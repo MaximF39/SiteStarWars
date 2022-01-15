@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Robo;
+    src: url(../fonts/robo.ttf);
+}
+
+*{
+    font-family: Robo;
+    letter-spacing: 1.5px;
+}
+
+button{
+    color: rgb(12, 15, 31);
+    background-color: rgb(218, 217, 236);
+    font-size: 150%;
+    align-items: center;
+}
+
+body {
+    color:rgb(184, 181, 221);
+    width: auto;
+    font-size: medium;
+    text-align: center;
+    background-color:rgb(56, 62, 100);
+    background-position: 50%;
+    background-size: 100%;
+    font-size: 90%;
+    line-height: 200%;
+}
+
+input{
+    background: linear-gradient(45deg,  rgb(218, 217, 236) 0%,rgb(184, 181, 221) 100%);
+}
+
+h1 {
+    color:rgb(218, 217, 236);
+    text-align: center;
+    font-weight: 50%;
+    font-family: Robo;
+    font-size: 150%;
+}
+div{
+    background: linear-gradient(45deg, rgb(20, 24, 46) 0%, rgb(10, 13, 29) 100%);
+    width: 500px;
+    margin-left: 30%;
+    color: blue1;
+}
+
+a{color:rgb(218, 217, 236);}
