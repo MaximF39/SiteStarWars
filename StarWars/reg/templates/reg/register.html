@@ -1,51 +1,59 @@
-<!--<form action="" method="post">{% csrf_token %}-->
-<!--    {{ form.as_p }}-->
-<!--    <input type="submit" value="Зарегистрировать">-->
-<!--</form>-->
-
 <html>
     <head>
+        <meta charset="utf-8">
         <title>Страница регистрации.</title>
-<!--        <style>-->
-<!--            @import "style.css" screen;-->
-<!--            /*@import "stylephone.css" handheld;*/-->
-<!--        </style>-->
+        <style>
+            @import url('../../static/css/style.css');
+            @import url('../../static/css/navigpanel.css');
+        </style>
+
+        <script src="../../static/js/func.js"></script>
     </head>
         <body>
-            <form action="" id="reg">
-                <fieldset>
-                    <header><h1>Регистрация аккаунта.</h1></header>
-                    <p><label for="user">Ваш никнейм.</label></p>
-                    <p><details>
-                        <p>- Длина его должна быть от 4 до 15 символов.</p>
-                        <p>- Не может начинаться с цифры.</p>
-                        <p>- Только буквы и цифры.</p>
-                    </details></p>
-                    <p><input type="text" name="user" required id="user"></p>
-                    <p><label for="mail">Ваш e-mail.</label></p>
-                    <p><input type="text" name="mail" required id="mail"></p>
-                    <p><label for="pass">Ваш пароль.</label></p>
-                    <p><details>
-                        <p>- Длина его должна быть от 3 до 20 символов.</p>
-                    </details></p>
-                    <p><input type="text" name="pass" required id="pass"></p>
-                    <p><input type="checkbox" name="gal1" id="gal1">
-                    <label for="gal">Запомнить вас при в следующем входе.</label>
-                    <p><button name="reg" form="reg">Зарегестрироваться.</button></p>
-                </fieldset>
-            </form>
-            <form action="" id="log">
-                <fieldset>
-                    <header><h1>Вход в аккаунт.</h1></header>
-                    <p><label for="user">Ваш никнейм.</label></p>
-                    <p><input type="text" name="user" id="user"></p>
-                    <p><label for="pass">Ваш пароль.</label></p>
-                    <p><input type="text" name="pass" id="pass"></p>
-                    <p><input type="checkbox" name="gal1" id="gal1">
-                    <label for="gal">Запомнить вас при в следующем входе.</label>
-                    <a href="">Забыли пароль?</a></p>
-                    <p><button name="log" form="log">Войти.</button></p>
-                </fieldset>
-            </form>
+            <nav class="nav">
+                <a>Home</a> <a class="activ">Registration</a> <a>Account</a> <a class="SW">STAR WARS</a>
+            </nav>
+            <div class="log">
+                <form action="" id="log">
+                    <fieldset>
+                        <header><h1>Вход в аккаунт.</h1></header>
+                        <p><label for="user">Ваш никнейм.</label></p>
+                        <p><input type="text" minlength="4" maxlength="15" pattern="[A-Za-z]{1}[a-zA-Z0-9]+$" name="user"></p>
+                        <p><label for="pass">Ваш пароль.</label></p>
+                        <p><input type="password" minlength="3" maxlength="20" pattern="[a-zA-Z0-9()-.^+\/*%^@#$]+$" name="pass" id="pass1" required>
+                        <input type="checkbox" onclick="showpass1()"></p>
+                        <p><input type="checkbox" class="ch">
+                        <label for="ch">Запомнить вас при в следующем входе.</label></p>
+                        <p><a href="" class="forgot">Забыли пароль?</a></p>
+                        <p><button name="log" form="log">Войти.</button></p>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="reg">
+                <form action="" id="reg">
+                    <fieldset>
+                        <header><h1>Регистрация аккаунта.</h1></header>
+                        <p><label for="user">Ваш никнейм.</label></p>
+                        <p><details>
+                            <p>- Длина его должна быть от 4 до 15 символов.</p>
+                            <p>- Не может начинаться с цифры.</p>
+                            <p>- Только буквы и цифры.</p>
+                        </details></p>
+                        <p><input type="text" minlength="4" maxlength="15" pattern="[A-Za-z]{1}[a-zA-Z0-9]+$" name="user" required></p>
+                        <p><label for="mail">Ваш e-mail.</label></p>
+                        <p><input type="email" name="mail" required></p>
+                        <p><label for="pass">Ваш пароль.</label></p>
+                        <p><details>
+                            <p>- Длина его должна быть от 3 до 20 символов.</p>
+                            <p>- Используется только латинская раскладка.</p>
+                        </details></p>
+                        <p><input type="password" minlength="3" maxlength="20" pattern="[a-zA-Z0-9()-.^+\/*%^@#$]+$" name="pass" id="pass2" required>
+                        <input type="checkbox" onclick="showpass2()"></p>
+                        <p><input type="checkbox" class="ch">
+                        <label for="ch">Запомнить вас при в следующем входе.</label>
+                        <p class="bu"><button name="reg" form="reg">Зарегистрироваться.</button></p>
+                    </fieldset>
+                </form>
+            </div>
         </body>
 </html>
