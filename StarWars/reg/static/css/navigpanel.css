@@ -1,35 +1,52 @@
+@import url(vars.css);
 @font-face {
     font-family: Robo;
     src: url(../fonts/robo.ttf);
 }
+
+/* * Шаблон панели
+<nav>
+    <a class="SW">STAR WARS</a> <a>Home</a> <a class="activ acc">Registration</a> 
+</nav> */
 
 *{
     font-family: Robo;
     letter-spacing: 1.5px;
 }
 
-.nav{
-    background-color: rgb(10, 13, 29);
+nav{
+    background-color: var(--blue1);
     overflow: hidden;
-    top: 0%; left: 0%; right: 0%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 9999;
 }
-.nav a {
+nav a {
     float: left;
-    color: rgb(184, 181, 221);
+    color: var(--blue3);
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 16px;
     text-decoration: none;
     font-size: 17px;
 }
-.nav a:hover{
-    background-color: rgb(56, 62, 100);
-    color: rgb(218, 217, 236);
+nav a:hover{
+    background-color: var(--blue2);
+    color: var(--blue4);
 }
-.nav a.activ{
-    background-color: rgb(218, 217, 236);
-    color: rgb(12, 15, 31);
+nav a.activ{
+    background-color: var(--blue4);
+    color: var(--blue1);
+}
+nav a.acc{
+    float: right;
 }
 
-.nav a.SW{
-    float: right;
+nav a.SW{
+    float: left;
+    font-size: 20px;
+    color:var(--blue4);
+}
+nav a.SW:hover{
+    background-color: var(--blue1);
+    color: var(--blue4);
 }

@@ -15,3 +15,12 @@ function showpass2() {
     x.type = "password";
   }
 }
+
+function showpass2() {
+  var x = document.getElementById("pass3");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
