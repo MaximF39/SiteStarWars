@@ -19,10 +19,10 @@
                     <header><h1>Вход в аккаунт</h1></header>
                     <p><label for="userlog">Ваш никнейм</label></p>
                     <p><input id="userlog" class="inp" type="text" minlength="4" maxlength="15" pattern="[A-Za-z]{1}[a-zA-Z0-9]+$"></p>
-                    <p><label for="passlog">Ваш пароль</label> <input type="checkbox" onclick="showpass1()"></p>
+                    <p><label for="passlog">Ваш пароль</label> <input id="pass1" type="checkbox" onclick="showpass('passlog')"></p>
                     <p><input id="passlog" class="inp" type="password" minlength="3" maxlength="20" pattern="[a-zA-Z0-9()-.^+\/*%^@#$]+$" required></p>
                     <p><input id="ch" class="remember ch1" type="checkbox"> <label class="remember ch2" for="ch">Запомнить вас</label>
-                    <p><a class="forgot" href="">Забыли пароль?</a></p>
+                    <a class="forgot" href="">Забыли пароль?</a></p>
                     <p><button class="butlog" form="log">Войти</button></p>
                 </fieldset>
             </form>
@@ -35,9 +35,9 @@
                     <p><input id="userreg" class="inp" type="text" minlength="4" maxlength="15" pattern="[A-Za-z]{1}[a-zA-Z0-9]+$" required></p>
                     <p><label for="mailreg">Ваш e-mail</label></p>
                     <input id="mailreg" class="inp" type="email" required></p>
-                    <p><label for="pass1reg">Ваш пароль</label> <input type="checkbox" onclick="showpass2()"></p>
+                    <p><label for="pass1reg">Ваш пароль</label> <input id="pass2" type="checkbox" onclick="showpass('pass1reg')"></p>
                     <p><input id="pass1reg" class="inp" type="password" minlength="3" maxlength="20" pattern="[a-zA-Z0-9()-.^+\/*%^@#$]+$" required></p>
-                    <p><label for="pass2reg">Повторите пароль</label> <input id="pass3" type="checkbox" onclick="showpass3()"></p>
+                    <p><label for="pass2reg">Повторите пароль</label> <input id="pass3" type="checkbox" onclick="showpass('pass2reg')"></p>
                     <p><input id="pass2reg" class="inp" type="password" minlength="3" maxlength="20" pattern="[a-zA-Z0-9()-.^+\/*%^@#$]+$" required></p>
                     <p><button class="butreg" form="reg">Зарегистрироваться</button></p>
                 </fieldset>
