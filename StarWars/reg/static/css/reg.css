@@ -1,0 +1,41 @@
+@import url(vars.css);
+@font-face {
+    font-family: Robo;
+    src: url(../fonts/robo.ttf);
+}
+
+div{
+    background-color: var(--blue1);
+    color: var(--blue3);
+    margin-left: 25%;
+}
+
+fieldset{border: none;}
+body{color: var(--blue3);}
+h1, a{color: var(--blue4);}
+
+.inp{
+    background-color: var(--blue3);
+    outline: none;
+    border: none;
+    width: 80%;
+}
+input, label, a.forgot, h1{
+    position: relative;
+    left: 5%;
+}
+button{
+    background-color: var(--blue3);
+    outline: none;
+    border: none;
+}
+.butlog{
+    position: relative;
+    left: 170px;
+}
+.butreg{
+    position: relative;
+    left: 130px;
+}
+.log{width: 450px;}
+.reg{width: 550px;}

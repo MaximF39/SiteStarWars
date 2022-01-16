@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Страница регистрации</title>
+        <style>
+            @import url('../../static/css/alls.css');
+            @import url('../../static/css/reg.css');
+            @import url('../../static/css/navigpanel.css');
+        </style>
+        <script src="../../static/js/func.js"></script>
+    </head>
+    <body>
+        <nav class="nav">
+            <a class="SW">STAR WARS</a> <a>Home</a> <a class="activ acc">Registration</a> 
+        </nav>
+        <div class="log up">
+            <form action="" id="log">
+                <fieldset>
+                    <header><h1>Вход в аккаунт</h1></header>
+                    <p><label for="userlog">Ваш никнейм</label></p>
+                    <p><input id="userlog" class="inp" type="text" minlength="4" maxlength="15" pattern="[A-Za-z]{1}[a-zA-Z0-9]+$"></p>
+                    <p><label for="passlog">Ваш пароль</label> <input type="checkbox" onclick="showpass1()"></p>
+                    <p><input id="passlog" class="inp" type="password" minlength="3" maxlength="20" pattern="[a-zA-Z0-9()-.^+\/*%^@#$]+$" required></p>
+                    <p><input id="ch" class="remember ch1" type="checkbox"> <label class="remember ch2" for="ch">Запомнить вас</label>
+                    <p><a class="forgot" href="">Забыли пароль?</a></p>
+                    <p><button class="butlog" form="log">Войти</button></p>
+                </fieldset>
+            </form>
+        </div>
+        <div class="reg">
+            <form action="" id="reg">
+                <fieldset>
+                    <header><h1>Регистрация аккаунта</h1></header>
+                    <p><label for="userreg">Ваш никнейм</label></p>
+                    <p><input id="userreg" class="inp" type="text" minlength="4" maxlength="15" pattern="[A-Za-z]{1}[a-zA-Z0-9]+$" required></p>
+                    <p><label for="mailreg">Ваш e-mail</label></p>
+                    <input id="mailreg" class="inp" type="email" required></p>
+                    <p><label for="pass1reg">Ваш пароль</label> <input type="checkbox" onclick="showpass2()"></p>
+                    <p><input id="pass1reg" class="inp" type="password" minlength="3" maxlength="20" pattern="[a-zA-Z0-9()-.^+\/*%^@#$]+$" required></p>
+                    <p><label for="pass2reg">Повторите пароль</label> <input id="pass3" type="checkbox" onclick="showpass3()"></p>
+                    <p><input id="pass2reg" class="inp" type="password" minlength="3" maxlength="20" pattern="[a-zA-Z0-9()-.^+\/*%^@#$]+$" required></p>
+                    <p><button class="butreg" form="reg">Зарегистрироваться</button></p>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
