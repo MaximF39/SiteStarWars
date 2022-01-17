@@ -1,0 +1,24 @@
+{% extends 'Base/base.html' %}
+{% load static %}
+
+{% block style %}
+@import url({% static 'Main/css/reg.css' %});
+{% endblock %}
+
+{% block content %}
+        <div class="log up">
+            <form method="post" id="log">
+                {% csrf_token %}
+                <fieldset>
+                    <header><h1>Вход в аккаунт</h1></header>
+                    <p><label for="id_username">Ваш никнейм</label></p>
+                    <p><input name="username" id="id_username" class="inp" type="text" minlength="4" maxlength="15" pattern="[A-Za-z]{1}[a-zA-Z0-9]+$"></p>
+                    <p><label for="id_password">Ваш пароль</label> <input id="pass1" type="checkbox" onclick="showpass('id_password')"></p>
+                    <p><input name="password" id="id_password" class="inp" type="password" minlength="3" maxlength="20" pattern="[a-zA-Z0-9()-.^+\/*%^@#$]+$" required></p>
+                    <p><input id="ch" class="remember ch1" type="checkbox"> <label class="remember ch2" for="ch">Запомнить вас</label>
+                    <a class="forgot" href="">Забыли пароль?</a></p>
+                    <p><button class="butlog" form="log">Войти</button></p>
+                </fieldset>
+            </form>
+        </div>
+{% endblock %}

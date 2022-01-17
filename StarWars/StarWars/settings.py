@@ -12,8 +12,8 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
-    'home.apps.HomeConfig',
-    'reg.apps.RegConfig',
+    'Main.apps.MainConfig',
+    'PersonalAccount.apps.PersonalaccountConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

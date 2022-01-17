@@ -1,0 +1,26 @@
+{% extends 'Base/base.html' %}
+{% load static %}
+
+{% block style %}
+@import url({% static 'Main/css/reg.css' %});
+{% endblock %}
+
+{% block content %}
+        <div class="reg up">
+            <form method="post" id="reg">
+                {% csrf_token %}
+                <fieldset>
+                    <header><h1>Регистрация аккаунта</h1></header>
+                    <p><label for="id_username">Ваш никнейм</label></p>
+                    <p><input name="username" id="id_username" class="inp" autofocus type="text" minlength="4" maxlength="15" pattern="[A-Za-z]{1}[a-zA-Z0-9]+$" required></p>
+                    <p><label for="id_email">Ваш e-mail</label></p>
+                    <input name="email" id="id_email" class="inp" type="email" required>
+                    <p><label for="id_password1">Ваш пароль</label> <input id="pass2" type="checkbox" onclick="showpass('id_password1')"></p>
+                    <p><input name="password1" id="id_password1" class="inp" type="password" minlength="3" maxlength="20" pattern="[a-zA-Z0-9()-.^+\/*%^@#$]+$" required></p>
+                    <p><label for="id_password2">Повторите пароль</label> <input id="pass3" type="checkbox" onclick="showpass('id_password2')"></p>
+                    <p><input name="password2" id="id_password2" class="inp" type="password" minlength="3" maxlength="20" pattern="[a-zA-Z0-9()-.^+\/*%^@#$]+$" required></p>
+                    <p><button type="submit" class="butreg" form="reg">Зарегистрироваться</button></p>
+                </fieldset>
+            </form>
+        </div>
+{% endblock %}

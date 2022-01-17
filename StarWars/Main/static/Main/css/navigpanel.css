@@ -1,0 +1,43 @@
+*{
+    font-family: Robo;
+    letter-spacing: 1.5px;
+}
+
+nav{
+    background-color: var(--blue1);
+    overflow: hidden;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 9999;
+}
+nav a {
+    float: left;
+    color: var(--blue3);
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+nav a:hover{
+    background-color: var(--blue2);
+    color: var(--blue4);
+}
+nav a.active{
+    background-color: var(--blue4);
+    color: var(--blue1);
+}
+nav a.acc{
+    float: right;
+}
+
+nav a.SW{
+    float: left;
+    font-size: 20px;
+    color:var(--blue4);
+    cursor: default;
+}
+nav a.SW:hover{
+    background-color: var(--blue1);
+    color: var(--blue4);
+    cursor: default;
+}

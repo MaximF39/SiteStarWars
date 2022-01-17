@@ -1,0 +1,36 @@
+{% extends 'Base/base.html' %}
+{% load static %}
+
+{% block style %}
+@import url({% static 'PersonalAccount/css/acc.css' %});
+{% endblock %}
+
+{% block title %}Личный кабинет{% endblock %}
+{% block content %}
+    <div>
+        <fieldset class="backavatar up">
+            <img class="avatar" src="{% static 'PersonalAccount/images/avatars/noAvatar.png' %}">
+            <p><a class="statleft">Nick:</a> <a class="statright">{{ user.get_username }}</a></p>
+            <p><a class="statleft">Опыт:</a> <a class="statright">Текст</a></p>
+            <p><a class="statleft">Статус:</a> <a class="statright">Текст</a></p>
+            <p><a class="statleft">Рейтинг:</a> <a class="statright">Текст</a></p>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset class="paneltop up">
+            <div>
+                <button>Умения</button>
+                <button>Инвентарь</button>
+                <button>Хранилище</button>
+                <button>Ангар</button>
+                <button>Клановое хранилище</button>
+                <button>Раса и клан</button> <!--Временный тестовый оаздел-->
+            </div>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset class="panelbottom">
+            {% block text %}{% endblock %}
+        </fieldset>
+    </div>
+{% endblock %}
