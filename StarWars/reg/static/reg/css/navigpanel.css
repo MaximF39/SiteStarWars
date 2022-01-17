@@ -45,8 +45,10 @@ nav a.SW{
     float: left;
     font-size: 20px;
     color:var(--blue4);
+    cursor: default;
 }
 nav a.SW:hover{
     background-color: var(--blue1);
     color: var(--blue4);
+    cursor: default;
 }

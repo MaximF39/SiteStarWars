@@ -1,3 +1,4 @@
+from importlib.resources import contents
 from django.contrib.auth import login, logout
 from django.contrib.auth.views import LoginView
 from django.http import HttpResponseRedirect
@@ -22,6 +23,10 @@ def base(request):
 def redirect_main(request):
     response = redirect('/main')
     return response
+
+def account(request):
+    context = {'title': 'Личный кабинет'}
+    return render(request, 'reg/account.html', context=context)
 
 class RegisterUser(DataMixin, CreateView):
     form_class = RegisterUserForm

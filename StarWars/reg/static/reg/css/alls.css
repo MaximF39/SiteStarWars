@@ -27,3 +27,4 @@ body{
 a{
     color: var(--blue2);
 }
+nav, a, input, button{cursor: pointer;}

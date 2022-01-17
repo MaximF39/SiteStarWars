@@ -47,5 +47,5 @@ button{
     left: 190px;
 }
 
-.log{width: 550px;}
+.log{width: 550px; position: relative; left: 3%;}
 .reg{width: 650px;}
