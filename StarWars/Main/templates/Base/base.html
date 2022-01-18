@@ -15,6 +15,7 @@
     <nav class="nav">
             <a href="/main" class="SW">STAR WARS</a>
             <a href="/main" class="{% ancestor '/main' %}">Home</a>
+            <a href="/faq" class="{% ancestor '/faq' %}">FAQ</a>
         {% if request.user.is_authenticated %}
             <a href="/logout" class="acc {% ancestor '/logout/' %}">Exit</a>
             <a href="/account" class="acc {% ancestor '/account/' %}">Account</a>

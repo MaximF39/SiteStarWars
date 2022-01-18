@@ -49,3 +49,6 @@ class LoginUser(DataMixin, LoginView):
 def logout_user(request):
     logout(request)
     return redirect('main')
+
+def faq(request):
+    return render(request, 'Main/faq.html')

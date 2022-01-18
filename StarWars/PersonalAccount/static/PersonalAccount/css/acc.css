@@ -1,3 +1,5 @@
+
+
 *{border: none;}
 
 .backavatar{
@@ -51,5 +53,8 @@ button.active{
     color: var(--blue1);
 }
 .statleft, .statright{cursor: default; color: var(--blue3);}
-.statleft{text-align: left;}
+.statleft{text-align: left;color: var(--blue4);}
 .statright{float: right;}
+
+.nick{font-size: 110%;}
+.id{font-size: 70%;}
