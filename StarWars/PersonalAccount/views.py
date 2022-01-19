@@ -19,3 +19,6 @@ def repository(request):
 
 def clan_repository(request):
     return render(request, 'PersonalAccount/clanRepository.html')
+
+def character(request):
+    return render(request, 'PersonalAccount/character.html')

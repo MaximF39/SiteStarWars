@@ -1,0 +1,12 @@
+/*just colors*/
+:root{
+    --blue1: rgb(10, 13, 29);
+    --blue5: rgb(23, 26, 53);
+    --blue2: rgb(56, 62, 100);
+    --blue3: rgb(184, 181, 221);
+    --blue4: rgb(218, 217, 236);
+
+    --fontTitle: 30px;
+    --fontText: 25px;
+    --fontLittle: 10px;
+}

@@ -1,5 +1,3 @@
-
-
 *{border: none;}
 
 .backavatar{
@@ -37,18 +35,19 @@
     float: right;
     height: 78.6%;
 }
-button{
+.butt{
     background-color: var(--blue1);
     color: var(--blue3);
-    position: relative;
-    height: 7%;
-    right: 1%;
-}
-button:hover{
+    float: left;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;}
+.butt:hover{
     background-color: var(--blue2);
     color: var(--blue4);
 }
-button.active{
+.butt.active{
     background-color: var(--blue4);
     color: var(--blue1);
 }

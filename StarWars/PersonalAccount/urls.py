@@ -9,4 +9,5 @@ urlpatterns = [
     path('repository/', repository, name="repository"),
     path('clan_repository/', clan_repository, name="clan_repository"),
     path('inventory/', inventory, name="inventory"),
+    path('character/', character, name="character"),
 ]

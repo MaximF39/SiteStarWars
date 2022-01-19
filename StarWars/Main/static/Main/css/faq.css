@@ -30,4 +30,4 @@
    z-index: 2;
 }
 .ss{position: relative; z-index: 3;}
-.up{color: var(--blue4);}
+.up{color: var(--blue4); margin-top: 15%;} 

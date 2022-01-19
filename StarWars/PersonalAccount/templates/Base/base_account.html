@@ -19,12 +19,12 @@
     <div>
         <fieldset class="paneltop up">
             <div>
-                <button>Умения</button>
-                <button>Инвентарь</button>
-                <button>Хранилище</button>
-                <button>Ангар</button>
-                <button>Клановое хранилище</button>
-                <button>Персонаж</button> <!--Временный тестовый оаздел-->
+                <a href="{% url 'skills' %}" class="butt">Умения</a>
+                <a href="{% url 'inventory' %}" class="butt">Инвентарь</a>
+                <a href="{% url 'repository' %}" class="butt">Хранилище</a>
+                <a href="{% url 'angar' %}" class="butt">Ангар</a>
+                <a href="{% url 'clan_repository' %}" class="butt">Клановое хранилище</a>
+                <a href="{% url 'character' %}" class="butt">Персонаж</a> <!--Временный тестовый оаздел-->
             </div>
         </fieldset>
     </div>
