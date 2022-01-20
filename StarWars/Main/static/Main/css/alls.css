@@ -5,7 +5,7 @@
 }
 
 *{
-    font-family: 'robo';
+
     font-size: 20px;
     text-align: left;
     background-size: 100%;
@@ -13,8 +13,19 @@
     line-height: 200%;
     z-index: 8888;
 }
+
+.back2{
+    position: absolute;
+    background-image: url(../images/Максу1.jpg);
+    height: 50%;
+    bottom: 50%;
+    z-index: -9999;
+    left: 0%;
+    right: 0%;
+}
+
 .up{
-    margin-top: 15%;
+    margin-top: 5%;
 }
 h1{
     font-size: var(--fontTitle);
