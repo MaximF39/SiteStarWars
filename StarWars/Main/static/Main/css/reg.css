@@ -20,7 +20,7 @@ input, label, a.forgot, h1{
     position: relative;
     left: 5%;
 }
-.forgot, .remember{font-size: var(--fontLittle);}
+.forgot, .remember{font-size: var(--Little);}
 a.forgot{
     position: relative;
     left: 30%;

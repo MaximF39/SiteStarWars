@@ -6,7 +6,8 @@
     --blue3: rgb(184, 181, 221);
     --blue4: rgb(218, 217, 236);
 
-    --fontTitle: 30px;
-    --fontText: 25px;
-    --fontLittle: 10px;
+    --Big: 30px;
+    --Middle: 25px;
+    --Middle2: 20px;
+    --Little: 10px;
 }

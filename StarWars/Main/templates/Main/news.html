@@ -1,0 +1,17 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block style %}
+@import url({% static 'Main/css/news.css' %});
+{% endblock %}
+
+{% block content %}
+    <h1 class="up zag">Новости по игре</h1>
+    
+        <fieldset class="aq">
+            <p class="dt">Время обновления: 20.01.22</p>
+            <p class="op">- Здесь будет описание того, чего мы сделали.</p>
+            <p class="op">- Проект делается уже несколько месяцев (точнее, сервер), и всего полмесяца существует сайт.</p>
+        </fieldset>
+
+{% endblock %}

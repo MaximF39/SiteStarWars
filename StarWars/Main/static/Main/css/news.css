@@ -1,0 +1,8 @@
+.aq{
+    background-color: var(--blue1);
+    color: var(--blue4);
+    border-radius: 10px;
+    border: none;
+}
+.op{font-size: var(--Middle2);}
+.dt{font-size: var(--Middle);}
