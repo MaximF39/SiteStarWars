@@ -1,7 +1,17 @@
 *{border: none;}
 
+body{
+    margin: 0px;
+    bottom: 0px;
+}
+
+.personal_account{
+  position: absolute;
+  bottom: 50px;
+}
+
 .backavatar{
-    background-color: var(--blue5); /* поставить --blue5  поставил, было --блие1*/
+    background-color: var(--blue5);0px
     color: var(--blue4);
     width: 20%;
     position: relative;
@@ -43,7 +53,8 @@
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
-    font-size: 17px;}
+    font-size: 17px;
+}
 .butt:hover{
     background-color: var(--blue2);
     color: var(--blue4);
@@ -56,7 +67,7 @@
 .statleft{text-align: left;color: var(--blue4);}
 .statright{float: right;}
 
-.nick{font-size: 110%;}
+.nick{font-size: 140%;}
 .id{font-size: 70%;}
 
 .up{margin-top: 5%;}

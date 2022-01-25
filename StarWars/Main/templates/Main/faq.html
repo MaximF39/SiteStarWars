@@ -5,12 +5,14 @@
 @import url({% static 'Main/css/faq.css' %});
 {% endblock %}
 
+{% block head %}
+Различные вопросы на ответы
+{% endblock %}
+
 {% block content %}
-    <h1 class="up zag">Различные вопросы на ответы</h1>
-    
-        <fieldset class="aq">
-            <p class="ask">- Ты любишь гречку?</p>
-            <p class="ques">Не сильно</p>
-        </fieldset>
-    
+<fieldset class="aq">
+    <p class="ask">- Ты любишь гречку?</p>
+    <p class="ques">Не сильно</p>
+</fieldset>
+
 {% endblock %}

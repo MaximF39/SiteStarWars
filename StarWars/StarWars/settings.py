@@ -13,6 +13,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'Main.apps.MainConfig',
+    'Forum.apps.ForumConfig',
     'PersonalAccount.apps.PersonalaccountConfig',
     'django.contrib.admin',
     'django.contrib.auth',

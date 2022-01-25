@@ -7,8 +7,9 @@
 
 {% block title %}Личный кабинет{% endblock %}
 {% block content %}
+<div class="acc">
     <div>
-        <fieldset class="backavatar up">
+        <fieldset class="backavatar">
             <img class="avatar" src="{% static 'PersonalAccount/images/avatars/noAvatar.png' %}">
             <p><a class="statleft nick">{{ user.get_username }}</a> <a class="statright id">id000</a></p>
             <p><a class="statleft">Опыт:</a> <a class="statright">Текст</a></p>
@@ -17,7 +18,7 @@
         </fieldset>
     </div>
     <div>
-        <fieldset class="paneltop up">
+        <fieldset class="paneltop">
             <div>
                 <a href="{% url 'skills' %}" class="butt">УМЕНИЯ</a>
                 <a href="{% url 'inventory' %}" class="butt">ИНВЕНТАРЬ</a>
@@ -33,4 +34,5 @@
             {% block text %}{% endblock %}
         </fieldset>
     </div>
+</div>
 {% endblock %}

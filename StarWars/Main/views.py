@@ -53,8 +53,5 @@ def logout_user(request):
 def faq(request):
     return render(request, 'Main/faq.html')
 
-def forum(request):
-    return render(request, 'Main/forum.html')
-
 def news(request):
     return render(request, 'Main/news.html')

@@ -26,7 +26,7 @@ nav a.active{
     background-color: var(--blue4);
     color: var(--blue1);
 }
-nav a.acc{
+.menu_right{
     float: right;
 }
 
@@ -36,8 +36,14 @@ nav a.SW{
     color:var(--blue4);
     cursor: default;
 }
+
 nav a.SW:hover{
     background-color: var(--blue1);
     color: var(--blue4);
     cursor: default;
+}
+
+div .content{
+    left: 10px;
+    right: 10px;
 }

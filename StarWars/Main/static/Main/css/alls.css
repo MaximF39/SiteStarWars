@@ -14,25 +14,23 @@
     z-index: 8888;
 }
 
-.back2{
-    position: absolute;
-    background-image: url(../images/Максу1.jpg);
-    height: 1000px;
-    top: -750px;
-    z-index: -9999;
-    left: 0%;
-    right: 0%;
+.background {
+  background-image: url(../images/Максу1.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 300px;
+  /* фокус! */
+  position: relative;
 }
-@media (max-width: 1100px) {
-    .back2{
-        position: absolute;
-        background-image: url(../images/Максу1.jpg);
-        height: 1000px;
-        top: -770px;
-        z-index: -9999;
-        left: 0%;
-        right: 0%;  
-    }}
+
+.head_text{
+      position: absolute;
+      bottom: 0px;
+      left: 20px;
+      width: calc(100% - 20px);
+      font-size: 30px;
+}
 
 .up{
     margin-top: 15%;
@@ -41,13 +39,17 @@ h1{
     font-size: var(--Big);
 }
 body{
+    margin: 0px;
+    bottom: 0px;
     background-color: var(--blue3);
     color: var(--blue1);
     font-size: var(--Middle);
 }
+
 a{
     color: var(--blue2);
 }
+
 nav, a, input, button{cursor: pointer;}
 
 .zag{color: var(--blue4);}
