@@ -5,8 +5,12 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views.generic import CreateView
+from rest_framework.permissions import IsAdminUser
 
 from Main.forms import RegisterUserForm, LoginUserForm
+from Main.models import Player
+from Main.permissions import IsOwnerOrReadOnly
+from Main.serializers import PlayerDetailSerializers, PlayerListSerializers
 from Main.utils import DataMixin
 
 
@@ -53,8 +57,21 @@ def logout_user(request):
 def faq(request):
     return render(request, 'Main/faq.html')
 
-def forum(request):
-    return render(request, 'Main/forum.html')
-
 def news(request):
     return render(request, 'Main/news.html')
+
+from rest_framework import generics
+
+class PlayerCreateView(generics.CreateAPIView):
+    serializer_class = PlayerDetailSerializers
+    permission_classes = (IsAdminUser,)
+
+class PlayerListView(generics.ListAPIView):
+    serializer_class = PlayerListSerializers
+    queryset = Player.objects.all()
+    permission_classes = (IsAdminUser,)
+
+class PlayerDetailView(generics.RetrieveUpdateDestroyAPIView):
+    serializer_class = PlayerDetailSerializers
+    queryset = Player.objects.all()
+    permission_classes = (IsOwnerOrReadOnly, IsAdminUser)
