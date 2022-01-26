@@ -20,19 +20,26 @@
     <div>
         <fieldset class="paneltop">
             <div>
-                <a href="{% url 'skills' %}" class="butt">УМЕНИЯ</a>
-                <a href="{% url 'inventory' %}" class="butt">ИНВЕНТАРЬ</a>
-                <a href="{% url 'repository' %}" class="butt">ХРАНИЛИЩЕ</a>
-                <a href="{% url 'angar' %}" class="butt">АНГАР</a>
-                <a href="{% url 'clan_repository' %}" class="butt">КЛАНОВОЕ ХРАНИЛИЩЕ</a>
-                <a href="{% url 'character' %}" class="butt">ПЕРСОНАЖ</a> <!--Временный тестовый оаздел-->
+                <a id="lk1" class="butt">УМЕНИЯ</a>
+                <a id="lk2" class="butt">ИНВЕНТАРЬ</a>
+                <a id="lk3" class="butt">ХРАНИЛИЩЕ</a>
+                <a id="lk4" class="butt">АНГАР</a>
+                <a id="lk5" class="butt">КЛАНОВОЕ ХРАНИЛИЩЕ</a>
+                <a id="lk6" class="butt">ПЕРСОНАЖ</a> <!--Временный тестовый оаздел-->
             </div>
         </fieldset>
     </div>
     <div>
         <fieldset class="panelbottom">
-            {% block text %}{% endblock %}
+            <!-- {% block text %}{% endblock %} -->
+            <div class="lk1 panelbottom_lk">lk1</div>
+            <div class="lk2 panelbottom_lk">lk2</div>
+            <div class="lk3 panelbottom_lk">lk3</div>
+            <div class="lk4 panelbottom_lk">lk4</div>
+            <div class="lk5 panelbottom_lk">lk5</div>
+            <div class="lk6 panelbottom_lk">lk6</div>
         </fieldset>
     </div>
 </div>
+<script src='{% static "PersonalAccount/js/func.js" %}'></script>
 {% endblock %}

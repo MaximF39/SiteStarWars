@@ -1,13 +1,17 @@
-*{
+* {
     font-family: Robo;
     letter-spacing: 1.2px;
-}
-body{
     margin: 0px;
     bottom: 0px;
 }
 
-.main_menu{
+a {
+    text-decoration: none;
+}
+
+body {}
+
+.main_menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,86 +21,114 @@ body{
     position: relative;
 }
 
-.revert_menu{
+.revert_menu {
     display: flex;
     flex-direction: row;
 }
 
-.revert_menu_link{
+.revert_menu_link {
     position: relative;
     color: var(--blue3);
     background-color: #fa0;
     height: 100%;
 }
 
-div a{
-    position: relative;
-    color: var(--blue3);
-    background-color: #fa0;
-    height: 100%;
+.revent_menu_title {
+    color: var(--blue4);
+    cursor: default;
+    font-size: 1.3em;
+    padding: 5px;
 }
 
-div a:hover{
+.revent_menu_items {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.revent_menu_item {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    font-size: 0.7em;
+    tt
+}
+
+.revent_menu_item:hover {
     background-color: var(--blue2);
+}
+
+.revent_menu_item a {
     color: var(--blue4);
 }
-div a.active{
+
+.revent_menu_item:hover a {
+    color: var(--blue3);
+}
+
+.revent_menu_item.active {
     background-color: var(--blue4);
+}
+
+.revent_menu_item.active a {
     color: var(--blue1);
 }
-.menu_right{
+
+.menu_right {
     float: right;
 }
 
-div a.SW{
-    float: left;
-    font-size: 20px;
-    color:var(--blue4);
-    cursor: default;
-}
 
-div .content{
+
+div .content {
     left: 10px;
     right: 10px;
 }
 
-nav{
+nav {
     background-color: var(--blue1);
     overflow: hidden;
     position: relative;
 }
-div a {
+
+/* div a {
     float: left;
     color: var(--blue3);
     padding: 10px 16px;
     font-size: 17px;
 }
-div a:hover{
+
+div a:hover {
     background-color: var(--blue2);
     color: var(--blue4);
 }
-div a.active{
+
+div a.active {
     background-color: var(--blue4);
     color: var(--blue1);
-}
-.menu_right{
+} */
+
+.menu_right {
     float: right;
 }
 
-div a.SW{
+div a.SW {
     float: left;
     font-size: 20px;
-    color:var(--blue4);
+    color: var(--blue4);
     cursor: default;
 }
 
-div a.SW:hover{
+div a.SW:hover {
     background-color: var(--blue1);
     color: var(--blue4);
     cursor: default;
 }
 
-div .content{
+div .content {
     left: 10px;
     right: 10px;
 }
