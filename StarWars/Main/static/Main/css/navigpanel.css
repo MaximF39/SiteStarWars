@@ -1,28 +1,46 @@
 *{
     font-family: Robo;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
+}
+body{
+    margin: 0px;
+    bottom: 0px;
 }
 
-nav{
-    background-color: var(--blue1);
+.main_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--blue1);
+
     overflow: hidden;
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 9999;
+    position: relative;
 }
-nav a {
-    float: left;
+
+.revert_menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.revert_menu_link{
+    position: relative;
     color: var(--blue3);
-    text-align: center;
-    padding: 10px 16px;
-    text-decoration: none;
-    font-size: 17px;
+    background-color: #fa0;
+    height: 100%;
 }
-nav a:hover{
+
+div a{
+    position: relative;
+    color: var(--blue3);
+    background-color: #fa0;
+    height: 100%;
+}
+
+div a:hover{
     background-color: var(--blue2);
     color: var(--blue4);
 }
-nav a.active{
+div a.active{
     background-color: var(--blue4);
     color: var(--blue1);
 }
@@ -30,14 +48,49 @@ nav a.active{
     float: right;
 }
 
-nav a.SW{
+div a.SW{
     float: left;
     font-size: 20px;
     color:var(--blue4);
     cursor: default;
 }
 
-nav a.SW:hover{
+div .content{
+    left: 10px;
+    right: 10px;
+}
+
+nav{
+    background-color: var(--blue1);
+    overflow: hidden;
+    position: relative;
+}
+div a {
+    float: left;
+    color: var(--blue3);
+    padding: 10px 16px;
+    font-size: 17px;
+}
+div a:hover{
+    background-color: var(--blue2);
+    color: var(--blue4);
+}
+div a.active{
+    background-color: var(--blue4);
+    color: var(--blue1);
+}
+.menu_right{
+    float: right;
+}
+
+div a.SW{
+    float: left;
+    font-size: 20px;
+    color:var(--blue4);
+    cursor: default;
+}
+
+div a.SW:hover{
     background-color: var(--blue1);
     color: var(--blue4);
     cursor: default;

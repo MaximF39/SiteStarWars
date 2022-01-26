@@ -1,7 +1,7 @@
-div.shift_left{
+div.shift{
     background-color: var(--blue1);
     color: var(--blue3);
-    margin-left: 25%;
+    margin-left: calc(50% - 325px);
     border-radius: 10px;
 }
 
@@ -41,5 +41,12 @@ button{
     left: 190px;
 }
 
-.log{width: 550px; position: relative; left: 3%;}
-.reg{width: 650px;}
+.remember_forgot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--blue1);
+}
+
+.log{width: 650px; position: relative;}
+.reg{width: 650px; position: relative;}
