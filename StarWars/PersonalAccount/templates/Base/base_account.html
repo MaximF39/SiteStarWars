@@ -7,38 +7,48 @@
 
 {% block title %}Личный кабинет{% endblock %}
 {% block content %}
-<div class="acc">
-    <div>
-        <fieldset class="backavatar">
-            <img class="avatar" src="{% static 'PersonalAccount/images/avatars/noAvatar.png' %}">
-            <p><a class="statleft nick">{{ user.get_username }}</a> <a class="statright id">id000</a></p>
-            <p><a class="statleft">Опыт:</a> <a class="statright">Текст</a></p>
-            <p><a class="statleft">Статус:</a> <a class="statright">Текст</a></p>
-            <p><a class="statleft">Рейтинг:</a> <a class="statright">Текст</a></p>
-        </fieldset>
+<div class="acc"> 
+    <div class="left_acc">
+        <div class='avatar'>
+            <img class="image_avatar" src="{% static 'PersonalAccount/images/avatars/noAvatar.png' %}">
+        </div>
+        <div class="revert_div">
+            <div><a class="base_text statleft main">{{ user.get_username }}</a></div>
+            <div><a class="base_text statright main">000</a></div>
+        </div>
+        <div class="revert_div">
+            <div><a class="base_text statleft">Опыт:</a></div>
+            <div><a class="base_text statright">Текст</a></div>
+        </div>
+        <div class="revert_div">
+            <div><a class="base_text statleft">Статус:</a> </div>
+            <div><a class="base_text statright">Текст</a></div>
+        </div>
+        <div class="revert_div">
+            <div><a class="base_text statleft">Рейтинг:</a></div>
+            <div><a class="base_text statright">Текст</a></div>
+        </div>
     </div>
-    <div>
-        <fieldset class="paneltop">
-            <div>
+    <div class="right_acc">
+        <div class="paneltop">
+            <div id=0>
                 <a id="lk1" class="butt">УМЕНИЯ</a>
                 <a id="lk2" class="butt">ИНВЕНТАРЬ</a>
                 <a id="lk3" class="butt">ХРАНИЛИЩЕ</a>
                 <a id="lk4" class="butt">АНГАР</a>
                 <a id="lk5" class="butt">КЛАНОВОЕ ХРАНИЛИЩЕ</a>
-                <a id="lk6" class="butt">ПЕРСОНАЖ</a> <!--Временный тестовый оаздел-->
+                <a id="lk6" class="butt">ПЕРСОНАЖ</a>
             </div>
-        </fieldset>
-    </div>
-    <div>
-        <fieldset class="panelbottom">
-            <!-- {% block text %}{% endblock %} -->
-            <div class="lk1 panelbottom_lk">lk1</div>
-            <div class="lk2 panelbottom_lk">lk2</div>
-            <div class="lk3 panelbottom_lk">lk3</div>
-            <div class="lk4 panelbottom_lk">lk4</div>
-            <div class="lk5 panelbottom_lk">lk5</div>
-            <div class="lk6 panelbottom_lk">lk6</div>
-        </fieldset>
+        </div>
+            <div class="panelbottom">
+                <!-- {% block text %}{% endblock %} -->
+                <div class="lk1 panelbottom_lk">lk1</div>
+                <div class="lk2 panelbottom_lk">lk2</div>
+                <div class="lk3 panelbottom_lk">lk3</div>
+                <div class="lk4 panelbottom_lk">lk4</div>
+                <div class="lk5 panelbottom_lk">lk5</div>
+                <div class="lk6 panelbottom_lk">lk6</div>
+            </div>
     </div>
 </div>
 <script src='{% static "PersonalAccount/js/func.js" %}'></script>

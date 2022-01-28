@@ -1,4 +1,4 @@
-* {
+d* {
     border: none;
 }
 
@@ -7,54 +7,57 @@ body {
     bottom: 0px;
 }
 
-.personal_account {
-    position: absolute;
-    bottom: 50px;
+.left_acc{
+    width: 25%;
+    height: 500px;
+    background-color: var(--blue1);
+    padding: 10px;
 }
 
-.backavatar {
-    background-color: var(--blue5);
-    0px color: var(--blue4);
-    width: 20%;
+.right_acc{
+    width: 60%;
+    height: 500px;
+    background-color: var(--blue1);
+    padding: 10px;
+}
+
+.acc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    left: 1%;
-    float: left;
+    top: -250px;
 }
 
-.ramka {
-    background-color: var(--blue2);
-    position: absolute;
-    width: 6%;
-    height: 6%;
-    left: 6%;
-    top: 16%;
-}
-
-.avatar {
+.image_avatar{
     position: relative;
-    left: 23%;
-    background-color: var(--blue4);
-    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    background-color: var(--blue3);
+    border-radius: 10%;
+}
+
+.avatar{
+    position: relative;
+    border-radius: 20%;
+    width: 75%;
+    height: auto;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 .paneltop {
     background-color: var(--blue1);
     color: var(--blue3);
-    width: 72%;
-    float: right;
-}
-
-.loll {
-    height: 100vh;
+    width: 100%;
 }
 
 .panelbottom {
     background-color: var(--blue1);
     color: var(--blue4);
-    width: 72%;
-    float: right;
-    bottom: 0%;
-    height: 78.6%;
+    width: 100%;
+    height: auto;
 }
 
 .panelbottom_lk:not(:first-child) {
@@ -64,11 +67,10 @@ body {
 .butt {
     background-color: var(--blue1);
     color: var(--blue3);
-    float: left;
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: var(--MiddleText);
 }
 
 .butt:hover {
@@ -81,29 +83,28 @@ body {
     color: var(--blue1);
 }
 
-.statleft,
-.statright {
+.revert_div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.base_text{
     cursor: default;
     color: var(--blue3);
 }
 
 .statleft {
     text-align: left;
+    align-items: center;
     color: var(--blue4);
 }
 
 .statright {
-    float: right;
+    align-content: center;
 }
 
-.nick {
-    font-size: 140%;
-}
-
-.id {
-    font-size: 70%;
-}
-
-.up {
-    margin-top: 5%;
+.main {
+    font-size: var(--BigText);
+    color: var(--blue4);
 }

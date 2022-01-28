@@ -8,7 +8,6 @@
         @import url('{% static "Main/css/alls.css" %}');
         @import url('{% static "Main/css/navigpanel.css" %}');{% block style %}{% endblock %}
         </style>
-        
 </head>
 
 <body>
@@ -26,11 +25,11 @@
         
         <div class="revert_menu">
             {% if request.user.is_authenticated %}
-            <div><a href="/account" class="{% ancestor '/account/' %}">ACCOUNT</a></div>
-            <div><a href="/logout" class="{% ancestor '/logout/' %}">EXIT</a></div>
+            <div class='revent_menu_item'><a href="/account" class="{% ancestor '/account/' %}">ACCOUNT</a></div>
+            <div class='revent_menu_item'><a href="/logout" class="{% ancestor '/logout/' %}">EXIT</a></div>
             {% else %}
-            <div><a href="/login" class="{% ancestor '/login/' %}">LOGIN</a></div>
-            <div><a href="/register" class="{% ancestor '/register/' %}">REGISTRATION</a></div>
+            <div class='revent_menu_item'><a href="/login" class="{% ancestor '/login/' %}">LOGIN</a></div>
+            <div class='revent_menu_item'><a href="/register" class="{% ancestor '/register/' %}">REGISTRATION</a></div>
             {% endif %}
         </div>
     </div>
@@ -39,14 +38,13 @@
             <h1 class="zag">{% block head %}{% endblock %}</h1>
         </div>
     </div>
-    <div class="down content">
+    <div class="down">
         {% block content %}
         {% endblock %}
     </div>
 
 
     <script src='{% static "Main/js/func.js" %}'></script>
-
 </body>
 
 </html>

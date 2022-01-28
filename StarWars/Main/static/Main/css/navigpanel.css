@@ -9,8 +9,6 @@ a {
     text-decoration: none;
 }
 
-body {}
-
 .main_menu {
     display: flex;
     align-items: center;
@@ -29,15 +27,19 @@ body {}
 .revert_menu_link {
     position: relative;
     color: var(--blue3);
-    background-color: #fa0;
     height: 100%;
 }
 
 .revent_menu_title {
+    height: auto;
+    width: auto;
     color: var(--blue4);
     cursor: default;
-    font-size: 1.3em;
-    padding: 5px;
+    font-size: var(--BigText);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
 }
 
 .revent_menu_items {
@@ -48,22 +50,28 @@ body {}
 
 .revent_menu_item {
     position: relative;
+    width: auto;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 16px;
-    font-size: 0.7em;
-    tt
+    font-size: var(--MiddleText);
 }
 
-.revent_menu_item:hover {
+.revent_menu_item:hover{
     background-color: var(--blue2);
 }
 
 .revent_menu_item a {
+    height: 100%;
+    width: 10vh;
     color: var(--blue4);
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
 }
+
 
 .revent_menu_item:hover a {
     color: var(--blue3);
@@ -77,58 +85,14 @@ body {}
     color: var(--blue1);
 }
 
-.menu_right {
-    float: right;
-}
-
-
-
-div .content {
-    left: 10px;
-    right: 10px;
-}
-
 nav {
     background-color: var(--blue1);
     overflow: hidden;
     position: relative;
 }
 
-/* div a {
-    float: left;
-    color: var(--blue3);
-    padding: 10px 16px;
-    font-size: 17px;
-}
-
-div a:hover {
-    background-color: var(--blue2);
-    color: var(--blue4);
-}
-
-div a.active {
-    background-color: var(--blue4);
-    color: var(--blue1);
-} */
-
-.menu_right {
-    float: right;
-}
-
-div a.SW {
-    float: left;
-    font-size: 20px;
-    color: var(--blue4);
-    cursor: default;
-}
-
 div a.SW:hover {
     background-color: var(--blue1);
     color: var(--blue4);
     cursor: default;
-}
-
-div .content {
-    left: 10px;
-    right: 10px;
 }

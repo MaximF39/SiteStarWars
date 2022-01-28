@@ -1,13 +1,22 @@
 div.shift{
     background-color: var(--blue1);
     color: var(--blue3);
-    margin-left: calc(50% - 325px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 10px;
 }
 
-fieldset{border: none;}
 body{color: var(--blue3);}
 h1, a{color: var(--blue4);}
+
+.center_window{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .inp{
     background-color: var(--blue3);
@@ -20,33 +29,40 @@ input, label, a.forgot, h1{
     position: relative;
     left: 5%;
 }
+
 .forgot, .remember{font-size: var(--fontLittle);}
 a.forgot{
     position: relative;
     left: 30%;
 }
 
-button{
+.butMiddle{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: var(--blue3);
     outline: none;
     border-radius: 5px;
     border: none;
 }
-.butlog{
-    position: relative;
-    left: 220px;
-}
-.butreg{
-    position: relative;
-    left: 190px;
+
+.backgroundReg{
+    width: 600px;
+    height: auto;
 }
 
-.remember_forgot{
+.backgroundLog{
+    width: 600px;
+    height: 290px;
+}
+
+.revert{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--blue1);
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.log{width: 650px; position: relative;}
-.reg{width: 650px; position: relative;}
+.button{
+    height: 70px;
+}

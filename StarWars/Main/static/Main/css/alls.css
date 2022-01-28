@@ -21,33 +21,30 @@
 
 .head_text{
       position: absolute;
-      bottom:-20px;
       left: 20px;
       width: calc(100% - 20px);
-      font-size: var(--Big);
+      font-size: var(--BigText);
 }
 
 .down{
     margin-top: 1%;
 }
 
-.up{
-    margin-top: -15%;
+h1{
+    font-size: var(--BigText);
 }
 
-h1{
-    font-size: var(--Big);
-}
 body{
     margin: 0px;
     bottom: 0px;
     background-color: var(--blue3);
     color: var(--blue1);
-    font-size: var(--Middle);
+    font-size: var(--MiddleText);
 }
 
 a{
     color: var(--blue2);
+    text-align: center;
 }
 
 nav, a, input, button{cursor: pointer;}
