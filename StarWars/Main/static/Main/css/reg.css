@@ -1,8 +1,8 @@
 div.shift{
     background-color: var(--blue1);
     color: var(--blue3);
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: -100px;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
@@ -10,6 +10,12 @@ div.shift{
 
 body{color: var(--blue3);}
 h1, a{color: var(--blue4);}
+
+.shift_left_div{
+    position:relative;
+    width: 86%;
+    left: 7%;
+}
 
 .center_window{
     position: absolute;
@@ -23,18 +29,13 @@ h1, a{color: var(--blue4);}
     outline: none;
     border-radius: 5px;
     border: none;
-    width: 80%;
+    width: 100%;
 }
 input, label, a.forgot, h1{
     position: relative;
-    left: 5%;
 }
 
 .forgot, .remember{font-size: var(--fontLittle);}
-a.forgot{
-    position: relative;
-    left: 30%;
-}
 
 .butMiddle{
     position: relative;
@@ -49,12 +50,12 @@ a.forgot{
 
 .backgroundReg{
     width: 600px;
-    height: auto;
+    height: 380px;
 }
 
 .backgroundLog{
     width: 600px;
-    height: 290px;
+    height: 280px;
 }
 
 .revert{

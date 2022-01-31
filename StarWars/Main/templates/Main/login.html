@@ -1,4 +1,4 @@
-{% extends 'Base/base.html' %}
+{% extends 'Main/base.html' %}
 {% load static %}
 
 {% block style %}
@@ -9,7 +9,7 @@
     <div class="backgroundLog shift">
         <form method="post" id="log">
             {% csrf_token %}
-            <div>
+            <div class="shift_left_div">
                 <div><h1>Вход в аккаунт</h1></div>
                 <div><label for="id_username">Ваш никнейм</label></div>
                 <div><input name="username" id="id_username" class="inp" type="text" minlength="4" maxlength="15" pattern="[A-Za-z]{1}[a-zA-Z0-9]+$"></div>
