@@ -8,6 +8,7 @@ SECRET_KEY = 'django-insecure-6$t@4ws7b#l=*2%nw8z0ycx#+ppss)bk&ku+rr6bt+l=xw-zfl
 DEBUG = True
 ALLOWED_HOSTS = []
 INSTALLED_APPS = [
+    'Accounts.apps.AccountsConfig',
     'Main.apps.MainConfig',
     'Forum.apps.ForumConfig',
     'PersonalAccount.apps.PersonalaccountConfig',
@@ -21,6 +22,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'djoser',
+
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -83,3 +85,4 @@ STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
+AUTH_USER_MODEL = 'Accounts.MyUser'

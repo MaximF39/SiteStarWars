@@ -5,7 +5,7 @@
     <meta charset="utf-8">
         <title>{% block title %}{% endblock %}</title>
         <style>
-        @import url('{% static "Main/css/alls.css" %}');
+        @import url('{% static "Main/css/main.css" %}');
         @import url('{% static "Main/css/navigpanel.css" %}');{% block style %}{% endblock %}
         </style>
 </head>
@@ -19,10 +19,12 @@
                 <div class="revent_menu_item {% ancestor '/forum' %}"><a href="/forum" >FORUM</a></div>
                 <div class="revent_menu_item {% ancestor '/news' %}"><a href="/news">NEWS</a></div>
                 <div class="revent_menu_item {% ancestor '/faq' %}" ><a href="/faq" >FAQ</a></div>
+                <div class="revent_menu_item {% ancestor '/faq' %}" ><a href="/top" >TOP</a>
+                </div>
             </div>
         </div>
 
-        
+
         <div class="revert_menu">
             {% if request.user.is_authenticated %}
             <div class='revent_menu_item'><a href="/account" class="{% ancestor '/account/' %}">ACCOUNT</a></div>

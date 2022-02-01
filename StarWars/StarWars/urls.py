@@ -6,6 +6,7 @@ import djoser
 
 urlpatterns = [
     path('', include('Main.urls')),
+    path('', include('Accounts.urls')),
     path('forum/', include('Forum.urls')),
     path('account/', include('PersonalAccount.urls')),
     path('admin/', admin.site.urls),
