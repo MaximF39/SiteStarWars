@@ -12,15 +12,20 @@
             <div>
                 <div class="shift_left_div">
                     <div><h1>Регистрация аккаунта</h1></div>
-                    <div><label for="id_username">Ваш никнейм</label></div>
-                    <div><input name="username" id="id_username" class="inp" autofocus type="text" minlength="4" maxlength="15" pattern="[A-Za-z]{1}[a-zA-Z0-9]+$" required></div>
-                    <div><label for="id_email">Ваш e-mail</label></div>
-                    <input name="email" id="id_email" class="inp" type="email" required>
-                    <div><label for="id_password1">Ваш пароль</label> <input id="pass2" type="checkbox" onclick="showpass('id_password1')"></div>
-                    <div><input name="password1" id="id_password1" class="inp" type="password" minlength="3" maxlength="20" pattern="[a-zA-Z0-9()-.^+\/*%^@#$]+$" required></div>
-                    <div><label for="id_password2">Повторите пароль</label> <input id="pass3" type="checkbox" onclick="showpass('id_password2')"></div>
-                    <div><input name="password2" id="id_password2" class="inp" type="password" minlength="3" maxlength="20" pattern="[a-zA-Z0-9()-.^+\/*%^@#$]+$" required></div>
-                    <div class='button'><button type="submit" class="butMiddle" form="reg">Зарегистрироваться</button></div>
+                        {% for field in form %}
+                            <div class="fieldWrapper">
+                                {{ field.errors }}
+                                {{ field.label_tag }}
+                                <div>
+<!--                                    <div><label for="id_password2">Показать пароль</label> <input id="pass3" type="checkbox" onclick="showpass()"></div>-->
+                                    {{ field }}
+                                </div>
+                                {% if field.help_text %}
+                                <p class="help">{{ field.help_text|safe }}</p>
+                                {% endif %}
+                            </div>
+                        {% endfor %}
+                        <div class='button'><button type="submit" class="butMiddle" form="reg">Зарегистрироваться</button></div>
                 </div>
             </div>
         </form>

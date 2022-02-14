@@ -2,7 +2,7 @@ div.shift{
     background-color: var(--blue1);
     color: var(--blue3);
     position: relative;
-    top: -100px;
+    top: 0px;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
@@ -50,12 +50,12 @@ input, label, a.forgot, h1{
 
 .backgroundReg{
     width: 600px;
-    height: 380px;
+    height: auto;
 }
 
 .backgroundLog{
     width: 600px;
-    height: 280px;
+    height: auto;
 }
 
 .revert{

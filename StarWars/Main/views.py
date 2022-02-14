@@ -4,6 +4,9 @@ from django.shortcuts import render, redirect
 def registration(request):
     return render(request, 'Main/register.html')
 
+def download(request):
+    return render(request, 'Main/download.html')
+
 def main(request):
     return render(request, 'Main/main.html')
 

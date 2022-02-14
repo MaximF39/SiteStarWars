@@ -59,6 +59,7 @@ a {
     justify-content: center;
     align-items: center;
     font-size: var(--MiddleText);
+    padding: 0 15px;x
 }
 
 .revent_menu_item:hover{

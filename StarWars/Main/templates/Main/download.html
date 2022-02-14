@@ -1,0 +1,19 @@
+{% extends 'Main/base.html' %}
+{% load static %}
+
+{% block style %}
+@import url({% static 'Main/css/faq.css' %});
+{% endblock %}
+
+{% block head %}
+Как играть?
+{% endblock %}
+
+{% block content %}
+<p class="text">
+    Скачать зип по ссылке: link
+</p>
+<p>
+    Вставить authkey в файл: config.xml
+</p>
+{% endblock %}

@@ -9,9 +9,16 @@ class RegisterUserForm(UserCreationForm):
     password1 = forms.CharField(label='Пароль', widget=forms.PasswordInput(attrs={'class': 'form-input'}))
     password2 = forms.CharField(label='Повтор пароля', widget=forms.PasswordInput(attrs={'class': 'form-input'}))
 
+    race_type = (
+        (1, 'Омоленианин (Красные)'),
+        (2, 'Иррииец (Жёлтые)'),
+        (3, 'Анид (Зелёные)'),
+        (4, 'Медрамилл (Синие)'),
+    )
+
     class Meta:
         model = MyUser
-        fields = ('username', 'email', 'password1', 'password2')
+        fields = ('username', 'email', 'password1', 'password2', "race")
 
 
 class LoginUserForm(AuthenticationForm):

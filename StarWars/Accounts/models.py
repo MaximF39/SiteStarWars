@@ -1,9 +1,12 @@
+import uuid
 
 from django.contrib.auth.models import (
-    BaseUserManager, AbstractBaseUser
+    BaseUserManager, AbstractBaseUser, PermissionsMixin
 )
+from django.core import validators
 
 from django.db import models
+
 
 class MyUserManager(BaseUserManager):
     def create_user(self, email, password=None):
@@ -35,17 +38,22 @@ class MyUserManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
-class MyUser(AbstractBaseUser):
+
+class MyUser(AbstractBaseUser, PermissionsMixin):
+    auth_key = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    username = models.CharField(verbose_name='username', unique=True, max_length=20, null=True)
+
     email = models.EmailField(
         verbose_name='email address',
         max_length=255,
+        validators=[validators.validate_email],
         unique=True,
+        blank=False
     )
+
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)
 
-    name = models.CharField(verbose_name='name', unique=True, max_length=10, null=True)
-    auth_key = models.CharField(verbose_name='auth_key', db_index=True, unique=True, max_length=32, null=True)
     race_type = (
         (1, 'Омоленианин (Красные)'),
         (2, 'Иррииец (Жёлтые)'),
@@ -56,7 +64,7 @@ class MyUser(AbstractBaseUser):
 
     objects = MyUserManager()
 
-    USERNAME_FIELD = 'email'
+    USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = []
 
     def __str__(self):
@@ -77,4 +85,3 @@ class MyUser(AbstractBaseUser):
         "Is the user a member of staff?"
         # Simplest possible answer: All admins are staff
         return self.is_admin
-
