@@ -1,13 +1,16 @@
+import hmac
+import uuid
+
 from django.db import models
 from django.contrib.auth import get_user_model
-
 User = get_user_model()
 
 
 class Player(models.Model):
+    auth_key = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(verbose_name='name', unique=True, max_length=10)
-    auth_key = models.CharField(verbose_name='auth_key', db_index=True, unique=True, max_length=32)
-    # avatar = models.IntegerField(verbose_name='Avatar')
+    # auth_key = models.UUIDField(verbose_name='auth_key')
+    # auth_key = models.CharField(verbose_name='auth_key', unique=True, max_length=32, default=auth)
     race_type = (
         (1, 'Омоленианин (Красные)'),
         (2, 'Иррииец (Жёлтые)'),
