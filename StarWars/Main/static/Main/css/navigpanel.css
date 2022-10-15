@@ -34,14 +34,20 @@ a {
 }
 
 .revent_menu_title {
-    height: auto;
-    width: auto;
+    height: 40px;
+    width: 100px;
+    margin: 2px 30px;
+    cursor: pointe !important;
+    display: block;
     color: var(--blue4);
     cursor: default;
     font-size: var(--BigText);
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(./logo.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
 }
 
 .revent_menu_items {
@@ -59,10 +65,10 @@ a {
     justify-content: center;
     align-items: center;
     font-size: var(--MiddleText);
-    padding: 0 15px;x
+    padding: 0 15px;
 }
 
-.revent_menu_item:hover{
+.revent_menu_item:hover {
     background-color: var(--blue2);
 }
 
