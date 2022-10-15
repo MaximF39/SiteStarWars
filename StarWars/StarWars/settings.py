@@ -11,6 +11,7 @@ INSTALLED_APPS = [
     'Accounts.apps.AccountsConfig',
     'Main.apps.MainConfig',
     'Forum.apps.ForumConfig',
+    'Shop.apps.ShopConfig',
     'PersonalAccount.apps.PersonalaccountConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -22,7 +23,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'djoser',
-
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

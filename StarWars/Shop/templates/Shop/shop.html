@@ -1,0 +1,21 @@
+{% extends 'Main/base.html' %}
+{% load static %}
+
+{% block style %}
+@import url({% static 'Shop/css/shop.css' %});
+{% endblock %}
+
+{% block head %}
+    StarWars Shop
+{% endblock %}
+
+{% block content %}
+    <div class="conteiner shop">
+        <div class="shop_item">
+            <div  class="shop_item__name">Название</div>
+            <div  class="shop_item__image"><img src="{% static 'Shop/images/12_Main_XFregatArmored.png' %}" alt=""></div>
+            <div  class="shop_item__description"></div>
+            <div  class="shop_item__price"></div>
+        </div>
+    </div>
+{% endblock %}
