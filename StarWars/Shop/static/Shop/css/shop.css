@@ -1,5 +1,112 @@
 .shop {
-    margin: 0;
-    width: 100%;
     display: flex;
+    padding: 40px;
+    word-wrap: break-word;
+    font-size: 11px;
+    position: relative;
+}
+
+.shop_item {
+    width: 200px;
+    min-height: 300px;
+    background: url(./item.jpg);
+    background-size: 100% 100%;
+    border: 2px rgb(255, 255, 255) solid;
+    box-shadow: 0px 0px 5px rgb(24, 0, 113);
+}
+
+.shop_item__name {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center;
+    line-height: 100%;
+    color: white;
+}
+
+.shop_item__image {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.shop_item__image img {
+    max-width: 80px;
+}
+
+.shop_item__states {
+    line-height: 100%;
+    margin: 20px 10px 0;
+    border: 1px rgb(255, 255, 255) solid;
+    padding: 5px;
+    color: white;
+}
+
+.shop_item__states p {
+    line-height: 150%;
+}
+
+.shop_item__states p span {
+    font-size: 10px;
+    font-family: Monospace !important;
+    line-height: 150%;
+    font-weight: 700;
+}
+
+.shop_item__states p span:first-child {
+    width: 70%;
+    display: inline-block;
+}
+
+.shop_item__detail {
+    width: 100%;
+    text-align: center;
+    font-size: 9px;
+    color: rgb(89, 90, 181);
+}
+
+.shop_item__price {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+.middle{
+    transform: translate(0,0);
+}
+
+.btn{
+    position: relative;
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    text-decoration: none;
+    margin: 5px auto;
+    border-radius: 2px;
+    padding: 2px 15px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.1s all ease;
+    text-shadow: 0 0 3px black;
+}
+
+.btn::before{
+    background: linear-gradient(0deg, rgb(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 1) 45%, rgba(255, 255, 255, 1) 55%, rgb(0, 0, 0, 0.1) 100%);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.1s ease;
+}
+
+.btn4::before{
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%,-50%) rotate(-0deg);
+}
+.btn4:hover::before{
+    height: 100%;
 }
