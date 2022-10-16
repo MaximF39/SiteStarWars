@@ -1,0 +1,26 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block style %}
+@import url({% static 'Accounts/css/reg.css' %});
+{% endblock %}
+
+{% block content %}
+    <div class="backgroundLog shift">
+        <form method="post" id="log">
+            {% csrf_token %}
+            <div class="shift_left_div">
+                <div><h1>Вход в аккаунт</h1></div>
+                <div><label for="id_username">Ваш никнейм</label></div>
+                <div><input name="username" id="id_username" class="inp" type="text" required></div>
+                <div><label for="id_password">Ваш пароль</label> <input id="pass1" type="checkbox" onclick="showpass('id_password')"></div>
+                <div><input name="password" id="id_password" class="inp" type="password" required></div>
+                <div class="revert">
+                    <div><input id="ch" class="remember ch1" type="checkbox"><label class="remember ch2" for="ch">Запомнить вас</label></div>
+                    <div><a href="">Забыли пароль?</a></div>
+                </div>
+                <div class='button'><button class="butMiddle" form="log">Войти</button></div>
+            </div>
+        </form>
+    </div>
+{% endblock %}
