@@ -25,6 +25,7 @@ a {
 .revert_menu {
     display: flex;
     flex-direction: row;
+    height: 44px;
 }
 
 .revert_menu_link {
