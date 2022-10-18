@@ -6,12 +6,12 @@ from django.contrib.postgres.fields import ArrayField
 
 
 class BaseItems(BaseModel):
-    name = models.CharField(max_length=100, null=False, verbose_name = "Название")
-    en_name = models.CharField(max_length=100, null=False, verbose_name = "Идент. номер")
-    class_number = models.IntegerField(null=False, verbose_name = "Номер класса")
-    cost = models.IntegerField(null=False, verbose_name = "Цена")
-    size = models.FloatField(null=False, verbose_name = "Размер")
-    image = VersatileImageField(null=False, blank=True, upload_to='images', verbose_name = "Изображение")
+    name = models.CharField(max_length=100, null=False, verbose_name="Название")
+    en_name = models.CharField(max_length=100, null=False, verbose_name="Идент. номер")
+    class_number = models.IntegerField(null=False, verbose_name="Номер класса")
+    cost = models.IntegerField(null=False, verbose_name="Цена")
+    size = models.FloatField(null=False, verbose_name="Размер")
+    image = VersatileImageField(null=False, blank=True, upload_to='images', verbose_name="Изображение")
 
     class Meta:
         verbose_name = "Item"
@@ -22,7 +22,8 @@ class BaseItems(BaseModel):
 
 
 class Ammo(BaseItems):
-    damage = models.IntegerField(null=False, verbose_name = "Урон")
+    damage = models.IntegerField(null=False, verbose_name="Урон")
+    type = models.CharField(max_length=100, default="Ammo")
 
     class Meta:
         verbose_name = "Боекомплект"
@@ -30,6 +31,7 @@ class Ammo(BaseItems):
 
 class Resources(BaseItems):
     effects = ArrayField(ArrayField(models.IntegerField()))
+    type = models.CharField(max_length=100, default="Resources")
 
     class Meta:
         verbose_name = "Ресурс"
@@ -48,6 +50,7 @@ class Ships(BaseItems):
     max_health = models.IntegerField(null=False)
     effects = ArrayField(ArrayField(models.IntegerField(null=False)))
     droid_slots = models.IntegerField(null=False)
+    type = models.CharField(max_length=100, default="Ships")
 
     class Meta:
         verbose_name = "Корабль"
@@ -58,6 +61,7 @@ class Engines(BaseItems):
     hyperjump_radius = models.IntegerField(null=False)
     energy_cost = models.IntegerField(null=False)
     max_health = models.IntegerField(null=False)
+    type = models.CharField(max_length=100, default="Engines")
 
     class Meta:
         verbose_name = "Двигатель"
@@ -65,11 +69,12 @@ class Engines(BaseItems):
 
 
 class Devices(BaseItems):
-    reload_time = models.IntegerField(null=False)  # ms
+    reload_time = models.IntegerField(null=False)
     energy_cost = models.IntegerField(null=False)
     effects = ArrayField(ArrayField(models.IntegerField(null=False)))
     max_health = models.IntegerField(null=False)
     device_type = models.IntegerField(null=False)
+    type = models.CharField(max_length=100, default="Devices")
 
     class Meta:
         verbose_name = "Устройство"
@@ -83,14 +88,12 @@ class Weapons(BaseItems):
     energy_cost = models.IntegerField(null=False)
     min_damage = models.IntegerField(null=False)
     max_damage = models.IntegerField(null=False)
-    ammo_class = models.OneToOneField(
-        Ammo,
-        on_delete=models.CASCADE,
-    )
+    ammo_class = models.ForeignKey('Ammo', on_delete=models.SET_NULL, null=True)
     need_cpu = models.IntegerField(null=False)
     effects = ArrayField(ArrayField(models.IntegerField(null=False)))
     max_health = models.IntegerField(null=False)
     weapon_type = models.IntegerField(null=False)
+    type = models.CharField(max_length=100, default="Weapons")
 
     class Meta:
         verbose_name = "Оружие"
@@ -101,11 +104,9 @@ class Droids(BaseItems):
     energy_cost = models.IntegerField(null=False)
     armor = models.IntegerField(null=False)
     droid_type = models.IntegerField(null=False)
-    weapon_class = models.OneToOneField(
-        Weapons,
-        on_delete=models.CASCADE,
-    )
+    weapon_class = models.ForeignKey('Weapons', on_delete=models.SET_NULL, null=True)
     max_health = models.IntegerField(null=False)
+    type = models.CharField(max_length=100, default="Droids", null=False)
 
     class Meta:
         verbose_name = "Дройд"
