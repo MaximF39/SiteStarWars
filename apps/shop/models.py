@@ -6,24 +6,34 @@ from django.contrib.postgres.fields import ArrayField
 
 
 class BaseItems(BaseModel):
-    name = models.CharField(max_length=100, null=False)
-    en_name = models.CharField(max_length=100, null=False)
-    class_number = models.IntegerField(null=False)
-    cost = models.IntegerField(null=False)
-    size = models.FloatField(null=False)
-    image = VersatileImageField(null=False, blank=True, upload_to='images')
+    name = models.CharField(max_length=100, null=False, verbose_name = "Название")
+    en_name = models.CharField(max_length=100, null=False, verbose_name = "Идент. номер")
+    class_number = models.IntegerField(null=False, verbose_name = "Номер класса")
+    cost = models.IntegerField(null=False, verbose_name = "Цена")
+    size = models.FloatField(null=False, verbose_name = "Размер")
+    image = VersatileImageField(null=False, blank=True, upload_to='images', verbose_name = "Изображение")
 
     class Meta:
         verbose_name = "Item"
         verbose_name_plural = "Items"
 
+    def __str__(self):
+        return self.name
+
 
 class Ammo(BaseItems):
-    damage = models.IntegerField(null=False)
+    damage = models.IntegerField(null=False, verbose_name = "Урон")
 
+    class Meta:
+        verbose_name = "Боекомплект"
+        verbose_name_plural = "Боекомплект"
 
 class Resources(BaseItems):
     effects = ArrayField(ArrayField(models.IntegerField()))
+
+    class Meta:
+        verbose_name = "Ресурс"
+        verbose_name_plural = "Ресурсы"
 
 
 class Ships(BaseItems):
@@ -34,11 +44,14 @@ class Ships(BaseItems):
     shields = models.IntegerField(null=False)
     cpu = models.IntegerField(null=False)
     radar = models.IntegerField(null=False)
-    restrictions = models.JSONField(null=False)
     speed = models.IntegerField(null=False)
     max_health = models.IntegerField(null=False)
     effects = ArrayField(ArrayField(models.IntegerField(null=False)))
     droid_slots = models.IntegerField(null=False)
+
+    class Meta:
+        verbose_name = "Корабль"
+        verbose_name_plural = "Корабли"
 
 
 class Engines(BaseItems):
@@ -46,14 +59,21 @@ class Engines(BaseItems):
     energy_cost = models.IntegerField(null=False)
     max_health = models.IntegerField(null=False)
 
+    class Meta:
+        verbose_name = "Двигатель"
+        verbose_name_plural = "Двигатели"
+
 
 class Devices(BaseItems):
     reload_time = models.IntegerField(null=False)  # ms
     energy_cost = models.IntegerField(null=False)
     effects = ArrayField(ArrayField(models.IntegerField(null=False)))
-    restrictions = models.JSONField(null=False)
     max_health = models.IntegerField(null=False)
     device_type = models.IntegerField(null=False)
+
+    class Meta:
+        verbose_name = "Устройство"
+        verbose_name_plural = "Устройства"
 
 
 class Weapons(BaseItems):
@@ -63,7 +83,6 @@ class Weapons(BaseItems):
     energy_cost = models.IntegerField(null=False)
     min_damage = models.IntegerField(null=False)
     max_damage = models.IntegerField(null=False)
-    restrictions = models.JSONField(null=False),
     ammo_class = models.OneToOneField(
         Ammo,
         on_delete=models.CASCADE,
@@ -72,6 +91,10 @@ class Weapons(BaseItems):
     effects = ArrayField(ArrayField(models.IntegerField(null=False)))
     max_health = models.IntegerField(null=False)
     weapon_type = models.IntegerField(null=False)
+
+    class Meta:
+        verbose_name = "Оружие"
+        verbose_name_plural = "Оружие"
 
 
 class Droids(BaseItems):
@@ -82,5 +105,8 @@ class Droids(BaseItems):
         Weapons,
         on_delete=models.CASCADE,
     )
-    restrictions = models.JSONField(null=False)
     max_health = models.IntegerField(null=False)
+
+    class Meta:
+        verbose_name = "Дройд"
+        verbose_name_plural = "Дройды"

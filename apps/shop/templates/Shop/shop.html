@@ -11,9 +11,14 @@
 
 {% block content %}
     <div class="conteiner shop">
+        {% for item in items %}
         <div class="shop_item">
-            <div  class="shop_item__name">Название vervreververververver rerverv revrever</div>
-            <div  class="shop_item__image"><img src="{% static 'Shop/images/12_Main_XFregatArmored.png' %}" alt=""></div>
+            <div  class="shop_item__name">{{ item.name }}</div>
+            <div  class="shop_item__image"><img src="
+            {% if item.image %}
+            {{ item.image.url }}
+            {% endif %}
+            " alt=""></div>
             <div  class="shop_item__states">
                 <p>
                     <span>Точность:</span>
@@ -28,10 +33,11 @@
                 </p>
             </div>
             <div  class="shop_item__detail">Подробнее ►►►</div>
-            <div  class="shop_item__price">Цена: 100$</div>
+            <div  class="shop_item__price">Цена: {{ item.cost }}$</div>
             <div  class="shop_item__buy middle">
                 <a href="" class="btn btn4">КУПИТЬ</a>
             </div>
         </div>
+        {% endfor %}
     </div>
 {% endblock %}

@@ -1,6 +1,6 @@
 from django.shortcuts import render
-
-# Create your views here.
+from .models import *
 
 def shop(request):
-    return render(request, 'shop/shop.html')
+    items = BaseItems.objects.select_related('ammo', 'resources', 'ships', 'engines', 'devices', 'weapons', 'droids')
+    return render(request, 'shop/shop.html', context = {'items' : items})

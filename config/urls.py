@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import include, path
-import rest_framework
-import djoser
+from django.conf.urls.static import static
+from django.conf import settings
 
 
 urlpatterns = [
@@ -11,8 +11,6 @@ urlpatterns = [
     path('shop/', include('shop.urls')),
     path('account/', include('personalAccount.urls')),
     path('admin/', admin.site.urls),
-
-    path('api/v1/base-auth/', include('rest_framework.urls')),
-    path('api/v1/auth/', include('djoser.urls')),
-    path('api/v1/auth_token/', include('djoser.urls.authtoken')),
 ]
+
+urlpatterns +=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

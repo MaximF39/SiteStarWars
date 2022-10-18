@@ -1,6 +1,6 @@
 .shop {
     display: flex;
-    padding: 40px;
+    padding: 20px 40px;
     word-wrap: break-word;
     font-size: 11px;
     position: relative;
@@ -13,6 +13,7 @@
     background-size: 100% 100%;
     border: 2px rgb(255, 255, 255) solid;
     box-shadow: 0px 0px 5px rgb(24, 0, 113);
+    margin: 0 10px 10px;
 }
 
 .shop_item__name {
@@ -22,6 +23,7 @@
     text-align: center;
     line-height: 100%;
     color: white;
+    font-size: 14px;
 }
 
 .shop_item__image {
