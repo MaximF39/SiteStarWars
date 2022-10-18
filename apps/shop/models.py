@@ -7,7 +7,8 @@ from django.contrib.postgres.fields import ArrayField
 
 class BaseItems(BaseModel):
     name = models.CharField(max_length=100, null=False)
-    classNumber = models.IntegerField(null=False)
+    en_name = models.CharField(max_length=100, null=False)
+    class_number = models.IntegerField(null=False)
     cost = models.IntegerField(null=False)
     size = models.FloatField(null=False)
     image = VersatileImageField(null=False, blank=True, upload_to='images')
@@ -18,66 +19,68 @@ class BaseItems(BaseModel):
 
 
 class Ammo(BaseItems):
-    damage = models.SmallIntegerField(null=False)
+    damage = models.IntegerField(null=False)
 
 
 class Resources(BaseItems):
-    effects = ArrayField(ArrayField(models.SmallIntegerField(null=False)))
+    effects = ArrayField(ArrayField(models.IntegerField()))
 
 
 class Ships(BaseItems):
-    maxEnergy = models.IntegerField(null=False)
-    weaponSlots = models.SmallIntegerField(null=False)
-    deviceSlots = models.SmallIntegerField(null=False)
+    max_energy = models.IntegerField(null=False)
+    weapon_slots = models.IntegerField(null=False)
+    device_slots = models.IntegerField(null=False)
     armor = models.IntegerField(null=False)
-    shields = models.SmallIntegerField(null=False)
-    cpu = models.SmallIntegerField(null=False)
-    radar = models.SmallIntegerField(null=False)
+    shields = models.IntegerField(null=False)
+    cpu = models.IntegerField(null=False)
+    radar = models.IntegerField(null=False)
     restrictions = models.JSONField(null=False)
-    speed = models.SmallIntegerField(null=False)
-    maxHealth = models.IntegerField(null=False)
-    effects = ArrayField(ArrayField(models.SmallIntegerField(null=False)))
-    droidSlots = models.SmallIntegerField(null=False)
+    speed = models.IntegerField(null=False)
+    max_health = models.IntegerField(null=False)
+    effects = ArrayField(ArrayField(models.IntegerField(null=False)))
+    droid_slots = models.IntegerField(null=False)
 
 
 class Engines(BaseItems):
-    hyperjumpRadius = models.SmallIntegerField(null=False)
-    energyCost = models.SmallIntegerField(null=False)
-    maxHealth = models.IntegerField(null=False)
+    hyperjump_radius = models.IntegerField(null=False)
+    energy_cost = models.IntegerField(null=False)
+    max_health = models.IntegerField(null=False)
 
 
 class Devices(BaseItems):
-    reloadTime = models.SmallIntegerField(null=False)  # ms
-    energyCost = models.SmallIntegerField(null=False)
-    effects = ArrayField(ArrayField(models.SmallIntegerField(null=False)))
+    reload_time = models.IntegerField(null=False)  # ms
+    energy_cost = models.IntegerField(null=False)
+    effects = ArrayField(ArrayField(models.IntegerField(null=False)))
     restrictions = models.JSONField(null=False)
-    maxHealth = models.IntegerField(null=False)
-    device_type = models.SmallIntegerField(null=False)
+    max_health = models.IntegerField(null=False)
+    device_type = models.IntegerField(null=False)
 
 
 class Weapons(BaseItems):
-    autoShots = models.SmallIntegerField(null=False)
-    radius = models.SmallIntegerField(null=False)
-    reloadTime = models.SmallIntegerField(null=False)
-    energyCost = models.SmallIntegerField(null=False)
-    minDamage = models.SmallIntegerField(null=False)
-    maxDamage = models.SmallIntegerField(null=False)
+    auto_shots = models.IntegerField(null=False)
+    radius = models.IntegerField(null=False)
+    reload_time = models.IntegerField(null=False)
+    energy_cost = models.IntegerField(null=False)
+    min_damage = models.IntegerField(null=False)
+    max_damage = models.IntegerField(null=False)
     restrictions = models.JSONField(null=False),
-    ammoClass = models.OneToOneField(
+    ammo_class = models.OneToOneField(
         Ammo,
         on_delete=models.CASCADE,
     )
-    needCpu = models.SmallIntegerField(null=False)
-    effects = ArrayField(ArrayField(models.SmallIntegerField(null=False)))
-    maxHealth = models.IntegerField(null=False)
-    weaponType = models.SmallIntegerField(null=False)
+    need_cpu = models.IntegerField(null=False)
+    effects = ArrayField(ArrayField(models.IntegerField(null=False)))
+    max_health = models.IntegerField(null=False)
+    weapon_type = models.IntegerField(null=False)
+
+
 class Droids(BaseItems):
-    energyCost = models.SmallIntegerField(null=False)
-    armor = models.SmallIntegerField(null=False)
-    droidType = models.SmallIntegerField(null=False)
-    weaponClass = models.OneToOneField(
+    energy_cost = models.IntegerField(null=False)
+    armor = models.IntegerField(null=False)
+    droid_type = models.IntegerField(null=False)
+    weapon_class = models.OneToOneField(
         Weapons,
         on_delete=models.CASCADE,
     )
     restrictions = models.JSONField(null=False)
-    maxHealth = models.IntegerField(null=False)
+    max_health = models.IntegerField(null=False)
