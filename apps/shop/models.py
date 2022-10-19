@@ -7,7 +7,7 @@ from django.contrib.postgres.fields import ArrayField
 
 class BaseItems(BaseModel):
     name = models.CharField(max_length=100, null=False, verbose_name="Название")
-    en_name = models.CharField(max_length=100, null=False, verbose_name="Идент. номер")
+    en_name = models.CharField(max_length=100, null=False, verbose_name="En название")
     class_number = models.IntegerField(null=False, verbose_name="Номер класса")
     cost = models.IntegerField(null=False, verbose_name="Цена")
     size = models.FloatField(null=False, verbose_name="Размер")
@@ -23,7 +23,7 @@ class BaseItems(BaseModel):
 
 class Ammo(BaseItems):
     damage = models.IntegerField(null=False, verbose_name="Урон")
-    type = models.CharField(max_length=100, default="Ammo")
+    type = models.CharField(max_length=20, auto_created="ammo")
 
     class Meta:
         verbose_name = "Боекомплект"
@@ -31,7 +31,7 @@ class Ammo(BaseItems):
 
 class Resources(BaseItems):
     effects = ArrayField(ArrayField(models.IntegerField()))
-    type = models.CharField(max_length=100, default="Resources")
+    type = models.CharField(max_length=20, auto_created="resource")
 
     class Meta:
         verbose_name = "Ресурс"
@@ -50,7 +50,9 @@ class Ships(BaseItems):
     max_health = models.IntegerField(null=False)
     effects = ArrayField(ArrayField(models.IntegerField(null=False)))
     droid_slots = models.IntegerField(null=False)
-    type = models.CharField(max_length=100, default="Ships")
+    restrictions = models.JSONField()
+    type = models.CharField(max_length=20, auto_created="ship")
+
 
     class Meta:
         verbose_name = "Корабль"
@@ -61,7 +63,7 @@ class Engines(BaseItems):
     hyperjump_radius = models.IntegerField(null=False)
     energy_cost = models.IntegerField(null=False)
     max_health = models.IntegerField(null=False)
-    type = models.CharField(max_length=100, default="Engines")
+    type = models.CharField(max_length=20, auto_created="engine")
 
     class Meta:
         verbose_name = "Двигатель"
@@ -74,7 +76,8 @@ class Devices(BaseItems):
     effects = ArrayField(ArrayField(models.IntegerField(null=False)))
     max_health = models.IntegerField(null=False)
     device_type = models.IntegerField(null=False)
-    type = models.CharField(max_length=100, default="Devices")
+    restrictions = models.JSONField()
+    type = models.CharField(max_length=20, auto_created="device")
 
     class Meta:
         verbose_name = "Устройство"
@@ -93,7 +96,8 @@ class Weapons(BaseItems):
     effects = ArrayField(ArrayField(models.IntegerField(null=False)))
     max_health = models.IntegerField(null=False)
     weapon_type = models.IntegerField(null=False)
-    type = models.CharField(max_length=100, default="Weapons")
+    restrictions = models.JSONField()
+    type = models.CharField(max_length=20, auto_created="weapon")
 
     class Meta:
         verbose_name = "Оружие"
@@ -106,7 +110,8 @@ class Droids(BaseItems):
     droid_type = models.IntegerField(null=False)
     weapon_class = models.ForeignKey('Weapons', on_delete=models.SET_NULL, null=True)
     max_health = models.IntegerField(null=False)
-    type = models.CharField(max_length=100, default="Droids", null=False)
+    restrictions = models.JSONField()
+    type = models.CharField(max_length=20, auto_created="droid")
 
     class Meta:
         verbose_name = "Дройд"

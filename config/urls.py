@@ -1,8 +1,9 @@
 from django.contrib import admin
+from django.contrib.auth.decorators import permission_required, login_required
+from django.template.defaulttags import url
 from django.urls import include, path
 from django.conf.urls.static import static
 from django.conf import settings
-
 
 urlpatterns = [
     path('', include('main.urls')),
@@ -13,4 +14,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
-urlpatterns +=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
