@@ -20,17 +20,83 @@
             {% endif %}
             " alt=""></div>
             <div  class="shop_item__states">
+                {% if item.ammo %}
                 <p>
-                    <span>Точность:</span>
-                    <span>95%</span>
+                    <span>Урон:</span>
+                    <span>{{ item.ammo.damage }}</span>
+                </p>
+                {% endif %}
+                {% if item.resources %}
+                <p>
+                    <span>Эффект:</span>
+                    <span>{{ item.resources.effects }}</span>
+                </p>
+                {% endif %}
+                {% if item.ships %}
+                <p>
+                    <span>Броня:</span>
+                    <span>{{ item.ships.armor }}</span>
+                </p>
+                <p>
+                    <span>Щиты:</span>
+                    <span>{{ item.ships.shields }}</span>
+                <p>
+                    <span>Скорость:</span>
+                    <span>{{ item.ships.speed }}</span>
+                </p>
+                {% endif %}
+                {% if item.engines %}
+                <p>
+                    <span>Дальность прыжка:</span>
+                    <span>{{ item.engines.hyperjump_radius }}</span>
+                </p>
+                <p>
+                    <span>Затраты энергии:</span>
+                    <span>{{ item.engines.energy_cost }}</span>
+                <p>
+                    <span>Прочность:</span>
+                    <span>{{ item.engines.max_health }}</span>
+                </p>
+                {% endif %}
+                {% if item.devices %}
+                <p>
+                    <span>Тип:</span>
+                    <span>{{ item.devices.device_type }}</span>
+                </p>
+                <p>
+                    <span>Время восстановления:</span>
+                    <span>{{ item.devices.reload_time }}</span>
+                <p>
+                    <span>Затраты энергии:</span>
+                    <span>{{ item.devices.energy_cost }}</span>
+                </p>
+                {% endif %}
+                {% if item.weapons %}
+                <p>
+                    <span>Боеприпасы:</span>
+                    <span>{{ item.weapons.ammo_class }}</span>
+                </p>
+                <p>
+                    <span>Радиус:</span>
+                    <span>{{ item.weapons.radius }}</span>
+                <p>
+                    <span>Урон:</span>
+                    <span>{{ item.weapons.min_damage }}-{{ item.weapons.max_damage }}</span>
+                </p>
+                {% endif %}
+                {% if item.droids %}
+                <p>
+                    <span>Тип:</span>
+                    <span>{{ item.droids.droid_type }}</span>
                 </p>
                 <p>
                     <span>Броня:</span>
-                    <span>1240</span></p>
+                    <span>{{ item.droids.armor }}</span>
                 <p>
-                    <span>Щит:</span>
-                    <span>220</span></p>
+                    <span>Оружие:</span>
+                    <span>{{ item.droids.weapon_class }}</span>
                 </p>
+                {% endif %}
             </div>
             <div  class="shop_item__detail">Подробнее ►►►</div>
             <div  class="shop_item__price">Цена: {{ item.cost }}$</div>

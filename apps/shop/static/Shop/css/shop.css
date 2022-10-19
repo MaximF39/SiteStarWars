@@ -42,6 +42,7 @@
     border: 1px rgb(255, 255, 255) solid;
     padding: 5px;
     color: white;
+    min-height: 52px;
 }
 
 .shop_item__states p {
@@ -53,11 +54,12 @@
     font-family: Monospace !important;
     line-height: 150%;
     font-weight: 700;
+    width: 48%;
+    display: inline-block;
 }
 
-.shop_item__states p span:first-child {
-    width: 70%;
-    display: inline-block;
+.shop_item__states p span:last-child {
+    text-align: center;
 }
 
 .shop_item__detail {

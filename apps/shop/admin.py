@@ -42,7 +42,7 @@ class ShipsAdmin(BaseAttributes):
           'fields': ('name', 'en_name', 'class_number', 'cost', 'size', 'image')
       }),
       ('Параметры', {
-          'fields': ('max_energy', 'weapon_slots', 'device_slots', 'armor', 'shields', 'cpu', 'radar', 'speed', 'max_health', 'effects', 'droid_slots')
+          'fields': ('max_energy', 'weapon_slots', 'device_slots', 'armor', 'shields', 'cpu', 'radar', 'speed', 'max_health', 'effects', 'droid_slots', 'restrictions')
       }),
    )
 
@@ -64,7 +64,7 @@ class DevicesAdmin(BaseAttributes):
           'fields': ('name', 'en_name', 'class_number', 'cost', 'size', 'image')
       }),
       ('Параметры', {
-          'fields': ('reload_time', 'energy_cost', 'effects', 'max_health', 'device_type')
+          'fields': ('reload_time', 'energy_cost', 'effects', 'max_health', 'device_type', 'restrictions')
       }),
    )
 
@@ -75,7 +75,7 @@ class WeaponsAdmin(BaseAttributes):
           'fields': ('name', 'en_name', 'class_number', 'cost', 'size', 'image')
       }),
       ('Параметры', {
-          'fields': ('auto_shots', 'radius', 'reload_time', 'energy_cost', 'min_damage', 'max_damage', 'ammo_class', 'need_cpu', 'effects', 'max_health', 'weapon_type')
+          'fields': ('auto_shots', 'radius', 'reload_time', 'energy_cost', 'min_damage', 'max_damage', 'ammo_class', 'need_cpu', 'effects', 'max_health', 'weapon_type', 'restrictions')
       }),
    )
 
@@ -86,6 +86,6 @@ class DroidsAdmin(BaseAttributes):
           'fields': ('name', 'en_name', 'class_number', 'cost', 'size', 'image')
       }),
       ('Параметры', {
-          'fields': ('energy_cost', 'armor', 'droid_type', 'weapon_class', 'max_health')
+          'fields': ('energy_cost', 'armor', 'droid_type', 'weapon_class', 'max_health', 'restrictions')
       }),
    )
