@@ -8,7 +8,7 @@ from django.db import migrations
 
 class Migration(migrations.Migration):
     dependencies = [
-        ('users', '0002_user_money'),
+        ('users', '0001_initial'),
     ]
 
     def generate_superuser(apps, schema_editor):

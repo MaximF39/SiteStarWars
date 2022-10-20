@@ -5,10 +5,8 @@ from core.models import BaseModel
 from django.contrib.postgres.fields import ArrayField
 
 
-class BaseItems(models.Model):
-    class_number = models.IntegerField(null=False, verbose_name="Номер класса", primary_key=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+class BaseItems(BaseModel):
+    class_number = models.IntegerField(verbose_name="Номер класса")
     name = models.CharField(max_length=100, null=False, verbose_name="Название")
     en_name = models.CharField(max_length=100, null=False, verbose_name="En название")
     cost = models.IntegerField(null=False, verbose_name="Цена")
@@ -40,16 +38,7 @@ class Resources(BaseItems):
         verbose_name_plural = "Ресурсы"
 
 
-class Ships(models.Model):
-    class_number = models.IntegerField(null=False, verbose_name="Номер класса", primary_key=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    name = models.CharField(max_length=100, null=False, verbose_name="Название")
-    en_name = models.CharField(max_length=100, null=False, verbose_name="En название")
-    cost = models.IntegerField(null=False, verbose_name="Цена")
-    size = models.FloatField(null=False, verbose_name="Размер")
-    image = VersatileImageField(null=False, blank=True, upload_to='images', verbose_name="Изображение")
-
+class Ships(BaseItems):
     max_energy = models.IntegerField(null=False)
     weapon_slots = models.IntegerField(null=False)
     device_slots = models.IntegerField(null=False)

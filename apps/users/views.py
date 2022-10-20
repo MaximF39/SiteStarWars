@@ -39,17 +39,3 @@ class LoginUser(DataMixin, LoginView):
 def logout_user(request):
     logout(request)
     return redirect('main')
-
-# class PlayerCreateView(generics.CreateAPIView):
-#     serializer_class = PlayerDetailSerializers
-#     permission_classes = (IsAdminUser,)
-#
-# class PlayerListView(generics.ListAPIView):
-#     serializer_class = PlayerListSerializers
-#     queryset = Player.objects.all()
-#     permission_classes = (IsAdminUser,)
-#
-# class PlayerDetailView(generics.RetrieveUpdateDestroyAPIView):
-#     serializer_class = PlayerDetailSerializers
-#     queryset = Player.objects.all()
-#     permission_classes = (IsOwnerOrReadOnly, IsAdminUser)

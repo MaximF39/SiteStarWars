@@ -50,7 +50,7 @@ class User(AbstractUser):
 
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)
-    money = models.IntegerField(default=0, null=False)
+    balance = models.IntegerField(default=0, null=False)
     race_type = (
         (1, 'Омоленианин (Красные)'),
         (2, 'Иррииец (Жёлтые)'),
