@@ -1,5 +1,7 @@
 .shop {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 20px 40px;
     word-wrap: break-word;
     font-size: 11px;
