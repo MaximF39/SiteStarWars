@@ -32,6 +32,7 @@
     width: 100%;
     margin-top: 20px;
     text-align: center;
+    height: 87px;
 }
 
 .shop_item__image img {
@@ -56,12 +57,16 @@
     font-family: Monospace !important;
     line-height: 150%;
     font-weight: 700;
-    width: 48%;
     display: inline-block;
+}
+
+.shop_item__states p span:first-child {
+    width: 68%;
 }
 
 .shop_item__states p span:last-child {
     text-align: center;
+    width: 28%;
 }
 
 .shop_item__detail {
