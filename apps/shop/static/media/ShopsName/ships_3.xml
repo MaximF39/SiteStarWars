@@ -1,0 +1,394 @@
+<ships>
+<OIntercepter classNumber="1"  race="1" imageClassName="OIntercepter" >	
+	<muzzles><muzzle x="7" y="21" /><muzzle x="32" y="21" /></muzzles>
+</OIntercepter>
+<OTransport classNumber="2"  race="1" imageClassName="OTransport">
+	<muzzles><muzzle x="10" y="16" /></muzzles>
+</OTransport>
+<OSience classNumber="3"  race="1" imageClassName="OSience">
+	<muzzles><muzzle x="24" y="22" /></muzzles>
+</OSience>
+<OScout classNumber="11"  race="1" imageClassName="OScout">
+	<muzzles><muzzle x="16" y="18" /></muzzles>
+</OScout>
+<OScoutM1 classNumber="20"  race="1" imageClassName="OScoutM1">
+	<muzzles><muzzle x="11" y="19" /><muzzle x="28" y="19" /></muzzles>
+</OScoutM1>
+<OFregat classNumber="4"  race="1" imageClassName="OFregat">
+	<muzzles><muzzle x="20" y="17" /><muzzle x="41" y="17" /><muzzle x="30" y="28" /></muzzles>
+</OFregat>
+<OIndustrial classNumber="10"  race="1" imageClassName="OIndustrial">
+	<muzzles><muzzle x="16" y="22" /></muzzles>
+</OIndustrial>
+<OCruiser classNumber="12"  race="1" imageClassName="OCruiser">
+	<muzzles><muzzle x="6" y="38" /><muzzle x="58" y="38" /><muzzle x="32" y="44" /></muzzles>
+</OCruiser>
+<OLinkor classNumber="14"  race="1" imageClassName="OLinkor">
+	<muzzles><muzzle x="21" y="41" /><muzzle x="44" y="41" /><muzzle x="18" y="16" /><muzzle x="46" y="16" /></muzzles>
+</OLinkor>
+<OIntercepterHavy classNumber="15"  race="1" imageClassName="OIntercepterHavy">
+	<muzzles><muzzle x="11" y="19" /><muzzle x="28" y="19" /></muzzles>
+</OIntercepterHavy>
+<OIntercepterCorsar classNumber="16"  race="1" imageClassName="OIntercepterCorsar">
+	<muzzles><muzzle x="11" y="19" /><muzzle x="28" y="19" /></muzzles>
+</OIntercepterCorsar>
+<OFregatArmored classNumber="17"  race="1" imageClassName="OFregatArmored">
+	<muzzles><muzzle x="20" y="15" /><muzzle x="43" y="15" /><muzzle x="32" y="28" /></muzzles>
+</OFregatArmored>
+<OFregatAssault classNumber="18"  race="1" imageClassName="OFregatAssault">
+	<muzzles><muzzle x="18" y="13" /><muzzle x="42" y="13" /><muzzle x="30" y="25" /></muzzles>
+</OFregatAssault>
+<OFregatAssaultM1 classNumber="19"  race="1" imageClassName="OFregatAssaultM1">
+	<muzzles><muzzle x="18" y="13" /><muzzle x="42" y="13" /><muzzle x="30" y="25" /></muzzles>
+</OFregatAssaultM1>
+
+<IIntercepter classNumber="1001"  race="2" imageClassName="IIntercepter">
+	<muzzles><muzzle x="14" y="25" /><muzzle x="29" y="25" /></muzzles>
+</IIntercepter>
+<ITransport classNumber="1002"  race="2" imageClassName="ITransport">
+	<muzzles><muzzle x="14" y="37" /></muzzles>
+</ITransport>
+<IScout classNumber="1011"  race="2" imageClassName="IScout">
+	<muzzles><muzzle x="13" y="28" /></muzzles>
+</IScout>
+<IScoutM1 classNumber="1020"  race="2" imageClassName="IScoutM1">
+	<muzzles><muzzle x="11" y="19" /><muzzle x="28" y="19" /></muzzles>
+</IScoutM1>
+<ISience classNumber="1003"  race="2" imageClassName="ISience">
+	<muzzles><muzzle x="24" y="4" /></muzzles>
+</ISience>
+<IFregat classNumber="1004"  race="2" imageClassName="IFregat">
+	<muzzles><muzzle x="20" y="28" /><muzzle x="42" y="28" /><muzzle x="31" y="13" /></muzzles>
+</IFregat>
+<IIndustrial classNumber="1010"  race="2" imageClassName="IIndustrial">
+	<muzzles><muzzle x="15" y="18" /></muzzles>
+</IIndustrial>
+<ICruiser classNumber="1012"  race="2" imageClassName="ICruiser">
+	<muzzles><muzzle x="22" y="51" /><muzzle x="36" y="51" /><muzzle x="29" y="35" /></muzzles>
+</ICruiser>
+<ILinkor classNumber="1014"  race="2" imageClassName="ILinkor">
+	<muzzles><muzzle x="23" y="39" /><muzzle x="63" y="39" /><muzzle x="31" y="25" /><muzzle x="55" y="25" /></muzzles>
+</ILinkor>
+<IIntercepterHavy classNumber="1015"  race="2" imageClassName="IIntercepterHavy">
+	<muzzles><muzzle x="13" y="17" /><muzzle x="19" y="17" /></muzzles>
+</IIntercepterHavy>
+<IIntercepterCorsar classNumber="1016"  race="2" imageClassName="IIntercepterCorsar">
+	<muzzles><muzzle x="7" y="25" /><muzzle x="25" y="25" /></muzzles>
+</IIntercepterCorsar>
+<IFregatArmored classNumber="1017"  race="2" imageClassName="IFregatArmored">
+	<muzzles><muzzle x="18" y="40" /><muzzle x="40" y="40" /><muzzle x="30" y="21" /></muzzles>
+</IFregatArmored>
+<IFregatAssault classNumber="1018"  race="2" imageClassName="IFregatAssault">
+	<muzzles><muzzle x="13" y="39" /><muzzle x="41" y="39" /><muzzle x="27" y="16" /></muzzles>
+</IFregatAssault>
+<IFregatAssaultM1 classNumber="1019"  race="2" imageClassName="IFregatAssaultM1">
+	<muzzles><muzzle x="13" y="39" /><muzzle x="41" y="39" /><muzzle x="27" y="16" /></muzzles>
+</IFregatAssaultM1>
+
+<AIntercepter classNumber="2001"  race="3" imageClassName="AIntercepter">
+	<muzzles><muzzle x="12" y="24" /><muzzle x="23" y="24" /></muzzles>
+</AIntercepter>
+<ATransport classNumber="2002"  race="3" imageClassName="ATransport">
+	<muzzles><muzzle x="17" y="22" /></muzzles>
+</ATransport>
+<ASience classNumber="2003"  race="3" imageClassName="ASience">
+	<muzzles><muzzle x="26" y="35" /></muzzles>
+</ASience>
+<AFregat classNumber="2004"  race="3" imageClassName="AFregat">
+	<muzzles><muzzle x="12" y="16" /><muzzle x="41" y="16" /><muzzle x="26" y="39" /></muzzles>
+</AFregat>
+<AIndustrial classNumber="2010"  race="3" imageClassName="AIndustrial">
+	<muzzles><muzzle x="26" y="19" /></muzzles>
+</AIndustrial>
+<AScout classNumber="2011"  race="3" imageClassName="AScout">
+	<muzzles><muzzle x="16" y="19" /></muzzles>
+</AScout>
+<AScoutM1 classNumber="2020"  race="3" imageClassName="AScoutM1">
+	<muzzles><muzzle x="11" y="19" /><muzzle x="28" y="19" /></muzzles>
+</AScoutM1>
+<ACruiser classNumber="2012"  race="3" imageClassName="ACruiser">
+	<muzzles><muzzle x="30" y="12" /><muzzle x="43" y="12" /><muzzle x="36" y="22" /></muzzles>
+</ACruiser>
+<ALinkor classNumber="2014"  race="3" imageClassName="ALinkor">
+	<muzzles><muzzle x="36" y="38" /><muzzle x="28" y="45" /><muzzle x="43" y="45" /><muzzle x="36" y="53" /></muzzles>
+</ALinkor>
+<AIntercepterHavy classNumber="2015"  race="3" imageClassName="AIntercepterHavy">
+	<muzzles><muzzle x="15" y="20" /><muzzle x="22" y="20" /></muzzles>
+</AIntercepterHavy>
+<AIntercepterCorsar classNumber="2016"  race="3" imageClassName="AIntercepterCorsar">
+	<muzzles><muzzle x="15" y="20" /><muzzle x="22" y="20" /></muzzles>
+</AIntercepterCorsar>
+<AFregatArmored classNumber="2017"  race="3" imageClassName="AFregatArmored">
+	<muzzles><muzzle x="12" y="19" /><muzzle x="40" y="19" /><muzzle x="27" y="31" /></muzzles>
+</AFregatArmored>
+<AFregatAssault classNumber="2018"  race="3" imageClassName="AFregatAssault">
+	<muzzles><muzzle x="21" y="37" /><muzzle x="37" y="37" /><muzzle x="29" y="29" /></muzzles>
+</AFregatAssault>
+<AFregatAssaultM1 classNumber="2019"  race="3" imageClassName="AFregatAssaultM1">
+	<muzzles><muzzle x="21" y="37" /><muzzle x="37" y="37" /><muzzle x="29" y="29" /></muzzles>
+</AFregatAssaultM1>
+
+<MIntercepter classNumber="3001"  race="4" imageClassName="MIntercepter">
+	<muzzles><muzzle x="15" y="31" /><muzzle x="26" y="31" /></muzzles>
+</MIntercepter>
+<MTransport classNumber="3002"  race="4" imageClassName="MTransport">
+	<muzzles><muzzle x="17" y="33" /></muzzles>
+</MTransport>
+<MSience classNumber="3003"  race="4" imageClassName="MSience">
+	<muzzles><muzzle x="24" y="35" /></muzzles>
+</MSience>
+<MFregat classNumber="3004"  race="4" imageClassName="MFregat">
+	<muzzles><muzzle x="9" y="37" /><muzzle x="42" y="37" /><muzzle x="26" y="39" /></muzzles>
+</MFregat>
+<MIndustrial classNumber="3010"  race="4" imageClassName="MIndustrial">
+	<muzzles><muzzle x="17" y="25" /></muzzles>
+</MIndustrial>
+<MScout classNumber="3011"  race="4" imageClassName="MScout">
+	<muzzles><muzzle x="13" y="21" /></muzzles>
+</MScout>
+<MScoutM1 classNumber="3020"  race="4" imageClassName="MScoutM1">
+	<muzzles><muzzle x="11" y="19" /><muzzle x="28" y="19" /></muzzles>
+</MScoutM1>
+<MCruiser classNumber="3012"  race="4" imageClassName="MCruiser">
+	<muzzles><muzzle x="21" y="18" /><muzzle x="36" y="18" /><muzzle x="29" y="39" /></muzzles>
+</MCruiser>
+<MLinkor classNumber="3014"  race="4" imageClassName="MLinkor">
+	<muzzles><muzzle x="21" y="9" /><muzzle x="35" y="9" /><muzzle x="29" y="29" /><muzzle x="29" y="40" /></muzzles>
+</MLinkor>
+<MIntercepterHavy classNumber="3015"  race="4" imageClassName="MIntercepterHavy">
+	<muzzles><muzzle x="6" y="19" /><muzzle x="31" y="19" /></muzzles>
+</MIntercepterHavy>
+<MIntercepterCorsar classNumber="3016"  race="4" imageClassName="MIntercepterCorsar">
+	<muzzles><muzzle x="6" y="19" /><muzzle x="31" y="19" /></muzzles>
+</MIntercepterCorsar>
+<MFregatArmored classNumber="3017"  race="4" imageClassName="MFregatArmored">
+	<muzzles><muzzle x="9" y="36" /><muzzle x="41" y="36" /><muzzle x="25" y="45" /></muzzles>
+</MFregatArmored>
+<MFregatAssault classNumber="3018"  race="4" imageClassName="MFregatAssault">
+	<muzzles><muzzle x="18" y="39" /><muzzle x="54" y="39" /><muzzle x="36" y="53" /></muzzles>
+</MFregatAssault>
+<MFregatAssaultM1 classNumber="3019"  race="4" imageClassName="MFregatAssaultM1">
+	<muzzles><muzzle x="18" y="39" /><muzzle x="54" y="39" /><muzzle x="36" y="53" /></muzzles>
+</MFregatAssaultM1>
+
+<GIntercepter classNumber="4001"  race="5" imageClassName="GIntercepter">
+	<muzzles><muzzle x="4" y="26" /><muzzle x="33" y="26" /></muzzles>
+</GIntercepter>
+<GTransport classNumber="4002"  race="5" imageClassName="GTransport">
+	<muzzles><muzzle x="11" y="12" /></muzzles>
+</GTransport>
+<GFregat classNumber="4003"  race="5" imageClassName="GFregat">
+	<muzzles><muzzle x="9" y="8" /><muzzle x="47" y="8" /><muzzle x="28" y="36" /></muzzles>
+</GFregat>
+<GIndustrial classNumber="4004"  race="5" imageClassName="GIndustrial">
+	<muzzles><muzzle x="16" y="16" /></muzzles>
+</GIndustrial>
+<GScout_M1 classNumber="4005"  race="5" imageClassName="GScout_M1">
+	<muzzles><muzzle x="4" y="26" /><muzzle x="33" y="26" /></muzzles>
+</GScout_M1>
+<GMarader classNumber="4006"  race="5" imageClassName="GMarader">
+	<muzzles><muzzle x="4" y="26" /><muzzle x="33" y="26" /></muzzles>
+</GMarader>
+
+
+<KTransport classNumber="5001"  race="7" imageClassName="KTransport">
+	<muzzles><muzzle x="26" y="26" /></muzzles>
+</KTransport>
+<KSience classNumber="5002"  race="7" imageClassName="KSience">
+	<muzzles><muzzle x="16" y="21" /><muzzle x="25" y="21" /></muzzles>
+</KSience>
+<KCruiser classNumber="5012"  race="7" imageClassName="KCruiser">
+	<muzzles><muzzle x="27" y="19" /><muzzle x="19" y="46" /><muzzle x="44" y="49" /></muzzles>
+</KCruiser>
+
+<KVTransport classNumber="5101"  race="7" imageClassName="KVTransport">
+	<muzzles><muzzle x="26" y="26" /></muzzles>
+</KVTransport>
+<KVSience classNumber="5102"  race="7" imageClassName="KVSience">
+	<muzzles><muzzle x="16" y="21" /><muzzle x="25" y="21" /></muzzles>
+</KVSience>
+<KVCruiser classNumber="5112"  race="7" imageClassName="KVCruiser">
+	<muzzles><muzzle x="27" y="19" /><muzzle x="19" y="46" /><muzzle x="44" y="49" /></muzzles>
+</KVCruiser>
+<KVarm classNumber="5999"  race="7" imageClassName="KVCruiser">
+	<muzzles><muzzle x="19" y="46" /><muzzle x="19" y="46" /></muzzles>
+</KVarm>
+
+<XScout classNumber="6001"  race="6" imageClassName="XScout">
+	<muzzles><muzzle x="16" y="27" /></muzzles>
+</XScout>
+<XScoutM1 classNumber="6020"  race="6" imageClassName="XScoutM1">
+	<muzzles><muzzle x="11" y="19" /><muzzle x="28" y="19" /></muzzles>
+</XScoutM1>
+<XIntercepter classNumber="6002"  race="6" imageClassName="XIntercepter">
+	<muzzles><muzzle x="10" y="31" /><muzzle x="22" y="31" /></muzzles>
+</XIntercepter>
+<XFregat classNumber="6003"  race="6" imageClassName="XFregat">
+	<muzzles><muzzle x="12" y="32" /><muzzle x="40" y="32" /><muzzle x="26" y="50" /></muzzles>
+</XFregat>
+<XCruiser classNumber="6012"  race="6" imageClassName="XCruiser">
+	<muzzles><muzzle x="14" y="29" /><muzzle x="46" y="29" /><muzzle x="31" y="54" /></muzzles>
+</XCruiser>
+<XIntercepterM1 classNumber="6102"  race="6" imageClassName="XIntercepterM1">
+	<muzzles><muzzle x="10" y="26" /><muzzle x="24" y="26" /></muzzles>
+</XIntercepterM1>
+<XFregatM1 classNumber="6103"  race="6" imageClassName="XFregatM1">
+	<muzzles><muzzle x="11" y="25" /><muzzle x="42" y="25" /><muzzle x="27" y="42" /></muzzles>
+</XFregatM1>
+<XFregatM2 classNumber="6203"  race="6" imageClassName="XFregatM2">
+	<muzzles><muzzle x="12" y="32" /><muzzle x="40" y="32" /><muzzle x="26" y="50" /></muzzles>
+</XFregatM2>
+<XCruiserM1 classNumber="6112"  race="6" imageClassName="XCruiserM1">
+	<muzzles><muzzle x="22" y="41" /><muzzle x="38" y="41" /><muzzle x="30" y="67" /></muzzles>
+</XCruiserM1>
+<PIntercepterCorsar classNumber="8001"  race="5" imageClassName="PIntercepterCorsar">
+	<muzzles><muzzle x="18" y="22" /><muzzle x="31" y="22" /></muzzles>
+</PIntercepterCorsar>
+<TSience classNumber="7001"  race="6" imageClassName="TSience">
+	<muzzles><muzzle x="36" y="44" /><muzzle x="52" y="44" /><muzzle x="20" y="44" /><muzzle x="20" y="32" /><muzzle x="52" y="32" /></muzzles>
+</TSience>
+
+
+<OPalaven classNumber="22"  race="1" imageClassName="OPalaven">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="20" y="44" /><muzzle x="36" y="44" /><muzzle x="48" y="20" /></muzzles>
+</OPalaven>
+<IPalaven classNumber="1022"  race="2" imageClassName="IPalaven">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="20" y="44" /><muzzle x="36" y="44" /><muzzle x="48" y="20" /></muzzles>
+</IPalaven>
+<APalaven classNumber="2022"  race="3" imageClassName="APalaven">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="20" y="44" /><muzzle x="36" y="44" /><muzzle x="48" y="20" /></muzzles>
+</APalaven>
+<MPalaven classNumber="3022"  race="4" imageClassName="MPalaven">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="20" y="44" /><muzzle x="36" y="44" /><muzzle x="48" y="20" /></muzzles>
+</MPalaven>
+<XPalaven classNumber="6022"  race="6" imageClassName="XPalaven">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="20" y="44" /><muzzle x="36" y="44" /><muzzle x="48" y="20" /></muzzles>
+</XPalaven>
+
+
+<OBrig classNumber="24"  race="1" imageClassName="OBrig">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="28" y="44" /><muzzle x="48" y="20" /></muzzles>
+</OBrig>
+<OShockBrig classNumber="25"  race="1" imageClassName="OShockBrig">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="28" y="44" /><muzzle x="48" y="20" /></muzzles>
+</OShockBrig>
+<OSiegeBrig classNumber="26"  race="1" imageClassName="OSiegeBrig">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="28" y="44" /><muzzle x="48" y="20" /></muzzles>
+</OSiegeBrig>
+
+<IBrig classNumber="1024"  race="2" imageClassName="IBrig">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="28" y="44" /><muzzle x="48" y="20" /></muzzles>
+</IBrig>
+<IShockBrig classNumber="1025"  race="2" imageClassName="IShockBrig">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="28" y="44" /><muzzle x="48" y="20" /></muzzles>
+</IShockBrig>
+<ISiegeBrig classNumber="1026"  race="2" imageClassName="ISiegeBrig">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="28" y="44" /><muzzle x="48" y="20" /></muzzles>
+</ISiegeBrig>
+
+<ABrig classNumber="2024"  race="3" imageClassName="ABrig">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="28" y="44" /><muzzle x="48" y="20" /></muzzles>
+</ABrig>
+<AShockBrig classNumber="2025"  race="3" imageClassName="AShockBrig">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="28" y="44" /><muzzle x="48" y="20" /></muzzles>
+</AShockBrig>
+<ASiegeBrig classNumber="2026"  race="3" imageClassName="ASiegeBrig">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="28" y="44" /><muzzle x="48" y="20" /></muzzles>
+</ASiegeBrig>
+
+<MBrig classNumber="3024"  race="4" imageClassName="MBrig">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="28" y="44" /><muzzle x="48" y="20" /></muzzles>
+</MBrig>
+<MShockBrig classNumber="3025"  race="4" imageClassName="MShockBrig">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="28" y="44" /><muzzle x="48" y="20" /></muzzles>
+</MShockBrig>
+<MSiegeBrig classNumber="3026"  race="4" imageClassName="MSiegeBrig">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="28" y="44" /><muzzle x="48" y="20" /></muzzles>
+</MSiegeBrig>
+
+<GBrig classNumber="4024"  race="5" imageClassName="GBrig">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="28" y="44" /><muzzle x="48" y="20" /></muzzles>
+</GBrig>
+<GShockBrig classNumber="4025"  race="5" imageClassName="GShockBrig">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="28" y="44" /><muzzle x="48" y="20" /></muzzles>
+</GShockBrig>
+<GSiegeBrig classNumber="4026"  race="5" imageClassName="GSiegeBrig">
+	<muzzles><muzzle x="8" y="20" /><muzzle x="28" y="44" /><muzzle x="48" y="20" /></muzzles>
+</GSiegeBrig>
+
+<OSiegeLinkor classNumber="27"  race="1" imageClassName="OSiegeLinkor">
+	<muzzles><muzzle x="43" y="13" /><muzzle x="33" y="26" /><muzzle x="53" y="26" /><muzzle x="34" y="60" /><muzzle x="52" y="60" /></muzzles>
+</OSiegeLinkor>
+<ISiegeLinkor classNumber="1027"  race="2" imageClassName="ISiegeLinkor">
+	<muzzles><muzzle x="43" y="20" /><muzzle x="11" y="25" /><muzzle x="75" y="25" /><muzzle x="4" y="43" /><muzzle x="82" y="43" /></muzzles>
+</ISiegeLinkor>
+<ASiegeLinkor classNumber="2027"  race="3" imageClassName="ASiegeLinkor">
+	<muzzles><muzzle x="40" y="53" /><muzzle x="32" y="45" /><muzzle x="48" y="45" /><muzzle x="28" y="37" /><muzzle x="52" y="37" /></muzzles>
+</ASiegeLinkor>
+<MSiegeLinkor classNumber="3027"  race="4" imageClassName="MSiegeLinkor">
+	<muzzles><muzzle x="33" y="23" /><muzzle x="6" y="25" /><muzzle x="60" y="25" /><muzzle x="14" y="64" /><muzzle x="52" y="64" /></muzzles>
+</MSiegeLinkor>
+
+
+
+
+<OLMiner classNumber="28"  race="1" imageClassName="OLMiner">
+	<muzzles><muzzle x="22" y="14" /><muzzle x="37" y="14" /><muzzle x="51" y="11" /><muzzle x="8" y="11" /></muzzles>
+</OLMiner>
+<ILMiner classNumber="1028"  race="2" imageClassName="ILMiner">
+	<muzzles><muzzle x="42" y="14" /><muzzle x="17" y="14" /><muzzle x="43" y="32" /><muzzle x="16" y="32" /></muzzles>
+</ILMiner>
+<ALMiner classNumber="2028"  race="3" imageClassName="ALMiner">
+	<muzzles><muzzle x="16" y="20" /><muzzle x="39" y="20" /><muzzle x="21" y="34" /><muzzle x="34" y="34" /></muzzles>
+</ALMiner>
+<MLMiner classNumber="3028"  race="4" imageClassName="MLMiner">
+	<muzzles><muzzle x="38" y="10" /><muzzle x="18" y="10" /><muzzle x="43" y="38" /><muzzle x="13" y="38" /></muzzles>
+</MLMiner>
+
+<OLRTransport classNumber="29"  race="1" imageClassName="OLRTransport">
+	<muzzles><muzzle x="74" y="42" /></muzzles>
+</OLRTransport>
+<ILRTransport classNumber="1029"  race="2" imageClassName="ILRTransport">
+	<muzzles><muzzle x="51" y="22" /></muzzles>
+</ILRTransport>
+<ALRTransport classNumber="2029"  race="3" imageClassName="ALRTransport">
+	<muzzles><muzzle x="49" y="18" /></muzzles>
+</ALRTransport>
+<MLRTransport classNumber="3029"  race="4" imageClassName="MLRTransport">
+	<muzzles><muzzle x="51" y="20" /></muzzles>
+</MLRTransport>
+
+<OFTransport classNumber="30"  race="1" imageClassName="OFTransport">
+	<muzzles><muzzle x="74" y="42" /></muzzles>
+</OFTransport>
+<IFTransport classNumber="1030"  race="2" imageClassName="IFTransport">
+	<muzzles><muzzle x="43" y="17" /></muzzles>
+</IFTransport>
+<AFTransport classNumber="2030"  race="3" imageClassName="AFTransport">
+	<muzzles><muzzle x="49" y="18" /></muzzles>
+</AFTransport>
+<MFTransport classNumber="3030"  race="4" imageClassName="MFTransport">
+	<muzzles><muzzle x="51" y="20" /></muzzles>
+</MFTransport>
+
+<AFregatAssaultV1 classNumber="2031"  race="3" imageClassName="AFregatAssaultV1">
+	<muzzles><muzzle x="21" y="37" /><muzzle x="37" y="37" /><muzzle x="29" y="29" /></muzzles>
+</AFregatAssaultV1>
+
+<OCarrier classNumber="21"  race="1" imageClassName="OCarrier">
+<muzzles><muzzle x="21" y="37" /><muzzle x="37" y="37" /><muzzle x="29" y="29" /></muzzles>
+</OCarrier>
+
+<ICarrier classNumber="1021"  race="2" imageClassName="ICarrier">
+<muzzles><muzzle x="21" y="37" /><muzzle x="37" y="37" /><muzzle x="29" y="29" /></muzzles>
+</ICarrier>
+
+<ACarrier classNumber="2021"  race="3" imageClassName="ACarrier">
+<muzzles><muzzle x="21" y="37" /><muzzle x="37" y="37" /><muzzle x="29" y="29" /></muzzles>
+</ACarrier>
+
+<MCarrier classNumber="3021"  race="4" imageClassName="MCarrier">
+<muzzles><muzzle x="21" y="37" /><muzzle x="37" y="37" /><muzzle x="29" y="29" /></muzzles>
+</MCarrier>
+
+</ships>

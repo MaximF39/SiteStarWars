@@ -15,8 +15,8 @@
         <div class="shop_item">
             <div  class="shop_item__name">{{ item.name }}</div>
             <div  class="shop_item__image"><img src="
-            {% if item.image %}
-            {{ item.image.url }}
+            {% if item.image  %}
+            {% static item.image.url %}
             {% endif %}
             " alt=""></div>
             <div  class="shop_item__states">
