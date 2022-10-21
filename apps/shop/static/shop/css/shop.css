@@ -1,7 +1,7 @@
 .shop {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px 40px;
     word-wrap: break-word;
     font-size: 11px;
@@ -9,6 +9,7 @@
 }
 
 .shop_item {
+    display: inline-block;
     width: 200px;
     min-height: 300px;
     background: url(item.jpg);
@@ -38,6 +39,7 @@
 
 .shop_item__image img {
     max-width: 80px;
+    max-height: 87px;
 }
 
 .shop_item__states {
