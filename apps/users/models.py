@@ -1,11 +1,13 @@
 import uuid
 
 from django.contrib.auth.models import (
-    BaseUserManager, AbstractBaseUser, PermissionsMixin, AbstractUser
+    BaseUserManager, AbstractUser
 )
 from django.core import validators
 
 from django.db import models
+
+from core.models import BaseModelID, BaseModel
 
 
 class UserManager(BaseUserManager):
@@ -51,6 +53,7 @@ class User(AbstractUser):
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)
     balance = models.IntegerField(default=0, null=False)
+    inventory = models.OneToOneField('Inventory', on_delete=models.CASCADE, null=True)
     race_type = (
         (1, 'Омоленианин (Красные)'),
         (2, 'Иррииец (Жёлтые)'),
@@ -58,27 +61,29 @@ class User(AbstractUser):
         (4, 'Медрамилл (Синие)'),
     )
     race = models.SmallIntegerField(verbose_name='Race', choices=race_type)
-
     objects = UserManager()
-
     USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = []
 
     def __str__(self):
-        return self.email
+        return f"{self.username}"
 
     def has_perm(self, perm, obj=None):
-        "Does the user have a specific permission?"
-        # Simplest possible answer: Yes, always
         return True
 
     def has_module_perms(self, app_label):
-        "Does the user have permissions to view the app `app_label`?"
-        # Simplest possible answer: Yes, always
         return True
 
     @property
     def is_staff(self):
-        "Is the user a member of staff?"
-        # Simplest possible answer: All admins are staff
         return self.is_admin
+
+
+class Item(BaseModel):
+    count = models.IntegerField(null=False)
+    item = models.OneToOneField('shop.BaseItems', on_delete=models.CASCADE, primary_key=True)
+
+
+class Inventory(BaseModelID):
+    is_repository = models.BooleanField(default=True)
+    items = models.ManyToManyField('Item')

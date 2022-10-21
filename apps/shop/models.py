@@ -1,11 +1,11 @@
 from django.db import models
 from versatileimagefield.fields import VersatileImageField
 
-from core.models import BaseModel
+from core.models import BaseModelID
 from django.contrib.postgres.fields import ArrayField
 
 
-class BaseItems(BaseModel):
+class BaseItems(BaseModelID):
     class_number = models.IntegerField(verbose_name="Номер класса")
     name = models.CharField(max_length=100, null=False, verbose_name="Название")
     en_name = models.CharField(max_length=100, null=False, verbose_name="En название")
