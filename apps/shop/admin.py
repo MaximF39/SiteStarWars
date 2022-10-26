@@ -5,7 +5,7 @@ from .models import *
 
 
 class BaseAttributes(admin.ModelAdmin):
-    list_display = ('name', 'cost', 'image_img')
+    list_display = ('name', 'cost', 'image_img', 'type')
 
     def image_img(self, obj):
         if obj.image:
@@ -20,7 +20,7 @@ class BaseAttributes(admin.ModelAdmin):
 class AmmoAdmin(BaseAttributes):
     fieldsets = (
         (None, {
-            'fields': ('name', 'en_name', 'class_number', 'cost', 'size', 'image')
+            'fields': ('name', 'en_name', 'class_number', 'cost', 'size', 'type', 'image')
         }),
         ('Параметры', {
             'fields': ('damage',)
@@ -32,7 +32,7 @@ class AmmoAdmin(BaseAttributes):
 class ResourcesAdmin(BaseAttributes):
     fieldsets = (
         (None, {
-            'fields': ('name', 'en_name', 'class_number', 'cost', 'size', 'image')
+            'fields': ('name', 'en_name', 'class_number', 'cost', 'size', 'type', 'image')
         }),
         ('Параметры', {
             'fields': ('effects',)
@@ -41,10 +41,10 @@ class ResourcesAdmin(BaseAttributes):
 
 
 @admin.register(Ships)
-class ShipsAdmin(admin.ModelAdmin):
+class ShipsAdmin(BaseAttributes):
     fieldsets = (
         (None, {
-            'fields': ('name', 'en_name', 'class_number', 'cost', 'size', 'image')
+            'fields': ('name', 'en_name', 'class_number', 'cost', 'size', 'type', 'image')
         }),
         ('Параметры', {
             'fields': (
@@ -52,7 +52,6 @@ class ShipsAdmin(admin.ModelAdmin):
             'effects', 'droid_slots', 'restrictions')
         }),
     )
-    list_display = ('name', 'cost', 'image_img')
 
     def image_img(self, obj):
         if obj.image:
@@ -67,7 +66,7 @@ class ShipsAdmin(admin.ModelAdmin):
 class EnginesAdmin(BaseAttributes):
     fieldsets = (
         (None, {
-            'fields': ('name', 'en_name', 'class_number', 'cost', 'size', 'image')
+            'fields': ('name', 'en_name', 'class_number', 'cost', 'size', 'type', 'image')
         }),
         ('Параметры', {
             'fields': ('hyperjump_radius', 'energy_cost', 'max_health')
@@ -79,7 +78,7 @@ class EnginesAdmin(BaseAttributes):
 class DevicesAdmin(BaseAttributes):
     fieldsets = (
         (None, {
-            'fields': ('name', 'en_name', 'class_number', 'cost', 'size', 'image')
+            'fields': ('name', 'en_name', 'class_number', 'cost', 'size', 'type', 'image')
         }),
         ('Параметры', {
             'fields': ('reload_time', 'energy_cost', 'effects', 'max_health', 'device_type', 'restrictions')
@@ -91,7 +90,7 @@ class DevicesAdmin(BaseAttributes):
 class WeaponsAdmin(BaseAttributes):
     fieldsets = (
         (None, {
-            'fields': ('name', 'en_name', 'class_number', 'cost', 'size', 'image')
+            'fields': ('name', 'en_name', 'class_number', 'cost', 'size', 'type', 'image')
         }),
         ('Параметры', {
             'fields': (
@@ -105,9 +104,13 @@ class WeaponsAdmin(BaseAttributes):
 class DroidsAdmin(BaseAttributes):
     fieldsets = (
         (None, {
-            'fields': ('name', 'en_name', 'class_number', 'cost', 'size', 'image')
+            'fields': ('name', 'en_name', 'class_number', 'cost', 'size', 'type', 'image')
         }),
         ('Параметры', {
             'fields': ('energy_cost', 'armor', 'droid_type', 'weapon_class', 'max_health', 'restrictions')
         }),
     )
+
+@admin.register(Type)
+class TypeAdmin(admin.ModelAdmin):
+    pass
