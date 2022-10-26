@@ -3,7 +3,6 @@ from .models import *
 
 
 def shop(request):
-    print(request.POST)
     id_type = 0
     if request.method == 'POST':
         if request.POST['filter'] != 0:
