@@ -1,5 +1,3 @@
-import uuid
-
 from django.contrib.auth.models import (
     BaseUserManager, AbstractUser
 )
@@ -7,7 +5,7 @@ from django.core import validators
 
 from django.db import models
 
-from core.models import BaseModelID, BaseModel
+from core.models import BaseModel, BaseModelID
 
 
 class UserManager(BaseUserManager):
