@@ -10,6 +10,17 @@
 {% endblock %}
 
 {% block content %}
+<form action="#" method="post">
+    {% csrf_token %}
+    <div class="filter">
+        <select name="filter" onchange="this.form.submit()">
+            <option value="0">Все товары</option>
+            {% for x in filter %}
+            <option value="{{ x.pk }}" {% if type == x.pk %} selected {% endif %}>{{ x.type }}</option>
+            {% endfor %}
+        </select>
+    </div>
+</form>
     <div class="conteiner shop">
         {% for item in items %}
         <div class="shop_item">
@@ -28,8 +39,7 @@
                 {% endif %}
                 {% if item.resources %}
                 <p>
-                    <span>Эффект:</span>
-                    <span>{{ item.resources.effects }}</span>
+                    <span style="width:100%; text-align: left;">Эффект: {{ item.resources.effects }}</span>
                 </p>
                 {% endif %}
                 {% if item.ships %}
@@ -64,7 +74,7 @@
                     <span>{{ item.devices.device_type }}</span>
                 </p>
                 <p>
-                    <span>Время восстановления:</span>
+                    <span>Время восст-я:</span>
                     <span>{{ item.devices.reload_time }}</span>
                 <p>
                     <span>Затраты энергии:</span>
@@ -73,8 +83,8 @@
                 {% endif %}
                 {% if item.weapons %}
                 <p>
-                    <span>Боеприпасы:</span>
-                    <span>{{ item.weapons.ammo_class }}</span>
+                    <span>Перезарядка:</span>
+                    <span>{{ item.weapons.reload_time }}ms</span>
                 </p>
                 <p>
                     <span>Радиус:</span>
@@ -93,8 +103,8 @@
                     <span>Броня:</span>
                     <span>{{ item.droids.armor }}</span>
                 <p>
-                    <span>Оружие:</span>
-                    <span>{{ item.droids.weapon_class }}</span>
+                    <span style="width: 30%;">Оружие:</span>
+                    <span style="width: 65%; text-align: right;">{{ item.droids.weapon_class }}</span>
                 </p>
                 {% endif %}
             </div>

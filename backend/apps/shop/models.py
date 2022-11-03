@@ -12,6 +12,7 @@ class BaseItems(BaseModelID):
     cost = models.IntegerField(null=False, verbose_name="Цена")
     size = models.FloatField(null=False, verbose_name="Размер")
     image = VersatileImageField(null=False, blank=True, upload_to='images', verbose_name="Изображение")
+    type = models.ForeignKey('Type', on_delete=models.PROTECT, default=1)
 
     class Meta:
         verbose_name = "Item"
@@ -23,7 +24,6 @@ class BaseItems(BaseModelID):
 
 class Ammo(BaseItems):
     damage = models.IntegerField(null=False, verbose_name="Урон")
-    type = models.CharField(max_length=20, auto_created="ammo", default="ammo")
 
     class Meta:
         verbose_name = "Боекомплект"
@@ -31,7 +31,6 @@ class Ammo(BaseItems):
 
 class Resources(BaseItems):
     effects = ArrayField(ArrayField(models.IntegerField()), null=True)
-    type = models.CharField(max_length=20, auto_created="resource", default="resource")
 
     class Meta:
         verbose_name = "Ресурс"
@@ -51,7 +50,6 @@ class Ships(BaseItems):
     effects = ArrayField(ArrayField(models.IntegerField()), null=True)
     droid_slots = models.IntegerField(null=False)
     restrictions = models.JSONField(null=True)
-    type = models.CharField(max_length=20, auto_created="ship", default="ship")
 
 
     class Meta:
@@ -63,7 +61,6 @@ class Engines(BaseItems):
     hyperjump_radius = models.IntegerField(null=False)
     energy_cost = models.IntegerField(null=False)
     max_health = models.IntegerField(null=False)
-    type = models.CharField(max_length=20, auto_created="engine", default="engine")
 
     class Meta:
         verbose_name = "Двигатель"
@@ -77,7 +74,6 @@ class Devices(BaseItems):
     max_health = models.IntegerField(null=False)
     device_type = models.IntegerField(null=False)
     restrictions = models.JSONField(null=True)
-    type = models.CharField(max_length=20, auto_created="device", default="device")
 
     class Meta:
         verbose_name = "Устройство"
@@ -97,7 +93,6 @@ class Weapons(BaseItems):
     max_health = models.IntegerField(null=False)
     weapon_type = models.IntegerField(null=False)
     restrictions = models.JSONField(null=True)
-    type = models.CharField(max_length=20, auto_created="weapon", default="weapon")
 
     class Meta:
         verbose_name = "Оружие"
@@ -111,8 +106,17 @@ class Droids(BaseItems):
     weapon_class = models.ForeignKey('Weapons', on_delete=models.CASCADE, null=True)
     max_health = models.IntegerField(null=False)
     restrictions = models.JSONField(null=True)
-    type = models.CharField(max_length=20, auto_created="droid", default="droid")
 
     class Meta:
         verbose_name = "Дройд"
         verbose_name_plural = "Дройды"
+
+class Type(models.Model):
+    type = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.type
+
+    class Meta:
+        verbose_name = "Тип"
+        verbose_name_plural = "Тип"
