@@ -16,20 +16,29 @@ class Migration(migrations.Migration):
         from core.utils import csv_to_json_data_migration
         from shop import models
         files = (
-            "ItemsType", "BaseItems", "Ammo", "Devices",
-            "Weapons", "Droids", "Engines", "Resources", "Ships",)
-        a = models.BaseItems(**{'id': '1', 'name': 'Снаряд', 'en_name': 'GunShot', 'class_number': '3', 'cost': '3',
-             'size': '0.00200000009', 'image': 'images\\Ammo\\GunBullet.png'})
-        a.save()
-        return
+            "Ammo", "Weapons",
+            "Droids", "Devices", "Engines", "Resources", "Ships", "ItemsType")
+        bs = csv_to_json_data_migration(os.path.join('apps', 'shop', 'migrations', 'data', 'BaseItems.csv'))
         for file in files:
-            print("*" * 100, file)
             p = os.path.join('apps', 'shop', 'migrations', 'data', file + ".csv")
             data = csv_to_json_data_migration(p)
             for data_ in data:
-                print(data_)
+                if file != "ItemsType":
+                    n = int(data_.pop('baseitems_ptr_id')) - 1
+                    data_.update(bs[n])
+                    if file == "Weapons":
+                        if data_['weapon_ammo_id']:
+                            data_['weapon_ammo_id'] = models.Ammo.objects.values_list('id', flat=True).get(class_number=data_['weapon_ammo_id'])
+                        else:
+                            data_['weapon_ammo_id'] = None
+                    elif file == "Droids":
+                        if data_['droid_weapon_id']:
+                            data_['droid_weapon_id'] = models.Weapons.objects.values_list('id', flat=True).get(class_number=data_['droid_weapon_id'])
+                        else:
+                            data_['droid_weapon_id'] = None
+
                 model = getattr(models, file)
-                model.objects.get_or_create(**data_)
+                model(**data_).save()
 
     operations = [
         migrations.RunPython(create_items),
