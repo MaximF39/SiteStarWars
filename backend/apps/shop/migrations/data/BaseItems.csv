@@ -1,0 +1,290 @@
+id,name,en_name,class_number,cost,size,image
+1,Снаряд,GunShot,3,3,0.00200000009,images\Ammo\GunBullet.png
+2,Снаряд для пушки,Bullet,5,2,0.00150000001,images\Ammo\Bullet.png
+3,Крупнокалиберный патрон,SmallBullet,7,2,0.00100000005,images\Ammo\AutoBullet.png
+4,Ракета,Rocket,9,7,0.0250000004,images\Ammo\Rocket.png
+5,Осколочная ракета,SplashRocket,11,8,0.0299999993,images\Ammo\SplashRocket.png
+6,Кассетная ракета,SmallRocket,13,3,0.00999999978,images\Ammo\SmallRocket.png
+7,Патрон Гаусса,GaussBullet,17,4,0.00200000009,images\Ammo\Gauss.png
+8,Бластерный заряд,BlasterBullet,19,2,0.00100000005,images\Ammo\Blaster.png
+9,Бластерная ракета,BlasterRocket,21,7,0.0199999996,images\Ammo\BlasterRocket.png
+10,Нейтронная ракета,NeutronRocket,23,10,0.0299999993,images\Ammo\NeutronRocket.png
+11,Плазменный заряд,PlasmaBullet,26,3,0.00200000009,images\Ammo\Plasma.png
+12,Кислотная капсула,AcidBullet,28,4,0.00100000005,images\Ammo\AcidBullet.png
+13,Кислотная ракета,AcidRocket,30,5,0.00999999978,images\Ammo\AcidBall.png
+14,Смоляная капсула,ResinBullet,32,2,0.00200000009,images\Ammo\AlcalisBullets.png
+15,Смоляная ракета,ResinRocket,34,6,0.00999999978,images\Ammo\AlcalisBall.png
+16,Шипы,CanieBullet,36,2,0.00100000005,images\Ammo\Canie.png
+17,Энерго ракета,SphereLightningShot,46,10,0.0250000004,images\Ammo\CrystalAmmo.png
+18,Гулдуцкая ракета,GRocket,82,3,0.00999999978,images\Ammo\GRocket.png
+19,Гулдуцкий снаряд,GBullet,83,2,0.00100000005,images\Ammo\GBullet.png
+20,Железная руда,IronOre,49,1,0.180000007,images\Resources\IronOre.png
+21,Железо,Iron,50,3,0.150000006,images\Resources\Iron.png
+22,Титановая руда,TitanOre,51,2,0.100000001,images\Resources\TitanOre.png
+23,Титан,Titan,52,5,0.0500000007,images\Resources\Titan.png
+24,Золотая руда,GoldOre,53,3,0.170000002,images\Resources\GoldOre.png
+25,Золото,Gold,54,10,0.100000001,images\Resources\Gold.png
+26,Осмиевая руда,OsmiumOre,55,5,0.100000001,images\Resources\OsmiumOre.png
+27,Осмий,Osmium,56,12,0.100000001,images\Resources\Osmium.png
+28,Ксенокристаллы,XenoCrystall,102,25,0.150000006,images\Resources\XenoCrystall.png
+29,OTrash,OTrash,115,1,0.300000012,images\Resources\OTrash.png
+30,ITrash,ITrash,116,1,0.270000011,images\Resources\ITrash.png
+31,ATrash,ATrash,117,1,0.280000001,images\Resources\ATrash.png
+32,MTrash,MTrash,118,1,0.300000012,images\Resources\MTrash.png
+33,GTrash,GTrash,119,1,0.330000013,images\Resources\GTrash.png
+34,KTrash,KTrash,120,1,0.170000002,images\Resources\KTrash.png
+35,XTrash,XTrash,121,1,0.200000003,images\Resources\XTrash.png
+36,Минералы,Minerals,131,5,0.0299999993,images\Resources\Minerals.png
+37,Органические соединения,Organic,132,6,0.0500000007,images\Resources\Organic.png
+38,"Опыт (+10,000)",ExpirienceCommon,133,40000,0.0500000007,images\Resources\ExpirienceCommon.png
+39,Опыт полицейского (+500),ExpiriencePolice,134,60000,0.0500000007,images\Resources\ExpiriencePolice.png
+40,Опыт пирата (+500),ExpiriencePirate,135,60000,0.0500000007,images\Resources\ExpiriencePirate.png
+41,Катализатор руды,Catalyst,136,3,0.0500000007,images\Resources\Catalyst.png
+42,Обломок неизвестного устройства,unknowTrash,137,30,0.0500000007,images\Resources\unknowTrash.png
+43,Ключ Киуна,xMedal1,138,100,0.0500000007,images\Resources\xMedal1.png
+44,Электроника,microscheme,143,38,0.200000003,images\Resources\microscheme.png
+45,Устройство экстренной телепортации,portal,148,60000,5,images\Resources\portal.png
+46,"Опыт (+30,000)",ExpirienceCommon2,162,100000,0.0500000007,images\Resources\ExpirienceCommon2.png
+47,Опыт полицейского (+1200),ExpiriencePolice2,163,120000,0.0500000007,images\Resources\ExpiriencePolice2.png
+48,Опыт пирата (+1200),ExpiriencePirate2,164,120000,0.0500000007,images\Resources\ExpiriencePirate2.png
+49,"Опыт (+70,000)",ExpirienceCommon3,165,140000,0.0500000007,images\Resources\ExpirienceCommon3.png
+50,Опыт полицейского (+2100),ExpiriencePolice3,166,200000,0.0500000007,images\Resources\ExpiriencePolice3.png
+51,Опыт пирата (+2100),ExpiriencePirate3,167,200000,0.0500000007,images\Resources\ExpiriencePirate3.png
+52,Engine,Engine,14,3000,50,images\Engines\AEngine.png
+53,Реактивный двигатель,OmolenianEngine,57,5000,150,images\Engines\OEngine.png
+54,Ядерный двигатель,AnidEngine,58,6500,100,images\Engines\AEngine.png
+55,Нагнетающий двигатель,IrritianEngine,59,4200,50,images\Engines\IEngine.png
+56,Энергодвигатель,MedramillEngine,60,5900,110,images\Engines\MEngine.png
+57,Протонный двигатель,OmolenianEngine2,77,19000,120,images\Engines\OEngine2.png
+58,Нейтронный двигатель,AnidEngine2,78,16000,110,images\Engines\AEngine2.png
+59,Кваркотрубный двигатель,IrritianEngine2,79,14000,70,images\Engines\IEngine2.png
+60,Ионный двигатель,MedramillEngine2,80,22000,100,images\Engines\MEngine2.png
+61,Феонный двигатель,KEngine,130,90000,70,images\Engines\KEngine.png
+62,Бозонный двигатель,OmolenianEngine3,192,21000,130,images\Engines\OEngine3.png
+63,Лазер,LaserGun,1,2200,30,images\Weapons\MLaserGun.png
+64,Гаубица,Gun,2,11000,40,images\Weapons\OGun.png
+65,Пушка,AutoGun,4,8800,35,images\Weapons\OAutoGun.png
+66,Пулемет,MachineGun,6,5000,25,images\Weapons\OMachineGun.png
+67,Пусковая установка,RocketLauncher,8,24000,65,images\Weapons\GRocketLauncher.png
+68,Осколочная установка,SplashRocketLauncher,10,90000,70,images\Weapons\OSplashRocketLauncher.png
+69,Кассетная установка,AutoRocketLauncher,12,21000,50,images\Weapons\OAutoRocketLauncher.png
+70,Пушка Гаусса,GaussGun,16,12000,50,images\Weapons\OGaussGun.png
+71,Бластерная пушка,BlasterGun,18,4500,30,images\Weapons\ABlasterGun.png
+72,Бластерная пусковая установка,BlasterRocketLauncher,20,20000,80,images\Weapons\ABlasterRocketLauncher.png
+73,Нейтронная пусковая установка,NeutronRocketLauncher,22,27000,70,images\Weapons\ANeutronRocketLauncher.png
+74,Плазменная пушка,PlasmaGun,24,7300,50,images\Weapons\APlasmaGun.png
+75,Плазменная гаубица,PlasmaCannon,25,13500,100,images\Weapons\APlasmaCannon.png
+76,Кислотное орудие,AcidGun,27,12000,30,images\Weapons\IAcidGun.png
+77,Кислотная пусковая установка,AcidLauncher,29,23000,50,images\Weapons\IAcidLauncher.png
+78,Смоляное орудие,ResinGun,31,6400,40,images\Weapons\IAlcalisGun.png
+79,Смоляная пусковая установка,ResinLauncher,33,19500,60,images\Weapons\IAlcalisLauncher.png
+80,Шиповое орудие,CanieGun,35,4000,30,images\Weapons\ICanieGun.png
+81,Жало,Jalo,37,2000,20,images\Weapons\IJalo.png
+82,Молния,LightningCannon,39,6000,40,images\Weapons\MLightningCannon.png
+83,Азоидная пушка,RailGun,41,11000,45,images\Weapons\MRailGun.png
+84,Азоидная гаубица,RailCannon,43,16000,55,images\Weapons\MRailCannon.png
+85,Энерго пусковая установка,SphereLightningCannon,45,25000,55,images\Weapons\MSphereLightningGun.png
+86,Гулдуцкая пушка,GGun,47,1800,120,images\Weapons\GGun.png
+87,Пульсар,AnidRezak,61,2200,40,images\Weapons\ARezak.png
+88,Резак,OmolenianRezak,62,1800,40,images\Weapons\ORezak.png
+89,Гулдуцкая пусковая установка,GRocketLauncher,81,35000,80,images\Weapons\GRocketLauncher.png
+90,Xenopulsar,Xenopulsar,101,25000,50,images\Weapons\XPulsar.png
+91,Фотонная пушка,PhotonGun,109,35000,40,images\Weapons\KPhotongun.png
+92,MultiBlaster,MultiBlaster,110,150000,50,images\Weapons\KMultiBlaster.png
+93,Splitter,Splitter,111,55000,55,images\Weapons\XSplitter.png
+94,Ксенопульсар,Desintegrator,126,220000,50,images\Weapons\XDesintegrator.png
+95,DroidDestroyer,DroidDestroyer,127,70000,50,images\Weapons\XDroidDestroyer.png
+96,Vampire,Vampire,128,200000,50,images\Weapons\KVampire.png
+97,Квантовый излучатель,XQuantumEmitter,158,320000,50,images\Weapons\XQuantumEmitter.png
+98,OVampireEvo,OVampireEvo,169,300000,50,images\Weapons\OVampireEvo.png
+99,OMultiBlasterEvo,OMultiBlasterEvo,170,250000,50,images\Weapons\OMultiBlasterEvo.png
+100,OSplitterEvo,OSplitterEvo,171,100000,55,images\Weapons\OSplitterEvo.png
+101,ODesintegratorEvo,ODesintegratorEvo,172,350000,50,images\Weapons\ODesintegratorEvo.png
+102,AVampireEvo,AVampireEvo,173,300000,50,images\Weapons\AVampireEvo.png
+103,AMultiBlasterEvo,AMultiBlasterEvo,174,250000,50,images\Weapons\AMultiBlasterEvo.png
+104,ASplitterEvo,ASplitterEvo,175,100000,55,images\Weapons\ASplitterEvo.png
+105,ADesintegratorEvo,ADesintegratorEvo,176,350000,50,images\Weapons\ADesintegratorEvo.png
+106,Иссушитель,GWither,193,300000,50,images\Weapons\GWither.png
+107,Гефест,OmolenianMiner,66,1200,10,images\DroidItems\oD1.png
+108,Рудокоп,AnidMiner,67,1300,12,images\DroidItems\aD1.png
+109,Муравей,IrritianMiner,68,1700,11,images\DroidItems\iD1.png
+110,MedramilMiner,MedramilMiner,69,1500,15,images\DroidItems\mD1.png
+111,Аполлон,OmolenianInfantry,70,2000,15,images\DroidItems\oD2.png
+112,Арес,OmolenianArmored,71,3200,20,images\DroidItems\oD3.png
+113,Артилерия,OmolenianArtilery,72,5800,20,images\None.png
+114,Спецназ,OmolenianSpecialForces,73,7300,25,images\None.png
+115,Шершень,IrritianInfantry,94,2200,14,images\DroidItems\iD2.png
+116,Шмель,IrritianArmored,95,4300,20,images\DroidItems\iD3.png
+117,Пехота,AnidInfantry,96,2200,14,images\DroidItems\aD2.png
+118,Штурмовик,AnidArmored,97,4300,23,images\DroidItems\aD3.png
+119,Смерч,MedramillInfantry,98,2200,20,images\DroidItems\mD2.png
+120,Цунами,MedramillArmored,99,4300,25,images\DroidItems\mD3.png
+121,Prophet,Prophet,129,50000,25,images\DroidItems\kProphet.png
+122,BB8,BB8,161,60000,25,images\DroidItems\kBB8.png
+123,Зевс,KZevs,168,60000,25,images\DroidItems\KZevs.png
+124,OmolenianUnzipper,OmolenianUnzipper,65,3000,45,images\Devices\OUnzipper.png
+125,AnidUnzipper,AnidUnzipper,74,3000,35,images\Devices\AUnzipper.png
+126,IrritianUnzipper,IrritianUnzipper,75,3000,40,images\Devices\IUnzipper.png
+127,MedramillUnzipper,MedramillUnzipper,76,3000,55,images\Devices\MUnzipper.png
+128,Батарея,Battery,88,4500,35,images\Devices\Battery.png
+129,Катализатор урона,Damage,89,13000,65,images\Devices\Damage.png
+130,Биомасса,Repair,90,12000,70,images\Devices\Repair.png
+131,Турбина,Turbo,91,6000,40,images\Devices\Turbo.png
+132,Дополнительный энергощит,Shield,92,11000,60,images\Devices\Shields.png
+133,Сфера превосходства,SuperioritySphere,93,150000,50,images\Devices\SuperioritySphere.png
+134,Бронепластины,Armor,103,24000,30,images\Devices\Armor.png
+135,Вспомогательный процессор,Processor,104,28000,20,images\Devices\Processor.png
+136,Аглу,Aglu,105,30000,75,images\Devices\Aglu.png
+137,Ремонтный дроид,RepairDroid,106,18000,60,images\Devices\RepairDroid.png
+138,Поглотитель,Absorber,107,85000,25,images\Devices\Absorber.png
+139,Отражатель,Reflector,108,70000,25,images\Devices\Reflector.png
+140,VacuumCoreBattery,VacuumCoreBattery,112,80000,35,images\Devices\vacuumCoreBattary.png
+141,Ядро вакуума,VacuumCore,113,4500,35,images\Devices\VacuumCore.png
+142,Генератор,Generator,114,4500,35,images\Devices\Generator.png
+143,Нитриниум,Nitrinium,122,51000,45,images\Devices\Nitrinium.png
+144,Энергон,Energon,123,53000,50,images\Devices\Energon.png
+145,Фазер,Phaser,124,53000,55,images\Devices\Phaser.png
+146,Метаконтроллер,MetaController,125,50000,50,images\Devices\MetaController.png
+147,Ксеносенсоры,XenoSensor,150,120000,7,images\Devices\XenoSensor.png
+148,Живая броня,livearmor,151,100000,38,images\Devices\livearmor.png
+149,RadarControl,RadarControl,152,50000,11,images\Devices\RadarControl.png
+150,XenoArmor,XenoArmor,153,110000,11,images\Devices\XenoArmor.png
+151,NanoRobots,NanoRobots,154,300000,5,images\Devices\NanoRobots.png
+152,kUnzipper,kUnzipper,155,40000,14,images\Devices\kUnzipper.png
+153,Атомный Ускоритель,AtomBooster,156,85000,11,images\Devices\AtomBooster.png
+154,EnginControl,EnginControl,157,100000,9,images\Devices\EnginControl.png
+155,Панекен дройда,DroidsDef,185,500000,11,images\Devices\PhReflectror.png
+156,Антифазер,MAntiFazer,186,60000,14,images\Devices\MAntiFazer.png
+157,Паразит,GGlist,187,210000,39,images\Devices\GGlist.png
+158,Турбо,GTurbin,188,120000,64,images\Devices\GTurbin.png
+159,Искажатель радаров,XVaccumShield,189,150000,90,images\Devices\XVaccumShield.png
+160,Деспот,KVDespot,190,100000,70,images\Devices\KVDespot.png
+161,Кристализатор энергии,MRepair2,191,90000,30,images\Devices\MRepair2.png
+162,AdminDev,AdminDev,1000,900000,5,images\Devices\vacuumCore.png
+163,Омоленианинский истребитель,OIntercepter,1,30000,700,images\Ships\OIntercepter.png
+164,Омоленианинский транспорт,OTransport,2,10000,1500,images\Ships\OTransport.png
+165,Омоленианинский научный,OSience,3,55000,850,images\Ships\OSience.png
+166,Омоленианинский фрегат,OFregat,4,81000,1150,images\Ships\OFregat.png
+167,Омоленианинский индустриальный,OIndustrial,10,5000,530,images\Ships\OIndustrial.png
+168,Омоленианинский корвет,OScout,11,14000,650,images\Ships\OScout.png
+169,Омоленианинский крейсер,OCruiser,12,160000,1300,images\Ships\OCruiser.png
+170,None,None,13,30000,700,images\None.png
+171,Омоленианинский линкор,OLinkor,14,395000,1450,images\Ships\OLinkor.png
+172,Омоленианинский тяжелый истребитель,OIntercepterHavy,15,85000,720,images\Ships\OIntercepterHavy.png
+173,Омоленианинский корсар,OIntercepterCorsar,16,170000,900,images\Ships\OIntercepterCorsar.png
+174,Омоленианинский броненосец,OFregatArmored,17,170000,1180,images\Ships\OFregatArmored.png
+175,Омоленианинский штурмовик,OFregatAssault,18,280000,1200,images\Ships\OFregatAssault.png
+176,Омоленианинский ударный штурмовик,OFregatAssaultM1,19,4000000,1400,images\Ships\OFregatAssaultM1.png
+177,Омоленианинский разведчик,OScoutM1,20,195000,900,images\Ships\OScoutM1.png
+178,Омоленианинский авианосец,OCarrier,21,8000000,4000,images\Ships\OCarrier.png
+179,Омоленианинский палавен,OPalaven,22,1480000,2000,images\Ships\OPalaven.png
+180,Омоленианинский бриг,OBrig,24,250000,1300,images\Ships\OBrig.png
+181,Омоленианинский ударный бриг,OShockBrig,25,300000,1300,images\Ships\OShockBrig.png
+182,Омоленианинский осадный бриг,OSiegeBrig,26,350000,1300,images\Ships\OSiegeBrig.png
+183,Омоленианинский осадный линкор,OSiegeLinkor,27,3000000,1550,images\Ships\OSiegeLinkor.png
+184,Омоленианинский рудокоп,OLMiner,28,50000,1300,images\Ships\OLMiner.png
+185,Омоленианинский транспорт,OLRTransport,29,100000,2500,images\Ships\OLRTransport.png
+186,Омоленианинский транспорт,OFTransport,30,200000,2600,images\Ships\OFTransport.png
+187,Иррииский истребитель,IIntercepter,1001,32000,650,images\Ships\IIntercepter.png
+188,Иррииский транспорт,ITransport,1002,9000,1200,images\Ships\ITransport.png
+189,Иррииский научный,ISience,1003,53000,700,images\Ships\ISience.png
+190,Иррииский фрегат,IFregat,1004,87000,1100,images\Ships\IFregat.png
+191,Иррииский индустриальный,IIndustrial,1010,5500,480,images\Ships\IIndustrial.png
+192,Иррииский корвет,IScout,1011,16000,600,images\Ships\IScout.png
+193,Иррииский крейсер,ICruiser,1012,114000,1300,images\Ships\ICruiser.png
+194,None,None,1013,32000,650,images\None.png
+195,Иррииский линкор,ILinkor,1014,390000,1500,images\Ships\ILinkor.png
+196,Иррииский тяжелый истребитель,IIntercepterHavy,1015,85000,720,images\Ships\IIntercepterHavy.png
+197,Иррииский корсар,IIntercepterCorsar,1016,170000,900,images\Ships\IIntercepterCorsar.png
+198,Иррииский броненосец,IFregatArmored,1017,170000,1180,images\Ships\IFregatArmored.png
+199,Иррииский штурмовик,IFregatAssault,1018,280000,1200,images\Ships\IFregatAssault.png
+200,Иррииский ударный штурмовик,IFregatAssaultM1,1019,4000000,1400,images\Ships\IFregatAssaultM1.png
+201,Иррииский разведчик,IScoutM1,1020,195000,900,images\Ships\IScoutM1.png
+202,Иррииский авианосец,ICarrier,1021,4000000,4000,images\Ships\ICarrier.png
+203,Иррииский палавен,IPalaven,1022,1480000,2000,images\Ships\IPalaven.png
+204,Иррииский бриг,IBrig,1024,250000,1300,images\Ships\IBrig.png
+205,Иррииский ударный бриг,IShockBrig,1025,300000,1300,images\Ships\IShockBrig.png
+206,Иррииский осадный бриг,ISiegeBrig,1026,250000,1300,images\Ships\ISiegeBrig.png
+207,Иррииский осадный линкор,ISiegeLinkor,1027,3000000,1600,images\Ships\ISiegeLinkor.png
+208,Иррииский рудокоп,ILMiner,1028,50000,1300,images\Ships\ILMiner.png
+209,Иррииский транспорт,ILRTransport,1029,100000,2500,images\Ships\ILRTransport.png
+210,Иррииский транспорт,IFTransport,1030,200000,2600,images\Ships\IFTransport.png
+211,Анидский истребитель,AIntercepter,2001,32000,700,images\Ships\AIntercepter.png
+212,Анидский транспорт,ATransport,2002,9000,1400,images\Ships\ATransport.png
+213,Анидский научный,ASience,2003,54000,830,images\Ships\ASience.png
+214,Анидский фрегат,AFregat,2004,85000,1100,images\Ships\AFregat.png
+215,Анидский индустриальный,AIndustrial,2010,5000,500,images\Ships\AIndustrial.png
+216,Анидский корвет,AScout,2011,15000,670,images\Ships\AScout.png
+217,Анидский крейсер,ACruiser,2012,157000,1250,images\Ships\ACruiser.png
+218,None,None,2013,32000,700,images\None.png
+219,Анидский линкор,ALinkor,2014,380000,1400,images\Ships\ALinkor.png
+220,Анидский тяжелый истребитель,AIntercepterHavy,2015,85000,720,images\Ships\AIntercepterHavy.png
+221,Анидский корсар,AIntercepterCorsar,2016,170000,900,images\Ships\AIntercepterCorsar.png
+222,Анидский броненосец,AFregatArmored,2017,170000,1180,images\Ships\AFregatArmored.png
+223,Анидский штурмовик,AFregatAssault,2018,280000,1200,images\Ships\AFregatAssault.png
+224,Анидский ударный штурмовик,AFregatAssaultM1,2019,4000000,1400,images\Ships\AFregatAssaultM1.png
+225,Анидский разведчик,AScoutM1,2020,195000,900,images\Ships\AScoutM1.png
+226,Анидский авианосец,ACarrier,2021,8000000,4000,images\Ships\ACarrier.png
+227,Анидский палавен,APalaven,2022,1480000,2000,images\Ships\APalaven.png
+228,Анидский бриг,ABrig,2024,250000,1300,images\Ships\ABrig.png
+229,Анидский ударный бриг,AShockBrig,2025,300000,1300,images\Ships\AShockBrig.png
+230,Анидский осадный бриг,ASiegeBrig,2026,350000,1300,images\Ships\ASiegeBrig.png
+231,Анидский осадный линкор,ASiegeLinkor,2027,3000000,1500,images\Ships\ASiegeLinkor.png
+232,Анидский рудокоп,ALMiner,2028,50000,1300,images\Ships\ALMiner.png
+233,Анидский транспорт,ALRTransport,2029,100000,2500,images\Ships\ALRTransport.png
+234,Анидский транспорт,AFTransport,2030,200000,2600,images\Ships\AFTransport.png
+235,Вип штурмовик,AFregatAssaultV1,2031,5000000,2000,images\Ships\AFregatAssaultV1.png
+236,Медрамиллский истребитель,MIntercepter,3001,29000,650,images\Ships\MIntercepter.png
+237,Медрамиллский транспорт,MTransport,3002,10500,1450,images\Ships\MTransport.png
+238,Медрамиллский научный,MSience,3003,54000,850,images\Ships\MSience.png
+239,Медрамиллский фрегат,MFregat,3004,83000,1100,images\Ships\MFregat.png
+240,Медрамиллский индустриальный,MIndustrial,3010,5400,450,images\Ships\MIndustrial.png
+241,Медрамиллский корвет,MScout,3011,15000,600,images\Ships\MScout.png
+242,Медрамиллский крейсер,MCruiser,3012,173000,1300,images\Ships\MCruiser.png
+243,None,None,3013,29000,650,images\None.png
+244,Медрамиллский линкор,MLinkor,3014,392000,1450,images\Ships\MLinkor.png
+245,Медрамиллский тяжелый истребитель,MIntercepterHavy,3015,85000,720,images\Ships\MIntercepterHavy.png
+246,Медрамиллский корсар,MIntercepterCorsar,3016,170000,900,images\Ships\MIntercepterCorsar.png
+247,Медрамиллский броненосец,MFregatArmored,3017,170000,1180,images\Ships\MFregatArmored.png
+248,Медрамиллский штурмовик,MFregatAssault,3018,280000,1200,images\Ships\MFregatAssault.png
+249,Медрамиллский ударный штурмовик,MFregatAssaultM1,3019,4000000,1400,images\Ships\MFregatAssaultM1.png
+250,Медрамиллский разведчик,MScoutM1,3020,195000,900,images\Ships\MScoutM1.png
+251,Медрамиллский авианосец,MCarrier,3021,8000000,4000,images\Ships\MCarrier.png
+252,Медрамиллский палавен,MPalaven,3022,1480000,2000,images\Ships\MPalaven.png
+253,Медрамиллский бриг,MBrig,3024,150000,1300,images\Ships\MBrig.png
+254,Медрамиллский ударный бриг,MShockBrig,3025,300000,1300,images\Ships\MShockBrig.png
+255,Медрамиллский осадный бриг,MSiegeBrig,3026,350000,1300,images\Ships\MSiegeBrig.png
+256,Медрамиллский осадный линкор,MSiegeLinkor,3027,3000000,1550,images\Ships\MSiegeLinkor.png
+257,Медрамиллский рудокоп,MLMiner,3028,50000,1300,images\Ships\MLMiner.png
+258,Медрамиллский транспорт,MLRTransport,3029,100000,2500,images\Ships\MLRTransport.png
+259,Медрамиллский транспорт,MFTransport,3030,200000,2600,images\Ships\MFTransport.png
+260,Гулдунцкий истребитель,GIntercepter,4001,32000,900,images\Ships\GIntercepter.png
+261,Гулдунцкий транспорт,GTransport,4002,22000,1500,images\Ships\GTransport.png
+262,Гулдунцкий фрегат,GFregat,4003,65000,1400,images\Ships\GFregat.png
+263,Гулдунцкий индустриальный,GIndustrial,4004,15000,700,images\Ships\GIndustrial.png
+264,None,None,4013,32000,800,images\None.png
+265,Гулдунцкий бриг,GBrig,4024,250000,1300,images\Ships\GBrig.png
+266,Гулдунцкий ударный бриг,GShockBrig,4025,300000,1300,images\Ships\GShockBrig.png
+267,Гулдунцкий осадный бриг,GSiegeBrig,4026,350000,1300,images\Ships\GSiegeBrig.png
+268,Каанианский транспорт,KTransport,5001,50000,1400,images\Ships\KTransport.png
+269,Каанианский транспорт,KSience,5002,100000,800,images\Ships\KSience.png
+270,Каанианский крейсер,KCruiser,5012,300000,1200,images\Ships\KCruiser.png
+271,None,None,5013,100000,800,images\None.png
+272,Нло,KVTransport,5101,80000,1400,images\Ships\KVTransport.png
+273,Нло,KVSience,5102,140000,1600,images\Ships\KVSience.png
+274,Нло,KVCruiser,5112,300000,2400,images\Ships\KVCruiser.png
+275,Басс,KVarm,5999,1,3000,images\Ships\KVCruiser.png
+276,None,None,6000,195000,900,images\None.png
+277,Нло,XScout,6001,20000,550,images\Ships\XScout.png
+278,Ксеноруитский истребитель,XIntercepter,6002,42000,700,images\Ships\XIntercepter.png
+279,Ксеноруитский фрегат,XFregat,6003,80000,1100,images\Ships\XFregat.png
+280,Ксеноруитский крейсер,XCruiser,6012,110000,1300,images\Ships\XCruiser.png
+281,None,None,6013,42000,700,images\None.png
+282,Ксеноруитский разведчик,XScoutM1,6020,195000,700,images\Ships\XScoutM1.png
+283,Ксеноруитский палавен,XPalaven,6022,1800000,2000,images\Ships\XPalaven.png
+284,Нло,XIntercepterM1,6102,10000,700,images\Ships\XIntercepterM1.png
+285,Нло,XFregatM1,6103,80000,1100,images\Ships\XFregatM1.png
+286,Нло,XCruiserM1,6112,300000,1300,images\Ships\XCruiserM1.png
+287,Нло,XFregatM2,6203,120000,1300,images\Ships\XFregatM2.png
+288,Киуна,TSience,7001,1540000,6000,images\Ships\TSience.png
+289,Корсар мк1,PIntercepterCorsar,8001,4500000,1325,images\Ships\PIntercepterCorsar.png

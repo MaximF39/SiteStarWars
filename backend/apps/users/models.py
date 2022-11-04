@@ -9,14 +9,14 @@ from core.models import BaseModel, BaseModelID
 
 
 class UserManager(BaseUserManager):
-    def create_user(self, email, username, race, password=None):
+    def create_user(self, email, username, race, password):
         if not email:
             raise ValueError('Users must have an email address')
 
         user = self.model(
             username=username,
             email=self.normalize_email(email),
-            race=race
+            race=race,
         )
         user.set_password(password)
         user.save(using=self._db)
@@ -51,7 +51,7 @@ class User(AbstractUser):
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)
     balance = models.IntegerField(default=0, null=False)
-    inventory = models.OneToOneField('Inventory', on_delete=models.CASCADE, null=True)
+    # inventory_id = models.OneToOneFieldeField('Inventory', on_delete=models.CASCADE, null=True)
     race_type = (
         (1, 'Омоленианин (Красные)'),
         (2, 'Иррииец (Жёлтые)'),

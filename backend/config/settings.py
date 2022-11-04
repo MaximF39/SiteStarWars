@@ -36,7 +36,7 @@ THIRD_PARTY = [
     'versatileimagefield',
     'constance',
     'constance.backends.database',
-    'ckeditor'
+    'ckeditor',
 ]
 
 LOCAL_APPS = [

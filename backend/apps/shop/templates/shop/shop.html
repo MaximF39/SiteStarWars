@@ -43,9 +43,15 @@
                 </p>
                 {% endif %}
                 {% if item.ships %}
+                    {% for name, value in item.properties.items() %}
+                    <p>
+                        <span>{{ name }}</span>
+                        <span>{{ value }}</span>
+                    </p>
+                    {% endfor %}
                 <p>
-                    <span>Броня:</span>
-                    <span>{{ item.ships.armor }}</span>
+                <span>Броня:</span>
+                <span>{{ item.ships.armor }}</span>
                 </p>
                 <p>
                     <span>Щиты:</span>
