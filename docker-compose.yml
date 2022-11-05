@@ -5,9 +5,8 @@ services:
     container_name: django
     restart: always
     build: ./backend
-    entrypoint: "/bin/sh -c ./entrypoint.sh"
     volumes:
-      - ./backend:/backend
+      - static:/backend/static
     env_file:
       - backend/.env
     expose:
@@ -17,7 +16,12 @@ services:
       context: ./backend
       dockerfile: Dockerfile_nginx
     restart: always
+    volumes:
+      - static:/static
     ports:
       - "50002:50002"
     depends_on:
       - django
+
+volumes:
+  static:

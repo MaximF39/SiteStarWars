@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.join(BASE_DIR, "apps"))
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 DEBUG = os.getenv("DJANGO_DEBUG")
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["*", "65.21.92.120", "starwars.site"]
 
 DJANGO_APPS = [
     'django.contrib.admin',

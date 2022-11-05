@@ -2,3 +2,4 @@
 /backend/venv/
 !/backend/entrypoint.sh
 /backend/Dockerfile
+/backend/static/
