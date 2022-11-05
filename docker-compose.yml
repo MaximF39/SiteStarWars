@@ -12,10 +12,12 @@ services:
       - backend/.env
     expose:
       - 8000
+    ports:
+      - "8000:8000"
   nginx:
     build: ./docker/nginx
     restart: always
     ports:
-      - "80:80"
+      - "1905:80"
     depends_on:
       - django

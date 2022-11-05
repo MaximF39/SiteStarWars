@@ -27,13 +27,13 @@ id,name,en_name,class_number,cost,size,image
 26,Осмиевая руда,OsmiumOre,55,5,0.100000001,Resources\OsmiumOre.png
 27,Осмий,Osmium,56,12,0.100000001,Resources\Osmium.png
 28,Ксенокристаллы,XenoCrystall,102,25,0.150000006,Resources\XenoCrystall.png
-29,OTrash,OTrash,115,1,0.300000012,Resources\OTrash.png
-30,ITrash,ITrash,116,1,0.270000011,Resources\ITrash.png
-31,ATrash,ATrash,117,1,0.280000001,Resources\ATrash.png
-32,MTrash,MTrash,118,1,0.300000012,Resources\MTrash.png
-33,GTrash,GTrash,119,1,0.330000013,Resources\GTrash.png
-34,KTrash,KTrash,120,1,0.170000002,Resources\KTrash.png
-35,XTrash,XTrash,121,1,0.200000003,Resources\XTrash.png
+29,Омоленианинский обломок,OTrash,115,1,0.300000012,Resources\oTrash.png
+30,Иррииский обломок,ITrash,116,1,0.270000011,Resources\iTrash.png
+31,Анидский обломок,ATrash,117,1,0.280000001,Resources\aTrash.png
+32,Медрамиллский обломок,MTrash,118,1,0.300000012,Resources\mTrash.png
+33,Гулдунцкий обломок,GTrash,119,1,0.330000013,Resources\gTrash.png
+34,Каанианский обломок,KTrash,120,1,0.170000002,Resources\kTrash.png
+35,Ксеноруитский обломок,XTrash,121,1,0.200000003,Resources\xTrash.png
 36,Минералы,Minerals,131,5,0.0299999993,Resources\Minerals.png
 37,Органические соединения,Organic,132,6,0.0500000007,Resources\Organic.png
 38,"Опыт (+10,000)",ExpirienceCommon,133,40000,0.0500000007,Resources\ExpirienceCommon.png
@@ -90,18 +90,18 @@ id,name,en_name,class_number,cost,size,image
 89,Гулдуцкая пусковая установка,GRocketLauncher,81,35000,80,Weapons\GRocketLauncher.png
 90,Xenopulsar,Xenopulsar,101,25000,50,Weapons\XPulsar.png
 91,Фотонная пушка,PhotonGun,109,35000,40,Weapons\KPhotongun.png
-92,MultiBlaster,MultiBlaster,110,150000,50,Weapons\KMultiBlaster.png
+92,MultiBlaster,MultiBlaster,110,150000,50,Weapons\KMultiblaster.png
 93,Splitter,Splitter,111,55000,55,Weapons\XSplitter.png
 94,Ксенопульсар,Desintegrator,126,220000,50,Weapons\XDesintegrator.png
 95,DroidDestroyer,DroidDestroyer,127,70000,50,Weapons\XDroidDestroyer.png
 96,Vampire,Vampire,128,200000,50,Weapons\KVampire.png
 97,Квантовый излучатель,XQuantumEmitter,158,320000,50,Weapons\XQuantumEmitter.png
 98,OVampireEvo,OVampireEvo,169,300000,50,Weapons\OVampireEvo.png
-99,OMultiBlasterEvo,OMultiBlasterEvo,170,250000,50,Weapons\OMultiBlasterEvo.png
+99,OMultiBlasterEvo,OMultiBlasterEvo,170,250000,50,Weapons\OMultiblasterEvo.png
 100,OSplitterEvo,OSplitterEvo,171,100000,55,Weapons\OSplitterEvo.png
 101,ODesintegratorEvo,ODesintegratorEvo,172,350000,50,Weapons\ODesintegratorEvo.png
 102,AVampireEvo,AVampireEvo,173,300000,50,Weapons\AVampireEvo.png
-103,AMultiBlasterEvo,AMultiBlasterEvo,174,250000,50,Weapons\AMultiBlasterEvo.png
+103,AMultiBlasterEvo,AMultiBlasterEvo,174,250000,50,Weapons\AMultiblasterEvo.png
 104,ASplitterEvo,ASplitterEvo,175,100000,55,Weapons\ASplitterEvo.png
 105,ADesintegratorEvo,ADesintegratorEvo,176,350000,50,Weapons\ADesintegratorEvo.png
 106,Иссушитель,GWither,193,300000,50,Weapons\GWither.png
@@ -121,38 +121,38 @@ id,name,en_name,class_number,cost,size,image
 120,Цунами,MedramillArmored,99,4300,25,DroidItems\mD3.png
 121,Prophet,Prophet,129,50000,25,DroidItems\kProphet.png
 122,BB8,BB8,161,60000,25,DroidItems\kBB8.png
-123,Зевс,KZevs,168,60000,25,DroidItems\KZevs.png
-124,OmolenianUnzipper,OmolenianUnzipper,65,3000,45,Devices\OUnzipper.png
-125,AnidUnzipper,AnidUnzipper,74,3000,35,Devices\AUnzipper.png
-126,IrritianUnzipper,IrritianUnzipper,75,3000,40,Devices\IUnzipper.png
-127,MedramillUnzipper,MedramillUnzipper,76,3000,55,Devices\MUnzipper.png
+123,Зевс,KZevs,168,60000,25,DroidItems\kZevs.png
+124,OmolenianUnzipper,OmolenianUnzipper,65,3000,45,Devices\oUnzipper.png
+125,AnidUnzipper,AnidUnzipper,74,3000,35,Devices\aUnzipper.png
+126,IrritianUnzipper,IrritianUnzipper,75,3000,40,Devices\iUnzipper.png
+127,MedramillUnzipper,MedramillUnzipper,76,3000,55,Devices\mUnzipper.png
 128,Батарея,Battery,88,4500,35,Devices\Battery.png
 129,Катализатор урона,Damage,89,13000,65,Devices\Damage.png
 130,Биомасса,Repair,90,12000,70,Devices\Repair.png
 131,Турбина,Turbo,91,6000,40,Devices\Turbo.png
 132,Дополнительный энергощит,Shield,92,11000,60,Devices\Shields.png
 133,Сфера превосходства,SuperioritySphere,93,150000,50,Devices\SuperioritySphere.png
-134,Бронепластины,Armor,103,24000,30,Devices\Armor.png
-135,Вспомогательный процессор,Processor,104,28000,20,Devices\Processor.png
-136,Аглу,Aglu,105,30000,75,Devices\Aglu.png
-137,Ремонтный дроид,RepairDroid,106,18000,60,Devices\RepairDroid.png
-138,Поглотитель,Absorber,107,85000,25,Devices\Absorber.png
-139,Отражатель,Reflector,108,70000,25,Devices\Reflector.png
+134,Бронепластины,Armor,103,24000,30,Devices\armor.png
+135,Вспомогательный процессор,Processor,104,28000,20,Devices\processor.png
+136,Аглу,Aglu,105,30000,75,Devices\aglu.png
+137,Ремонтный дроид,RepairDroid,106,18000,60,Devices\repairdroid.png
+138,Поглотитель,Absorber,107,85000,25,Devices\absorber.png
+139,Отражатель,Reflector,108,70000,25,Devices\reflector.png
 140,VacuumCoreBattery,VacuumCoreBattery,112,80000,35,Devices\vacuumCoreBattary.png
-141,Ядро вакуума,VacuumCore,113,4500,35,Devices\VacuumCore.png
-142,Генератор,Generator,114,4500,35,Devices\Generator.png
-143,Нитриниум,Nitrinium,122,51000,45,Devices\Nitrinium.png
-144,Энергон,Energon,123,53000,50,Devices\Energon.png
-145,Фазер,Phaser,124,53000,55,Devices\Phaser.png
-146,Метаконтроллер,MetaController,125,50000,50,Devices\MetaController.png
-147,Ксеносенсоры,XenoSensor,150,120000,7,Devices\XenoSensor.png
+141,Ядро вакуума,VacuumCore,113,4500,35,Devices\vacuumCore.png
+142,Генератор,Generator,114,4500,35,Devices\generator.png
+143,Нитриниум,Nitrinium,122,51000,45,Devices\nitrinium.png
+144,Энергон,Energon,123,53000,50,Devices\energon.png
+145,Фазер,Phaser,124,53000,55,Devices\phaser.png
+146,Метаконтроллер,MetaController,125,50000,50,Devices\metacontroller.png
+147,Ксеносенсоры,XenoSensor,150,120000,7,Devices\xenosensor.png
 148,Живая броня,livearmor,151,100000,38,Devices\livearmor.png
-149,RadarControl,RadarControl,152,50000,11,Devices\RadarControl.png
-150,XenoArmor,XenoArmor,153,110000,11,Devices\XenoArmor.png
-151,NanoRobots,NanoRobots,154,300000,5,Devices\NanoRobots.png
+149,RadarControl,RadarControl,152,50000,11,Devices\radarcontrol.png
+150,XenoArmor,XenoArmor,153,110000,11,Devices\xenoarmor.png
+151,NanoRobots,NanoRobots,154,300000,5,Devices\nanorobots.png
 152,kUnzipper,kUnzipper,155,40000,14,Devices\kUnzipper.png
-153,Атомный Ускоритель,AtomBooster,156,85000,11,Devices\AtomBooster.png
-154,EnginControl,EnginControl,157,100000,9,Devices\EnginControl.png
+153,Атомный Ускоритель,AtomBooster,156,85000,11,Devices\atombooster.png
+154,EnginControl,EnginControl,157,100000,9,Devices\engincontrol.png
 155,Панекен дройда,DroidsDef,185,500000,11,Devices\PhReflectror.png
 156,Антифазер,MAntiFazer,186,60000,14,Devices\MAntiFazer.png
 157,Паразит,GGlist,187,210000,39,Devices\GGlist.png
