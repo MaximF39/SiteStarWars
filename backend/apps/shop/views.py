@@ -3,12 +3,11 @@ from . import models
 
 
 def shop(request):
-    if request.method == 'POST' and int(request.POST['filter']) != 1:
-        id_type = int(request.POST['filter'])
-        en_name = models.ItemsType.objects.values_list('type_en', flat=True).get(id=id_type)
-        items = getattr(models, en_name).objects.all()
-    else:
-        id_type = 1
+    types = models.ItemsType.objects.all()
+    select_type = int(request.GET.get('item_type', 1))
+    en_name = types[select_type - 1].type_en
+    if select_type == 1:
         items = models.BaseItems.objects.select_related('ammo', 'resources', 'engines', 'devices', 'weapons', 'droids', 'ships')
-    filter = models.ItemsType.objects.all()
-    return render(request, 'shop/shop.html', context={'items': items, 'filter': filter, 'type': id_type})
+    else:
+        items = getattr(models, en_name).objects.all()
+    return render(request, 'shop/shop.html', context={'items': items, 'types': types, 'select_type': select_type})

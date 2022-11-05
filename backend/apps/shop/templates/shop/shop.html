@@ -10,12 +10,11 @@
 {% endblock %}
 
 {% block content %}
-<form action="#" method="post">
-    {% csrf_token %}
+<form method="get">
     <div class="filter">
-        <select name="filter" onchange="this.form.submit()">
-            {% for x in filter %}
-            <option value="{{ x.pk }}" {% if type == x.pk %} selected {% endif %}>{{ x.type_ru }}</option>
+        <select name="item_type" onchange="this.form.submit()">
+            {% for type in types %}
+                <option value="{{ type.pk }}" {% if type.pk == select_type %} selected {% endif %}>{{ type.type_ru }}</option>
             {% endfor %}
         </select>
     </div>
@@ -24,82 +23,15 @@
         {% for item in items %}
         <div class="shop_item">
             <div  class="shop_item__name">{{ item.name }}</div>
-            <div  class="shop_item__image"><img src="
-            {% if item.image  %}
-            {% static item.image.url %}
-            {% endif %}
-            " alt=""></div>
+            <div  class="shop_item__image">
+                <img src="{% static '' %}shop/images/items/{{ item.image }}" alt=""></div>
             <div  class="shop_item__states">
-                {% if item.ammo %}
-                <p>
-                    <span>Урон:</span>
-                    <span>{{ item.ammo.damage }}</span>
-                </p>
-                {% elif item.resources %}
-                <p>
-                    <span style="width:100%; text-align: left;">Эффект: {{ item.resources.effects }}</span>
-                </p>
-                {% elif item.ships %}
-                <p>
-                <span>Броня:</span>
-                <span>{{ item.ships.armor }}</span>
-                </p>
-                <p>
-                    <span>Щиты:</span>
-                    <span>{{ item.ships.shields }}</span>
-                <p>
-                    <span>Скорость:</span>
-                    <span>{{ item.ships.speed }}</span>
-                </p>
-                {% elif item.engines %}
-                <p>
-                    <span>Дальность прыжка:</span>
-                    <span>{{ item.engines.hyperjump_radius }}</span>
-                </p>
-                <p>
-                    <span>Затраты энергии:</span>
-                    <span>{{ item.engines.energy_cost }}</span>
-                <p>
-                    <span>Прочность:</span>
-                    <span>{{ item.engines.max_health }}</span>
-                </p>
-                {% elif item.devices %}
-                <p>
-                    <span>Тип:</span>
-                    <span>{{ item.devices.device_type }}</span>
-                </p>
-                <p>
-                    <span>Время восст-я:</span>
-                    <span>{{ item.devices.reload_time }}</span>
-                <p>
-                    <span>Затраты энергии:</span>
-                    <span>{{ item.devices.energy_cost }}</span>
-                </p>
-                {% elif item.weapons %}
-                <p>
-                    <span>Перезарядка:</span>
-                    <span>{{ item.weapons.reload_time }}ms</span>
-                </p>
-                <p>
-                    <span>Радиус:</span>
-                    <span>{{ item.weapons.radius }}</span>
-                <p>
-                    <span>Урон:</span>
-                    <span>{{ item.weapons.min_damage }}-{{ item.weapons.max_damage }}</span>
-                </p>
-                {% elif item.droids %}
-                <p>
-                    <span>Тип:</span>
-                    <span>{{ item.droids.droid_type }}</span>
-                </p>
-                <p>
-                    <span>Броня:</span>
-                    <span>{{ item.droids.armor }}</span>
-                <p>
-                    <span style="width: 30%;">Оружие:</span>
-                    <span style="width: 65%; text-align: right;">{{ item.droids.weapon_class }}</span>
-                </p>
-                {% endif %}
+{#                    {% for name, value in item.items() %}#}
+{#                    <p>#}
+{#                        <span>{{ name }}</span>#}
+{#                        <span>{{ value }}</span>#}
+{#                    </p>#}
+{#                    {% endfor %}#}
             </div>
             <div  class="shop_item__detail">Подробнее ►►►</div>
             <div  class="shop_item__price">Цена: {{ item.cost }}$</div>
