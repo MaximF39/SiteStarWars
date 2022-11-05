@@ -27,12 +27,12 @@
 
         <div class="revert_menu">
             {% if request.user.is_authenticated %}
-            <div class='revent_menu_item'><a href="/download" class="{% ancestor '/download/' %}">DOWNLOAD</a></div>
-            <div class='revent_menu_item'><a href="/account" class="{% ancestor '/account/' %}">ACCOUNT</a></div>
-            <div class='revent_menu_item'><a href="/logout" class="{% ancestor '/logout/' %}">EXIT</a></div>
+            <div class='revent_menu_item'><a href="{% url 'download' %}" class="{% ancestor '/download/' %}">DOWNLOAD</a></div>
+            <div class='revent_menu_item'><a href="{% url 'account' %}" class="{% ancestor '/account/' %}">ACCOUNT</a></div>
+            <div class='revent_menu_item'><a href="{% url 'logout' %}" class="{% ancestor '/logout/' %}">EXIT</a></div>
             {% else %}
-            <div class='revent_menu_item'><a href="/login" class="{% ancestor '/login/' %}">LOGIN</a></div>
-            <div class='revent_menu_item'><a href="/register" class="{% ancestor '/register/' %}">REGISTRATION</a></div>
+            <div class='revent_menu_item'><a href="{% url 'login' %}" class="{% ancestor '/login/' %}">LOGIN</a></div>
+            <div class='revent_menu_item'><a href="{% url 'register' %}" class="{% ancestor '/register/' %}">REGISTRATION</a></div>
             {% endif %}
         </div>
     </div>
