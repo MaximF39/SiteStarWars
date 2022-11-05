@@ -1,4 +1,5 @@
-FROM nginx-alpine:latest
+FROM nginx:1.19.0-alpine
 
-RUN rm /etc/nginx/conf.d/default.conf
-COPY ./docker/nginx/nginx.conf /etc/nginx/nginx.conf
+COPY static /static
+
+COPY default.conf /etc/nginx/conf.d/default.conf

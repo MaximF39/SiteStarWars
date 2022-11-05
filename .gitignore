@@ -7,3 +7,4 @@ env
 backend/.env
 !/backend/venv/
 !/backend/static/
+!/docker/nginx/static/
