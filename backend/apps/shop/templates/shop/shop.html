@@ -35,19 +35,11 @@
                     <span>Урон:</span>
                     <span>{{ item.ammo.damage }}</span>
                 </p>
-                {% endif %}
-                {% if item.resources %}
+                {% elif item.resources %}
                 <p>
                     <span style="width:100%; text-align: left;">Эффект: {{ item.resources.effects }}</span>
                 </p>
-                {% endif %}
-                {% if item.ships %}
-{#                    {% for name, value in item.properties.items() %}#}
-{#                    <p>#}
-{#                        <span>{{ name }}</span>#}
-{#                        <span>{{ value }}</span>#}
-{#                    </p>#}
-{#                    {% endfor %}#}
+                {% elif item.ships %}
                 <p>
                 <span>Броня:</span>
                 <span>{{ item.ships.armor }}</span>
@@ -59,8 +51,7 @@
                     <span>Скорость:</span>
                     <span>{{ item.ships.speed }}</span>
                 </p>
-                {% endif %}
-                {% if item.engines %}
+                {% elif item.engines %}
                 <p>
                     <span>Дальность прыжка:</span>
                     <span>{{ item.engines.hyperjump_radius }}</span>
@@ -72,8 +63,7 @@
                     <span>Прочность:</span>
                     <span>{{ item.engines.max_health }}</span>
                 </p>
-                {% endif %}
-                {% if item.devices %}
+                {% elif item.devices %}
                 <p>
                     <span>Тип:</span>
                     <span>{{ item.devices.device_type }}</span>
@@ -85,8 +75,7 @@
                     <span>Затраты энергии:</span>
                     <span>{{ item.devices.energy_cost }}</span>
                 </p>
-                {% endif %}
-                {% if item.weapons %}
+                {% elif item.weapons %}
                 <p>
                     <span>Перезарядка:</span>
                     <span>{{ item.weapons.reload_time }}ms</span>
@@ -98,8 +87,7 @@
                     <span>Урон:</span>
                     <span>{{ item.weapons.min_damage }}-{{ item.weapons.max_damage }}</span>
                 </p>
-                {% endif %}
-                {% if item.droids %}
+                {% elif item.droids %}
                 <p>
                     <span>Тип:</span>
                     <span>{{ item.droids.droid_type }}</span>

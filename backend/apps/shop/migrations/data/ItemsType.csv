@@ -1,9 +1,9 @@
 id,type_ru,type_en
-1,РџР°С‚СЂРѕРЅС‹,Ammo
-2,Р РµСЃСѓСЂСЃС‹,Resources
-3,РљРѕСЂР°Р±Р»Рё,Ships
-4,Р”РІРёРіР°С‚РµР»Рё,Engines
-5,РЈСЃС‚СЂРѕР№СЃС‚РІР°,Devices
-6,РћСЂСѓР¶РёСЏ,Weapons
-7,Р”СЂРѕР№РґС‹,Droids
-8,Р’СЃРµ РїСЂРµРґРјРµС‚С‹,BaseItems
+1,Все предметы,BaseItems
+2,Патроны,Ammo
+3,Ресурсы,Resources
+4,Корабли,Ships
+5,Двигатели,Engines
+6,Устройства,Devices
+7,Оружия,Weapons
+8,Дройды,Droids
