@@ -1,8 +1,9 @@
-
 .vscode
 .idea
 
 venv
 env
 
-.env
+backend/.env
+!/backend/venv/
+!/backend/static/
