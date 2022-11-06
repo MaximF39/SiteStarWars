@@ -1,4 +1,4 @@
-/backend/.env
+/.env
 /backend/venv/
 !/backend/entrypoint.sh
 /backend/Dockerfile
