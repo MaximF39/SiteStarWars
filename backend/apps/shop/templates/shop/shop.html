@@ -22,10 +22,16 @@
 </form>
     <nav class="list_pages">
         <ul>
-            {% for p in items.paginator.page_range %}
-            <li>
+            {% for p in page_obj.paginator.page_range %}
+            {% if page_obj.number == p %}
+            <li class="list_pages__active">
+                {{ p }}
+            </li>
+            {% else %}
+            <li class="list_pages__li">
                 <a href="?page={{ p }}"> {{ p }} </a>
             </li>
+            {% endif %}
             {% endfor %}
         </ul>
     </nav>
