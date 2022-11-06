@@ -22,7 +22,6 @@ class Shop(ListView):
 
 
 class ShopFilter(ListView):
-    model = BaseItems
     template_name = 'shop/shop.html'
     context_object_name = 'items'
 
