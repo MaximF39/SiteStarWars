@@ -115,8 +115,8 @@ id,name,en_name,class_number,cost,size,image
 114,Спецназ,OmolenianSpecialForces,73,7300,25,None.png
 115,Шершень,IrritianInfantry,94,2200,14,DroidItems\iD2.png
 116,Шмель,IrritianArmored,95,4300,20,DroidItems\iD3.png
-117,Пехота,AnidInfantry,96,2200,14,None.png
-118,Штурмовик,AnidArmored,97,4300,23,None.png
+117,Пехота,AnidInfantry,96,2200,14,DroidItems\aD2.png
+118,Штурмовик,AnidArmored,97,4300,23,DroidItems\aD3.png
 119,Смерч,MedramillInfantry,98,2200,20,DroidItems\mD2.png
 120,Цунами,MedramillArmored,99,4300,25,DroidItems\mD3.png
 121,Prophet,Prophet,129,50000,25,DroidItems\kProphet.png
