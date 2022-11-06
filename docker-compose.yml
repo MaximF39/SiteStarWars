@@ -12,6 +12,8 @@ services:
       - pg_data:/var/lib/postgres/data/
     expose:
       - "${POSTGRES_PORT}"
+    ports:
+      - "${POSTGRES_PORT}:${POSTGRES_PORT}"
     env_file:
       - .env
   django:
