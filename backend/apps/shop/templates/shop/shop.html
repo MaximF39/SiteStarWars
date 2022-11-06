@@ -10,15 +10,25 @@
 {% endblock %}
 
 {% block content %}
-<form method="get">
+<form method="post">
+    {% csrf_token %}
     <div class="filter">
-        <select name="item_type" onchange="this.form.submit()">
+        <select name="item_type"  onchange="location = this.value;">
             {% for type in types %}
                 <option value="{{ type.pk }}" {% if type.pk == select_type %} selected {% endif %}>{{ type.type_ru }}</option>
             {% endfor %}
         </select>
     </div>
 </form>
+    <nav class="list_pages">
+        <ul>
+            {% for p in items.paginator.page_range %}
+            <li>
+                <a href="?page={{ p }}"> {{ p }} </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
     <div class="conteiner shop">
         {% for item in items %}
         <div class="shop_item">

@@ -1,25 +1,48 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic import ListView
 from django.http import HttpResponse
+from django.core.paginator import Paginator
 from .models import *
 from . import models
 
 
-class shop(ListView):
+class Shop(ListView):
     model = BaseItems
     template_name = 'shop/shop.html'
+    context_object_name = 'items'
     object_list = 'items'
 
-    def get_context_data(self, *, object_list=None, **kwargs):
+    def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        types = models.ItemsType.objects.all()
+        select_type = 1
+        context['select_type'] = select_type
+        context['types'] = types
         return context
 
-    def get(self, request):
-        select_type = int(request.GET.get('item_type', 1))
+
+class ShopFilter(ListView):
+    model = BaseItems
+    template_name = 'shop/shop.html'
+    context_object_name = 'items'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        types = models.ItemsType.objects.all()
+        select_type = int(self.kwargs['item_slug'])
+        context['select_type'] = select_type
+        context['types'] = types
+        return context
+
+    def get_queryset(self):
+        select_type = int(self.kwargs['item_slug'])
         types = models.ItemsType.objects.all()
         en_name = types[select_type - 1].type_en
-        if select_type == 1:
-            items = models.BaseItems.objects.select_related('ammo', 'resources', 'engines', 'devices', 'weapons', 'droids', 'ships')
-        else:
-            items = getattr(models, en_name).objects.all()
-        return render(request, self.template_name, context={'items': items, 'types': types, 'select_type': select_type})
+        model_items = getattr(models, en_name).objects.all().order_by('id')
+        return model_items
+
+
+
+
+def redirect_shop(request):
+    return redirect('shop')
