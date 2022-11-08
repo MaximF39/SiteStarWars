@@ -1,21 +1,26 @@
-version: '3.8'
+version: '3.3'
 
 services:
   django:
-    container_name: django
     restart: always
     build: ./backend
-    entrypoint: "/bin/sh -c ./entrypoint.sh"
     volumes:
-      - ./backend:/backend
+      - static:/backend/static
     env_file:
-      - backend/.env
+      - .env
     expose:
       - 8000
   nginx:
-    build: ./docker/nginx
+    build:
+      context: ./backend
+      dockerfile: Dockerfile_nginx
     restart: always
+    volumes:
+      - static:/static
     ports:
-      - "80:80"
+      - "50002:50002"
     depends_on:
       - django
+
+volumes:
+  static:

@@ -4,7 +4,8 @@
 venv
 env
 
-backend/.env
+.env
 !/backend/venv/
 !/backend/static/
 !/docker/nginx/static/
+!/.env
