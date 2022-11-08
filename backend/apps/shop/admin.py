@@ -110,7 +110,3 @@ class DroidsAdmin(BaseAttributes):
             'fields': ('energy_cost', 'armor', 'droid_type', 'weapon_class', 'max_health', 'restrictions')
         }),
     )
-
-@admin.register(ItemsType)
-class TypeAdmin(admin.ModelAdmin):
-    pass

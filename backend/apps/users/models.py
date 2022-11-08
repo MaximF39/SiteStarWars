@@ -2,10 +2,8 @@ from django.contrib.auth.models import (
     BaseUserManager, AbstractUser
 )
 from django.core import validators
-
 from django.db import models
-
-from core.models import BaseModel, BaseModelID
+from core.models import CoreModel, CoreModelNoID
 
 
 class UserManager(BaseUserManager):
@@ -51,7 +49,7 @@ class User(AbstractUser):
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)
     balance = models.IntegerField(default=0, null=False)
-    # inventory_id = models.OneToOneFieldeField('Inventory', on_delete=models.CASCADE, null=True)
+    # inventory = models.ForeignKey('Inventory', on_delete=models.CASCADE, null=True)
     race_type = (
         (1, 'Омоленианин (Красные)'),
         (2, 'Иррииец (Жёлтые)'),
@@ -76,12 +74,15 @@ class User(AbstractUser):
     def is_staff(self):
         return self.is_admin
 
+    # def change_item(self, item, count):
 
-class Item(BaseModel):
+
+class Item(CoreModelNoID):
     count = models.IntegerField(null=False)
+    health = models.SmallIntegerField(default=1000, null=False)
     item = models.OneToOneField('shop.BaseItems', on_delete=models.CASCADE, primary_key=True)
 
 
-class Inventory(BaseModelID):
+class Inventory(CoreModel):
     is_repository = models.BooleanField(default=True)
-    items = models.ManyToManyField('Item')
+    items = models.ForeignKey('Item', on_delete=models.CASCADE, null=True)

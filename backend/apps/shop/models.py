@@ -1,17 +1,20 @@
 from django.db import models
 from versatileimagefield.fields import VersatileImageField
 
-from core.models import BaseModelID
+from core.models import CoreModel
 from django.contrib.postgres.fields import ArrayField
 
 
-class BaseItems(BaseModelID):
+class BaseItems(CoreModel):
     name = models.CharField(max_length=100, null=False, verbose_name="Название")
     class_number = models.IntegerField(verbose_name="Номер класса")
     en_name = models.CharField(max_length=100, null=False, verbose_name="En название")
     cost = models.IntegerField(null=False, verbose_name="Цена")
     size = models.FloatField(null=False, verbose_name="Размер")
-    image = VersatileImageField(null=False, blank=True, upload_to='images', verbose_name="Изображение")
+    image = models.ImageField(max_length=255, null=False, blank=True, verbose_name="Изображение")
+    @property
+    def type(self):
+        return self.__class__.__name__
 
     class Meta:
         verbose_name = "Предмет"
@@ -107,10 +110,9 @@ class Droids(BaseItems):
         verbose_name = "Дройд"
         verbose_name_plural = "Дройды"
 
-class ItemsType(models.Model):
+class ItemsType(CoreModel):
     type_en = models.CharField(max_length=50)
     type_ru = models.CharField(max_length=50)
-
 
     def __str__(self):
         return self.type_ru

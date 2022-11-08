@@ -1,9 +1,7 @@
 from django.db import models
 
 
-
-class BaseModel(models.Model):
-    """Basic Model"""
+class CoreModelNoID(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, null=True)
     updated_at = models.DateTimeField(auto_now=True, null=True)
 
@@ -11,10 +9,10 @@ class BaseModel(models.Model):
         abstract = True
         ordering = ['-created_at', '-updated_at']
 
-
-class BaseModelID(BaseModel):
+class CoreModel(CoreModelNoID):
     """Basic Model"""
     id = models.AutoField(primary_key=True, editable=False)
+
 
     class Meta:
         abstract = True
