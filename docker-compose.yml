@@ -5,7 +5,8 @@ services:
     restart: always
     build: ./backend
     volumes:
-      - static:/backend/static
+      - app:/app
+      - static:/app/static
     env_file:
       - .env
     expose:
@@ -13,7 +14,7 @@ services:
   nginx:
     build:
       context: ./backend
-      dockerfile: Dockerfile_nginx
+      dockerfile: nginx.Dockerfile
     restart: always
     volumes:
       - static:/static
@@ -24,3 +25,4 @@ services:
 
 volumes:
   static:
+  app:

@@ -37,7 +37,8 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractUser):
-    auth_key = models.AutoField(primary_key=True, editable=False)
+    id = models.AutoField(primary_key=True)
+    auth_key = models.UUIDField(null=True, editable=False)
     username = models.CharField(verbose_name='username', unique=True, max_length=20, null=True)
 
     email = models.EmailField(

@@ -39,6 +39,7 @@ THIRD_PARTY = [
     'constance',
     'constance.backends.database',
     'ckeditor',
+    'drf_registration',
 ]
 
 LOCAL_APPS = [
@@ -46,7 +47,7 @@ LOCAL_APPS = [
     'main',
     'forum',
     'shop',
-    'personalAccount',
+    'personal_account',
     'wiki',
 ]
 
@@ -139,6 +140,7 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework_simplejwt.authentication.JWTAuthentication",
         'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
     ),
     "DEFAULT_FILTER_BACKENDS": ("django_filters.rest_framework.DjangoFilterBackend",),
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.LimitOffsetPagination",
@@ -146,3 +148,6 @@ REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema",
 }
 
+AUTHENTICATION_BACKENDS = [
+    'drf_registration.auth.MultiFieldsModelBackend',
+]

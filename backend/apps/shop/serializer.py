@@ -1,5 +1,4 @@
 from rest_framework import serializers
-from versatileimagefield.serializers import VersatileImageFieldSerializer
 
 from shop import models
 from core.serializer import CoreSerializer
@@ -7,6 +6,7 @@ from core.serializer import CoreSerializer
 
 class BaseItemSerializer(CoreSerializer):
     type = serializers.ReadOnlyField()
+    # image = serializers.Pref
 
     class Meta(CoreSerializer.Meta):
         model = models.BaseItems
