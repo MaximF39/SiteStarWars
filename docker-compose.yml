@@ -19,7 +19,7 @@ services:
     volumes:
       - static:/static
     ports:
-      - "50002:50002"
+      - "3000:3000"
     depends_on:
       - django
 

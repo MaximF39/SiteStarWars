@@ -14,9 +14,9 @@ sys.path.insert(0, os.path.join(BASE_DIR, "apps"))
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "django-insecure-wz1lx#xr^@^fqivedz3!iqr=szc^2qw__+$xg4f-@w$3dwry(5")
 DEBUG = os.getenv("DJANGO_DEBUG", True)
 
-ALLOWED_HOSTS = ["*", "65.21.92.120", "starwars.site", "localhost"]
+ALLOWED_HOSTS = ["*", "65.21.92.120", "starwars.site"]
 
-CSRF_TRUSTED_ORIGINS = ["http://localhost:50002", "http://starwars.site"]
+CSRF_TRUSTED_ORIGINS = ["http://localhost:3000", "http://starwars.site"]
 
 DJANGO_APPS = [
     'django.contrib.admin',
