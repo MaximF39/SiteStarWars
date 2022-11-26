@@ -9,3 +9,5 @@ env
 !/backend/static/
 !/docker/nginx/static/
 !/.env
+!/backend/.env
+!/.env
